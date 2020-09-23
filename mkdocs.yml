@@ -1,9 +1,10 @@
 site_name: Blue Teaming Training 2020
 nav:
     - Home: index.md
-    - Incident Response and Security Operations Fundamentals: Incident-Response-and-Security-Operations-Fundamentals.md
-    - Using MITRE ATT&CK to defend against Advanced Persistent Threats: MITRE-APT.md
-    - Getting started with IDA Pro: ida.md
-    - Threat Intelligence Fundamentals: Threat-intelligence-fundamentals.md
+    - Module 1 - Incident Response and Security Operations Fundamentals: Incident-Response-and-Security-Operations-Fundamentals.md
+    - Module 2 - Using MITRE ATT&CK to defend against Advanced Persistent Threats: MITRE-APT.md
+    - Module 3 - Getting started with IDA Pro: ida.md
+    - Module 4 - Threat Intelligence Fundamentals: Threat-intelligence-fundamentals.md
+    - Module 5 - Malware Analysis- How to use Yara rules to detect malware: #
     
 theme: material
