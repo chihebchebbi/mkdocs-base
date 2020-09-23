@@ -5,6 +5,6 @@ nav:
     - Module 2 - Using MITRE ATT&CK to defend against Advanced Persistent Threats: MITRE-APT.md
     - Module 3 - Getting started with IDA Pro: ida.md
     - Module 4 - Threat Intelligence Fundamentals: Threat-intelligence-fundamentals.md
-    - Module 5 - Malware Analysis- How to use Yara rules to detect malware: #
+    - Module 5 - Malware Analysis- How to use Yara rules to detect malware: test.md
     
 theme: material
