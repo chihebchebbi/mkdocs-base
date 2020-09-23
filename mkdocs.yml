@@ -2,5 +2,8 @@ site_name: Blue Teaming Training 2020
 nav:
     - Home: index.md
     - Incident Response and Security Operations Fundamentals: Incident-Response-and-Security-Operations-Fundamentals.md
-    - About: about.md
+    - Using MITRE ATT&CK to defend against Advanced Persistent Threats: MITRE-APT.md
+    - Getting started with IDA Pro: ida.md
+    - Threat Intelligence Fundamentals: Threat-intelligence-fundamentals.md
+    
 theme: material
