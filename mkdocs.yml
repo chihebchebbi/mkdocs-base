@@ -1,5 +1,6 @@
 site_name: Blue Teaming Training 2020
 nav:
     - Home: index.md
+    - Incident Response and Security Operations Fundamentals: Incident-Response-and-Security-Operations-Fundamentals.md
     - About: about.md
 theme: material
