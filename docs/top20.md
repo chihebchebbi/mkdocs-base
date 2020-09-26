@@ -2,7 +2,7 @@
 
 Hi Peerlysters,
 
- A few days ago, I wrote a piece called &quot;**[TOP 20 tools every security professional should have in 2020](https://www.peerlyst.com/posts/top-20-tools-every-security-professional-should-have-in-2020-chiheb-chebbi?trk=search_page_search_result)**&quot; where I presented some of the most helpful and required tools in information security that you need to acquire. Most of the presented tools were usually used for offensive purposes. So, I am taking this opportunity to present the TOP 20  free tools that every blue teamer should have in 2020:
+I am taking this opportunity to present the TOP 20  free tools that every blue teamer should have in 2020:
 
 ![](RackMultipart20200926-4-1rlrx7g_html_24fe06ae0b1283b3.png)
 
@@ -16,9 +16,7 @@ TheHive is a scalable 4-in-1 open source and free security incident response pla
 
 Its official website: [https://thehive-project.org](https://thehive-project.org/)
 
-_To learn more about it:_
 
-- [A practical Guide: How to Install and use The Hive Project in Incident Management](https://www.peerlyst.com/posts/a-practical-guide-how-to-install-and-use-the-hive-project-in-incident-management-chiheb-chebbi?trk=search_page_search_result)
 
 ### OSSIM
 
@@ -28,9 +26,7 @@ OSSIM is an open-source security information and event management system (SIEM).
 
 You can download it from here: [https://cybersecurity.att.com/products/ossim](https://cybersecurity.att.com/products/ossim)
 
-_To learn more about it:_
 
-- [Security information and event management (OSSIM example)](https://www.peerlyst.com/posts/security-information-and-event-management-ossim-example-mohamed-marrouchi?trk=search_page_search_result)
 
 ### The HELK
 
@@ -40,8 +36,7 @@ If you are into threat hunting than you probabilly heard of the HELK project. Th
 
 Its official website: [Cyb3rWard0g/HELK: The Hunting ELK - GitHub](https://github.com/Cyb3rWard0g/HELK)
 
-- [How to build a Threat Hunting platform using ELK Stack](https://www.peerlyst.com/posts/how-to-build-a-threat-hunting-platform-using-elk-stack-chiheb-chebbi?trk=search_page_search_result)
-- [How to build a Threat Hunting platform using ELK Stack [Part 2]](https://www.peerlyst.com/posts/how-to-build-a-threat-hunting-platform-using-elk-stack-part-2-chiheb-chebbi?trk=search_page_search_result)
+
 
 ### Nmap
 
@@ -51,9 +46,7 @@ Scanning is one of the required steps in every attacking operation. After gather
 
 You can download it from here: [https://nmap.org/download.html](https://nmap.org/download.html)
 
-_To learn more about it: _
 
-- [A Detailed Guide on Nmap (from Zero to Hero)](https://www.peerlyst.com/posts/a-detailed-guide-on-nmap-from-zero-to-hero-chiheb-chebbi?trk=search_page_search_result)
 
 ### Volatility
 
@@ -63,9 +56,6 @@ Memory malware analysis is widely used for digital investigation and malware ana
 
 You can download Volatility from here: [https://github.com/volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility)
 
-_To learn more about it:_
-
-- [The Volatility wiki](https://www.peerlyst.com/posts/the-volatility-wiki-peerlyst?trk=search_page_search_result)
 
 ### Demisto Community Edition
 
@@ -75,7 +65,7 @@ Security Orchestration, Automation and Response or simply SOAR are very effectiv
 
 You can download the community edition from here: [https://www.demisto.com/community/](https://www.demisto.com/community/)
 
-[[#Blog] Demisto and Awake Security: Automated Network Detection and Response](https://www.peerlyst.com/posts/blog-demisto-and-awake-security-automated-network-detection-and-response-demisto?trk=search_page_search_result)
+
 
 ## Wireshark
 
@@ -83,10 +73,7 @@ Communication and networking are vital for every modern organization. Making sur
 
 You can download it from here: [https://www.wireshark.org/download.html](https://www.wireshark.org/download.html)
 
-_To learn more about it:_
 
-- [How to use Wireshark: Part one](https://www.peerlyst.com/posts/let-s-use-wireshark-part-one-kimberly-crawley?trk=search_page_search_result)
-- [How to get started with Wireshark plugins, tools, and scripts](https://www.peerlyst.com/posts/how-to-get-started-with-wireshark-plugins-tools-and-scripts-kimberly-crawley?trk=search_page_search_result)
 
 ### Atomic Red Team
 
@@ -146,8 +133,6 @@ Forensics imaging is a very important task in digital forensics. Imaging is copy
 
 Its official website: [https://accessdata.com/product-download/ftk-imager-version-4-2-0](https://accessdata.com/product-download/ftk-imager-version-4-2-0)
 
-- [Hands-on Guide to Digital Forensics](https://www.peerlyst.com/posts/hands-on-guide-to-digital-forensics-chiheb-chebbi?trk=search_page_search_result)
-
 ### Cuckoo
 
 ![](RackMultipart20200926-4-1rlrx7g_html_a57e1a3795995974.jpg)
@@ -172,9 +157,7 @@ Another great reverse engineering tool is Ghidra. This project is open-source an
 
 Its official website is: [http://ghidra-sre.org](http://ghidra-sre.org/)
 
-_To learn more about it:_
 
-- [Getting Started with Reverse Engineering using Ghidra](https://www.peerlyst.com/posts/getting-started-with-reverse-engineering-using-ghidra-chiheb-chebbi?trk=search_page_search_result)
 
 ### Snort
 
