@@ -84,19 +84,19 @@ Install a required module:
 
 `Install-Module -Name powershell-yaml`
 
-![](img/importmodule.png)
+![](img/installmodule.png)
 
 Now go and download  **Invoke-atomicreadteam**  from: [https://github.com/redcanaryco/invoke-atomicredteam](https://github.com/redcanaryco/invoke-atomicredteam)
 
 _Invoke-AtomicRedTeam is a PowerShell module to execute  __tests__  as defined in the _[_atomics folder_](https://github.com/redcanaryco/atomic-red-team/tree/master/atomics)_ of Red Canary&#39;s Atomic Red  __Team__  project. The &quot;atomics folder&quot; contains a folder for each  __Technique__  defined by the _[_MITRE ATT&amp;CK™ Framework_](https://attack.mitre.org/matrices/enterprise/)_. Inside of each of these &quot;T#&quot; folders you&#39;ll find a  __**yaml**__  file that defines the attack  __procedures__  for each atomic test as well as an easier to read markdown ( __**md**__ )  __version__  of the same data._
 
-![](img/installmodule.png)
+![](img/invoke.png)
 
 Enter the project folder and then type:
 
 `Import-Module ./Invoke-AtomicRedTeam.psm1`
 
-![](img/invoke.png)
+![](img/importmodule.png)
 
 Now you can run any test you want by simply run the following commands:
 
