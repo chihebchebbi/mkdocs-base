@@ -1,25 +1,26 @@
 # **How to build a Machine Learning Intrusion Detection system**
 
-**Abstract**
+## Introduction
 
-[Machine learning](https://www.peerlyst.com/tags/machine-learning) [techniques](https://www.peerlyst.com/tags/techniques) are changing our view of the world and they are impacting all aspects of our daily life. Thus machine [learning](https://www.peerlyst.com/tags/learning) is playing a huge role in information security. In this article Peerlysters will not only explore the fundamentals behind machine learning techniques but they will dive into a hands-on experience to learn [how to](https://www.peerlyst.com/tags/how-to) build real world [Intrusion detection system](https://www.peerlyst.com/tags/intrusion-detection-system)s from scratch using cutting edge techniques, [programming](https://www.peerlyst.com/tags/programming) libraries and publicly available datasets. Also we are providing a useful attachment to make you choose machine learning algorithms in an easy way.
+Machine learning techniques are changing our view of the world and they are impacting all aspects of our daily life. Thus machine learning is playing a huge role in information security. In this module you will not only explore the fundamentals behind machine learning techniques but you will dive into a hands-on experience to learn how to build real world Intrusion detection systems from scratch using cutting edge techniques, programming libraries and publicly available datasets. 
 
-This article will cover:
+This module will cover:
 
-- Machine learning models
-- The required steps to build a Machine learning [project](https://www.peerlyst.com/tags/project)
-- How to evaluate a machine learning Model
-- Most useful [Data Science](https://www.peerlyst.com/tags/data-science) and Machine learning libraries
-- Artificial [Neural Networks](https://www.peerlyst.com/tags/neural-networks) and Deep Learning
-- Next Generation [Intrusion detection systems](https://www.peerlyst.com/tags/intrusion-detection-systems) using Machine learning Techniques **. **
+*	Machine learning models
+*	The required steps to build a Machine learning project
+*	How to evaluate a machine learning Model
+*	Most useful Data Science and Machine learning libraries
+*	Artificial Neural Networks and Deep Learning
+*	Next Generation Intrusion detection systems using Machine learning Techniques. 
 
-**Artificial intelligence **
 
-[Artificial intelligence](https://www.peerlyst.com/tags/artificial-intelligence) is the art of making computer programs to behave like a [human](https://www.peerlyst.com/tags/human-1) and by behave i mean perceiving, learning, understanding and knowing. AI is involving many areas such as [computer science](https://www.peerlyst.com/tags/computer-science), neuroscience, psychology and so on.
+## Artificial intelligence  
+
+Artificial intelligence is the art of making computer programs to behave like a human and by behave i mean perceiving, learning, understanding and knowing. AI is involving many areas such as computer science, neuroscience, psychology and so on. 
 
 ![](RackMultipart20200926-4-kmxakm_html_69942718d81c4342.jpg)
 
-**Machine Learning models**
+## Machine Learning models 
 
 Machine learning is the study and the creation of algorithms that learn from given data and examples. It is a particular approach to artificial intelligence.Tom M. Mitchell (an american computer scientist ) defines machine learning as &quot;A computer program is said to learn from experience _E_ with respect to some class of tasks _T_ and performance measure _P_ if its performance at tasks in _T_, as measured by _P_, improves with experience _E_&quot; . In machine learning we have four major models; supervised, semi-supervised,unsupervised and reinforcement.
 
@@ -192,9 +193,8 @@ You can also download the presentation slides from this link: [Presentation Slid
 
 This article is a [fair](https://www.peerlyst.com/tags/fair) overview of machine learning in information security.We discussed the required fundamentals in every machine learning project starting from the fundamentals to gaining the skills to build a machine learning projects.We took intrusion detection systems as real world case study.
 
-[howto](https://www.peerlyst.com/tags/howto)‍, [training](https://www.peerlyst.com/tags/training)‍
 
-**Reference of the attached Doc** : [https://communities.sas.com/t5/SAS-Data-Mining-and-Machine/Machine-learning-algorithms-cheat-sheet-blog-post/td-p/363568](https://communities.sas.com/t5/SAS-Data-Mining-and-Machine/Machine-learning-algorithms-cheat-sheet-blog-post/td-p/363568)
+
 
 2 [https://www.slideshare.net/idsecconf/jim-geovedi-machine-learning-for-cybersecurity](https://www.slideshare.net/idsecconf/jim-geovedi-machine-learning-for-cybersecurity)
 
