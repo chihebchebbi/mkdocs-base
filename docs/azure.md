@@ -1,16 +1,14 @@
-[Detailed Guide] Getting started using Microsoft Azure Sentinel (Cloud-Native SIEM and SOAR)
+# Getting started using Microsoft Azure Sentinel (Cloud-Native SIEM and SOAR)
 
-Hi Peerlysters, in this article we are going to explore Microsoft Azure Sentinel (Cloud-Native SIEM and SOAR). We are going to learn how to deploy the SIEM from scratch and we are going to see how to start detecting threats with it
+In this module, we are going to explore Microsoft Azure Sentinel (Cloud-Native SIEM and SOAR). We are going to learn how to deploy the SIEM from scratch and we are going to see how to start detecting threats with it
 
-![](RackMultipart20200926-4-o5tfaf_html_2d3b334571b9e52.jpg)
+![](https://danielchronlundcloudtechblog.files.wordpress.com/2019/07/sentineldashboard.jpg?w=1100)
 
-[Source](https://danielchronlundcloudtechblog.files.wordpress.com/2019/07/sentineldashboard.jpg?w=1100)
+[Source]()
 
 Before learning how to use Azure Sentinel, we need to define it first. According to one of  their official [blog posts](https://azure.microsoft.com/en-in/blog/introducing-microsoft-azure-sentinel-intelligent-security-analytics-for-your-entire-enterprise/):
 
-_Azure Sentinel provides __ __ intelligent __ __ security analytics __ __ at __ __ cloud __ __ scale __ __ for your entire enterprise. Azure Sentinel makes it easy to collect security data across your entire __ __ hybrid __ __ organization from devices, to __ __ users __, to apps, to servers on any cloud.  It uses the power of__   __artificial intelligence__   __to ensure you are identifying real threats quickly and unleashes you from the burden of traditional__   __SIEMs__   __by eliminating the need to spend time on setting up, maintaining, and__   __scaling__  __infrastructure._
-
-To explore the Sentinel components in details, I highly recommend you to read this resource from  Eli Shlomo‍
+> Azure Sentinel provides intelligent security analytics at cloud scale for your entire enterprise. Azure Sentinel makes it easy to collect security data across your entire hybrid organization from devices, to users, to apps, to servers on any cloud.  It uses the power of artificial intelligence to ensure you are identifying real threats quickly and unleashes you from the burden of traditional SIEMs by eliminating the need to spend time on setting up, maintaining, and scaling infrastructure.
 
 Most of the first steps are already discussed in details in the previous resource. Thus I am going to go through the steps rapidly:
 
@@ -125,6 +123,7 @@ You can also write your own advanced detection queries with KQL. Go to &quot; **
 
 ![](RackMultipart20200926-4-o5tfaf_html_4e021d847b722091.png)
 
- By now you are ready to start your Hunting mission.
+By now you are ready to start your Hunting mission.
 
- I hope you found it helpful. If you need me to correct something please don&#39;t hesitate to comment on this post.
+I hope you found it helpful. If you need me to correct something please don&#39;t hesitate to comment on this post.
+
