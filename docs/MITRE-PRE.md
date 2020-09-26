@@ -106,7 +106,7 @@ By definition:
 
 Open source intelligence is like any methodological process is going thru a defined number of steps.In order to perform an open source intelligence you can follow the following phases:
 
-- **Direction and planning: ** in this phase you need to identify the sources,in other words where you can find information
+- **Direction and planning:** in this phase you need to identify the sources,in other words where you can find information
 - **Collection:**  in this phase you will collect and harvest information from the selected sources
 - **Processing and collation:**  during this phase you need to process information to get useful insights.
 - **Analysis and integration:**  in this phase you need to join all the information and analyse them
@@ -195,7 +195,7 @@ When performing open-source intelligence (OSINT), you usually try to find inform
 
 ### T1291 Research relevant vulnerabilities/CVEs ** **
 
-This technique consists of finding known vulnerabilities in the targeted systems and applications. Vulnerabilities can be classified using a ranking system, for example, using the  **Common Vulnerability Scoring System ** ( **CVSS** ) for the  **Common Vulnerabilities and Exposures ** ( **CVE** ) vulnerabilities. To find vulnerabilities in a service you can use shodan or any vulnerability scanner
+This technique consists of finding known vulnerabilities in the targeted systems and applications. Vulnerabilities can be classified using a ranking system, for example, using the  **Common Vulnerability Scoring System** ( **CVSS** ) for the  **Common Vulnerabilities and Exposures** ( **CVE** ) vulnerabilities. To find vulnerabilities in a service you can use shodan or any vulnerability scanner
 
 Shodan is a search engine that lets the user find specific types of computers (webcams, routers, servers, etc.) connected to the internet using a variety of filters. Some have also described it as a search engine of service banners, which are metadata that the server sends back to the client. This can be information about the server software, what options the service supports, a welcome message or anything else that the client can find out before interacting with the server.
 
