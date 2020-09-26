@@ -3,21 +3,21 @@
 
 Nowadays, new techniques are invented on a daily basis to bypass security layers and avoid detection. Thus it is time to figure out new techniques too and defend against cyber threats.
 
-![](RackMultipart20200923-4-16yksxn_html_a10bfbdc75bf3b65.jpg)
+![](https://base.imgix.net/files/base/ebm/tdworld/image/2019/04/tdworld_13685_cyberattack_matejmo.png?auto=format&amp;fit=crop&amp;h=432&amp;w=768)
 
 _Image _[_Courtesy_](https://base.imgix.net/files/base/ebm/tdworld/image/2019/04/tdworld_13685_cyberattack_matejmo.png?auto=format&amp;fit=crop&amp;h=432&amp;w=768)
 
 Before diving into how to use MITRE ATT&amp;CK framework to defend against advanced persistent threats and protect critical assets, let&#39;s explore some important terminologies
 
-**Threats **
+## **Threats **
 
-![](RackMultipart20200923-4-16yksxn_html_f1ac457893fa235a.png)
+![](https://wpsitehelpers.com/wp-content/uploads/2016/11/wordpress-malware-removal.png)
 
 _Image _[_Courtesy_](https://wpsitehelpers.com/wp-content/uploads/2016/11/wordpress-malware-removal.png)
 
 By definition, a  **threat**  is a potential danger for the enterprise assets that could harm these systems. In many cases, there is confusion between the three terms Threat, Vulnerability and Risk; the first term, as I explained before, is a potential danger while a Vulnerability is a known weakness or a gap in an asset. A risk is a result of a threat exploiting a vulnerability. In other words, you can see it as an intersection between the two previous terms. The method used to attack an asset is called a  **Threat Vector**.
 
-**Advanced Persistent Threats**
+## **Advanced Persistent Threats**
 
 Wikipedia defines an &quot;Advanced Persistence Threat&quot; as follows:
 
@@ -29,23 +29,23 @@ To discover some of the well-known APT groups you can check this great resource 
 
 ![](RackMultipart20200923-4-16yksxn_html_637f115c4eb01d.png)
 
-**The Cyber Kill Chain**
+## **The Cyber Kill Chain**
 
 The Cyber Kill Chain is a military inspired model to describe the required steps and stages to perform attacks. The Cyber Kill Chain framework is created by Lockheed Martin as part of the Intelligence Driven Defense model for identification and prevention of cyber intrusions activity. While a kill chain in military refers to: Find, Fix, Track, Target, Engage and Assess, cyber kill chain refers to: reconnaissance, Initial attack, Command and control, Discover and spread and finally Extraction and exfiltration. Knowing this framework is essential to have a clearer understanding about how major attacks occur.
 
-![](RackMultipart20200923-4-16yksxn_html_d075af3c4b3158e4.png)
+![](http://www.go4hosting.com/image/blog/AttivoNetworks_KillChain2.png)
 
 _Image _[_Courtesy_](http://www.go4hosting.com/image/blog/AttivoNetworks_KillChain2.png)
 
 Threat intelligence is an important operation in cyber-security and especially in security operations and incident response. Because as Sun Tzu said:
 
-![](RackMultipart20200923-4-16yksxn_html_5ac207927d639f62.jpg)
+![](https://www.fortinet.com/content/dam/fortinet-blog/article-images/individual-images/AbqKCT0.jpg)
 
 _Image _[_Courtesy_](https://www.fortinet.com/content/dam/fortinet-blog/article-images/individual-images/AbqKCT0.jpg)
 
 Security operation analysts should be proactive when it comes to gathering information and intelligence about the external threats and adversaries to achieve faster detection.
 
-**MITRE ATT&amp;CK Framework**
+## **MITRE ATT&amp;CK Framework**
 
 ![](RackMultipart20200923-4-16yksxn_html_a1f3903ce3b17ff4.png)
 
@@ -93,7 +93,7 @@ Export the techniques as SVG
 
 If you are dealing with many APT groups at the same time highlight the techniques using colorful shades depends on how often the technique is used by the APT groups (brightest color = The technique is used by many groups)
 
-![](RackMultipart20200923-4-16yksxn_html_29527be032d759e5.png)
+![](https://www.schemecolor.com/wp-content/uploads/lunar-eclipses-red-colors.png)
 
 _Image _[_Courtesy_](https://www.schemecolor.com/wp-content/uploads/lunar-eclipses-red-colors.png)_ _
 
@@ -107,7 +107,7 @@ Mitigations for every technique can be found on [https://attack.mitre.org/mitiga
 
 ![](RackMultipart20200923-4-16yksxn_html_ed02c2f56802bed8.png)
 
-**Threat Emulation**
+## **Threat Emulation**
 
 One of the techniques to help you practice how to defend your organization from these attacks is Threat Emulation. You can use Atomic Red Team to train your team.
 
@@ -115,19 +115,15 @@ One of the techniques to help you practice how to defend your organization from 
 
 _&quot;_[_Atomic Red Team_](https://atomicredteam.io/)_ is a library of simple  __tests__  that every  __security team__  can execute to test their defenses. Tests are focused, have few dependencies, and are defined in a structured  __format__  that can be used by  __automation__  frameworks.&quot;_
 
-Check the other tools here:
 
-**Summary**
+
+## **Summary**
 
 In this article, we learned many important terminologies and how to use MITRE ATT&amp;CK framework to detect advanced persistent threats.
 
-**More Resources**
-
-- [The Advanced Persistent Threat (APT) Wiki. (Overviews, Groups and Solutions)](https://www.peerlyst.com/posts/the-advanced-persistent-threat-apt-wiki-overviews-groups-and-solutions-chiheb-chebbi?trk=search_page_search_result)
-- [The Everything about The MITRE ATT&amp;CK Framework Wiki](https://www.peerlyst.com/posts/the-everything-about-the-mitre-att-and-ck-framework-wiki-chiheb-chebbi?trk=search_page_search_result)
 
 **References and Credit**
 
-- [https://www.peerlyst.com/posts/getting-started-using-mitre-att-and-ck-for-threat-hunting-chiheb-chebbi?trk=search\_page\_search\_result](https://www.peerlyst.com/posts/getting-started-using-mitre-att-and-ck-for-threat-hunting-chiheb-chebbi?trk=search_page_search_result)
 - [https://www.fireeye.com/blog/products-and-services/2020/01/operationalizing-cti-hunt-for-defend-against-iranian-cyber-threats.html](https://www.fireeye.com/blog/products-and-services/2020/01/operationalizing-cti-hunt-for-defend-against-iranian-cyber-threats.html)
-- [https://www.peerlyst.com/posts/how-to-build-a-threat-hunting-platform-using-elk-stack-chiheb-chebbi?trk=search\_page\_search\_result](https://www.peerlyst.com/posts/how-to-build-a-threat-hunting-platform-using-elk-stack-chiheb-chebbi?trk=search_page_search_result)
+
+
