@@ -5,7 +5,7 @@
 
 ## MITRE ATT&amp;CK Framework
 
-![](RackMultipart20200926-4-1ddq8vf_html_38c74bebb4ed7239.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mitre_Corporation_logo.svg/1200px-Mitre_Corporation_logo.svg.png)
 
 MITRE ATT&amp;CK is a framework developed by the Mitre Corporation. The comprehensive document classifies adversary attacks, in other words, their techniques and tactics after observing millions of real-world attacks against many different organizations. This is why ATT&amp;CK refers to &quot;Adversarial Tactics, Techniques &amp; Common Knowledge&quot;.
 
@@ -45,13 +45,13 @@ You can find all the techniques here: [https://attack.mitre.org/techniques/pre/]
 
 You can find the full matrix (Techniques and tactics) here: [https://attack.mitre.org/tactics/pre/](https://attack.mitre.org/tactics/pre/)
 
-![](RackMultipart20200926-4-1ddq8vf_html_0.png)
+![](img/MATRIX.png)
 
 Now let&#39;s explore some techniques:
 
 ### T1279 Conduct social engineering
 
-![](RackMultipart20200926-4-1ddq8vf_html_a36d835dd599014b.png)
+![](img/SE.png)
 
 Social engineering is the art of hacking humans. In other words, it is a set of techniques (technical and nontechnical) used to get useful and sensitive information from others using psychological manipulation. These are some causes why people and organizations are vulnerable to Social engineering attacks:
 
@@ -150,7 +150,6 @@ job announcements could be a valuable source of information. Job postings can gi
 - [Glassdoor](https://www.betterteam.com/glassdoor)
 - [LinkedIn](https://www.betterteam.com/linkedin)
 
-To learn more about how to perform OSINT using job boards check this great post by  z3ro Trust‍
 
 ### T1256 Identify web defensive services
 
@@ -187,11 +186,8 @@ When performing open-source intelligence (OSINT), you usually try to find inform
 - An Instagram Open source Intelligence Tool: [https://github.com/sc1341/InstagramOSINT](https://github.com/sc1341/InstagramOSINT)
 - Facebook Search tool: [https://netbootcamp.org/facebook.html](https://netbootcamp.org/facebook.html)
 
-![](RackMultipart20200926-4-1ddq8vf_html_ae5f76f27234ca7d.png)
+![](img/instaosint.png)
 
-###
-
-###
 
 ### T1291 Research relevant vulnerabilities/CVEs ** **
 
@@ -199,7 +195,7 @@ This technique consists of finding known vulnerabilities in the targeted systems
 
 Shodan is a search engine that lets the user find specific types of computers (webcams, routers, servers, etc.) connected to the internet using a variety of filters. Some have also described it as a search engine of service banners, which are metadata that the server sends back to the client. This can be information about the server software, what options the service supports, a welcome message or anything else that the client can find out before interacting with the server.
 
-![](RackMultipart20200926-4-1ddq8vf_html_cc7090d5444d3262.png)
+![](img/cve.png)
 
 **Summary**
 
