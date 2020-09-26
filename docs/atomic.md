@@ -34,7 +34,7 @@ Red Teamers usually perform the following steps:
 
 According to its official Github [repository](https://github.com/redcanaryco/atomic-red-team)
 
-  ![](RackMultipart20200926-4-kwa6fy_html_749da0e6c24c1e60.png)
+  ![](https://camo.githubusercontent.com/3eb25137d0e56f9d9a96c43867780e63e918e5df/68747470733a2f2f72656463616e6172792e636f6d2f77702d636f6e74656e742f75706c6f6164732f41746f6d69632d5265642d5465616d2d4c6f676f2e706e67)
 
 > _Atomic Red Team allows every security team to test their controls by executing simple &quot;atomic tests&quot; that exercise the same techniques used by adversaries (all mapped to _[_Mitre&#39;s ATT&amp;CK_](https://attack.mitre.org/wiki/Main_Page)_). Atomic Red Team is a library of simple tests that every security team can execute to test their controls. Tests are focused, have few dependencies, and are defined in a structured format that can be used by automation frameworks._
 
@@ -109,7 +109,7 @@ The techniques can be found in the first downloaded project
 ![](img/techniques.png)
 
 
-**References: ** [
+## References:  [
 ](https://bestestredteam.com/2019/07/30/atomic-red-team/)
 
 - [https://bestestredteam.com/2019/07/30/atomic-red-team/](https://bestestredteam.com/2019/07/30/atomic-red-team/)
