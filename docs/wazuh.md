@@ -2,9 +2,9 @@
 
 Hi Peerlysters,
 
-I hope all is good with you. Let&#39;s take this opportunity while we are all at home to learn something new. In this article we are going to learn how to deploy a powerful HIDS called &quot;Wazuh&quot;
+In this article we are going to learn how to deploy a powerful HIDS called &quot;Wazuh&quot;
 
-![](RackMultipart20200926-4-zy362i_html_d45310e129f5db67.jpg)
+![](https://1.bp.blogspot.com/-cLWhyj0UdO8/Vqvp68xMPHI/AAAAAAAAHA4/c1NJZ803AaE/s1600/WazuhDashboard.JPG)
 
 _[Image Source](https://1.bp.blogspot.com/-cLWhyj0UdO8/Vqvp68xMPHI/AAAAAAAAHA4/c1NJZ803AaE/s1600/WazuhDashboard.JPG)_
 
@@ -38,29 +38,28 @@ It contains the following components:
 
 Now let&#39;s explore how to deploy it. For the demonstration i am using a Ubuntu 18.04 VM.
 
-sudo apt-get update
+`sudo apt-get update`
 
-**\&lt;img src=&quot;https://res.cloudinary.com/peerlyst/image/upload/c\_limit,dpr\_auto,f\_auto,fl\_lossy,h\_356,q\_auto,w\_624/v1/post-attachments/1585316843334\_y1sa0c&quot; width=&quot;624&quot; height=&quot;356&quot; class=&quot;fr-fic fr-dii&quot; data-cl-public\_id=&quot;post-attachments/1585316843334\_y1sa0c&quot; data-cl-type=&quot;upload&quot; data-cl-resource\_type=&quot;image&quot; data-cl-version=&quot;1&quot; data-upload-format=&quot;png&quot; data-cl-height=&quot;356&quot; data-cl-width=&quot;624&quot;\&gt;\&lt;/img**
 
-sudo apt-get installcurl apt-transport-https lsb-release gnupg2
+`sudo apt-get installcurl apt-transport-https lsb-release gnupg2`
 
 ![](RackMultipart20200926-4-zy362i_html_d53c3744ad961b1d.png)
 
 Install the GPG key:
 
-sudo curl -s href=&quot;https://packages.wazuh.com/key/GPG-KEY-WAZUH&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;\&lt;a href=&quot;https://packages.wazuh.com/key/GPG-KEY-WAZUH&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo apt-key add -\&lt;/a
+`wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -`
 
 ![](RackMultipart20200926-4-zy362i_html_73623269c21834e.png)
 
 Add the repository
 
-sudo echo &quot;deb href=&quot;https://packages.wazuh.com/3.x/apt/&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;\&lt;a href=&quot;https://packages.wazuh.com/3.x/apt/&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://packages.wazuh.com/3.x/apt/ stable main&quot; | sudo tee -a /etc/apt/sources.list.d/wazuh.list\&lt;/a
+`echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list`
 
 ![](RackMultipart20200926-4-zy362i_html_c88d03aae000f1c3.png)
 
 Update the package information:
 
-sudo apt-get update
+`sudo apt-get update`
 
 ![](RackMultipart20200926-4-zy362i_html_c18fcb27a994bd3b.png)
 
@@ -70,13 +69,13 @@ sudo apt-get update
 
 On your terminal, install the Wazuh manager:
 
-sudo apt-get install wazuh-manager
+`sudo apt-get install wazuh-manager`
 
 ![](RackMultipart20200926-4-zy362i_html_bfed41c12b56c01a.png)
 
 Once the process is completed, you can check the service status with:
 
-service wazuh-manager status
+`service wazuh-manager status`
 
 ![](RackMultipart20200926-4-zy362i_html_89db1a79726c368b.png)
 
@@ -84,56 +83,57 @@ Installing the Wazuh API:
 
 NodeJS \&gt;= 4.6.1 is required in order to run the Wazuh API.
 
-sudo curl -sL href=&quot;https://deb.nodesource.com/setup\_8.x&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;\&lt;a href=&quot;https://deb.nodesource.com/setup\_8.x&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://deb.nodesource.com/setup\_8.x | sudo  bash -\&lt;/a
+`sudo curl -sL https://deb.nodesource.com/setup_8.x | sudo  bash -`
 
 ![](RackMultipart20200926-4-zy362i_html_9dd3ea1e87a19d1b.png)
 
 and then, install NodeJS:
 
-sudo apt-get install nodejs
+`sudo apt-get install nodejs`
 
 ![](RackMultipart20200926-4-zy362i_html_8b52760186b30d27.png)
 
 Install the Wazuh API:
 
-sudo apt-get install wazuh-api
+`sudo apt-get install wazuh-api`
 
 ![](RackMultipart20200926-4-zy362i_html_156a3cab0f23ed3d.png)
 
 Once the process is complete, you can check the service status with:
 
-sudo service wazuh-api status
+`sudo service wazuh-api status`
 
 ![](RackMultipart20200926-4-zy362i_html_76e0f4edcb710c9a.png)
 
 **Installing Filebeat**
 
-apt-get install filebeat=7.4.2
+`apt-get install filebeat=7.4.2`
 
 ![](RackMultipart20200926-4-zy362i_html_63fffa821960a016.png)
 
 This is pre-configuration to forward Wazuh alerts to Elasticsearch
 
-sudo curl -so /etc/filebeat/filebeat.yml \&lt;a href=&quot;https://raw.githubusercontent.com/wazuh/wazuh/v3.10.2/extensions/filebeat/7.x/filebeat.yml&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://raw.githubusercontent.com/wazuh/wazuh/v3.10.2/extensions/filebeat/7.x/filebeat.yml\&lt;/a
+`curl -so /etc/filebeat/filebeat.yml https://raw.githubusercontent.com/wazuh/wazuh/v3.11.4/extensions/filebeat/7.x/filebeat.yml`
 
 Download the alerts template for Elasticsearch
 
-sudo curl -so /etc/filebeat/wazuh-template.json \&lt;a href=&quot;https://raw.githubusercontent.com/wazuh/wazuh/v3.10.2/extensions/elasticsearch/7.x/wazuh-template.json&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://raw.githubusercontent.com/wazuh/wazuh/v3.10.2/extensions/elasticsearch/7.x/wazuh-template.json\&lt;/a
+`curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/v3.11.4/extensions/elasticsearch/7.x/wazuh-template.json`
 
 Download the Wazuh module for Filebeat:
 
-sudo curl -s \&lt;a href=&quot;https://packages.wazuh.com/3.x/filebeat/wazuh-filebeat-0.1.tar.gz&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://packages.wazuh.com/3.x/filebeat/wazuh-filebeat-0.1.tar.gz | sudo tar -xvz -C /usr/share/filebeat/module\&lt;/a
+`curl -s https://packages.wazuh.com/3.x/filebeat/wazuh-filebeat-0.1.tar.gz | sudo tar -xvz -C /usr/share/filebeat/module`
 
 ![](RackMultipart20200926-4-zy362i_html_6b38c4b249efe4c6.png)
 
-sudo vi /etc/filebeat/filebeat.yml
+`sudo vi /etc/filebeat/filebeat.yml`
 
 ![](RackMultipart20200926-4-zy362i_html_7a91f95fd55a7af0.png)
 
 Enable and start the Filebeat service:
 
-sudo update-rc.d filebeat defaults 95 10
- sudo service filebeat start
+`sudo update-rc.d filebeat defaults 95 10`
+
+`sudo service filebeat start`
 
 ## Installing Elastic Stack
 
@@ -141,25 +141,26 @@ sudo update-rc.d filebeat defaults 95 10
 
 Elasticsearch is a powerful open source distributed, RESTful, JSON-based search engine.You can see it as a search server.It is a NoSQL database.To install elasticsearch we need to make sure that we are already installed Java.
 
-sudo apt-get install elasticsearch=7.4.2
+`sudo apt-get install elasticsearch=7.4.2`
 
- sudo vi /etc/elasticsearch/elasticsearch.yml
+` sudo vi /etc/elasticsearch/elasticsearch.yml`
 
-node.name: node-1
- network.host: [&quot;0.0.0.0&quot;]
- http.port: 9200
- discovery.seed\_hosts: []
- cluster.initial\_master\_nodes: [&quot;node-1&quot;]
 
-sudo update-rc.d elasticsearch defaults 95 10
+    node.name: node-1
+    network.host: ["0.0.0.0"]
+    http.port: 9200
+    discovery.seed_hosts: []
+    cluster.initial_master_nodes: ["node-1"]
 
- sudo service elasticsearch start
+`sudo update-rc.d elasticsearch defaults 95 10`
+
+` sudo service elasticsearch start`
 
 ![](RackMultipart20200926-4-zy362i_html_8ff5f8f3b17d00df.png)
 
 Once Elasticsearch is up and running, it is recommended to load the Filebeat template. Run the following command where Filebeat was installed:
 
-sudo filebeat setup --index-management -E setup.template.json.enabled=false
+`sudo filebeat setup --index-management -E setup.template.json.enabled=false`
 
 ![](RackMultipart20200926-4-zy362i_html_dae9d6b87aa15bc.png)
 
@@ -169,23 +170,24 @@ sudo filebeat setup --index-management -E setup.template.json.enabled=false
 
 Kibana is a Web interface for searching and visualizing logs. It is a data-log dashboard. It contains pie charts, bars, heat maps, bubble charts and scatter plots. It is an amazing solution to visualize your data and detect any unusual patterns
 
-apt-get install kibana=7.4.2
+`apt-get install kibana=7.4.2`
 
 ![](RackMultipart20200926-4-zy362i_html_e18eebaf1ab24d59.png)
 
 Install the Wazuh app plugin for Kibana
 
-sudo -u kibana bin/kibana-plugin install \&lt;a href=&quot;https://packages.wazuh.com/wazuhapp/wazuhapp-3.11.4\_7.4.2.zip&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://packages.wazuh.com/wazuhapp/wazuhapp-3.11.4\_7.4.2.zip
- \&lt;img src=&quot;https://res.cloudinary.com/peerlyst/image/upload/c\_limit,dpr\_auto,f\_auto,fl\_lossy,h\_163,q\_auto,w\_624/v1/post-attachments/1585315815595\_n0fhsa&quot; width=&quot;624&quot; height=&quot;163&quot; class=&quot;fr-fic fr-dii&quot; data-cl-public\_id=&quot;post-attachments/1585315815595\_n0fhsa&quot; data-cl-type=&quot;upload&quot; data-cl-resource\_type=&quot;image&quot; data-cl-version=&quot;1&quot; data-upload-format=&quot;png&quot; data-cl-height=&quot;163&quot; data-cl-width=&quot;624&quot;\&gt;\&lt;/img\&lt;/a
+`sudo -u kibana bin/kibana-plugin install https://packages.wazuh.com/wazuhapp/wazuhapp-3.11.4_7.6.1.zip`
 
-sudo vi /etc/kibana/kibana.yml
+`sudo vi /etc/kibana/kibana.yml`
 
-server.port: 5601
- server.host: 0.0.0.0
- elasticsearch.hosts: [&quot;http://localhost:9200&quot;]
 
-sudo update-rc.d kibana defaults 95 10
- service kibana start
+    server.port: 5601
+    server.host: 0.0.0.0
+    elasticsearch.hosts: ["http://localhost:9200"]
+
+`sudo update-rc.d kibana defaults 95 10`
+
+` service kibana start`
 
 **Transform  data with Logstash (Optional)**
 
@@ -193,15 +195,17 @@ sudo update-rc.d kibana defaults 95 10
 
 Logstash is an open source to collect,parse and transform logs.
 
-sudo apt-get install logstash=1:7.4.2-1
- sudo systemctl daemon-reload
- sudo systemctl enable logstash
+`sudo apt-get install logstash=1:7.4.2-1`
+
+` sudo systemctl daemon-reload`
+
+` sudo systemctl enable logstash`
 
 ![](RackMultipart20200926-4-zy362i_html_2eec7358c1070e16.png)
 
 Download the Wazuh configuration file for Logstash
 
-sudo curl -so /etc/logstash/conf.d/01-wazuh.conf \&lt;a href=&quot;https://raw.githubusercontent.com/wazuh/wazuh/v3.10.2/extensions/logstash/7.x/01-wazuh-remote.conf&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://raw.githubusercontent.com/wazuh/wazuh/v3.10.2/extensions/logstash/7.x/01-wazuh-remote.conf
+
 
  sudo systemctl restart logstash
 
@@ -211,7 +215,6 @@ Configure the Filebeat instance, change the events destination from Elasticsearc
 
 Disable Elasticsearch Output:
 
-#hosts: [&#39;http://YOUR\_ELASTIC\_SERVER\_IP:9200&#39;]
 
 Add:
 
@@ -242,3 +245,4 @@ To add new agent just select the OS, curl the package and install it:
 ![](RackMultipart20200926-4-zy362i_html_95f75164aaf9ca35.png)
 
 I hope you will find it helpful
+
