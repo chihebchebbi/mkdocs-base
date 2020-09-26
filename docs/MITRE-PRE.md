@@ -1,8 +1,7 @@
 # **How to use the MITRE PRE-ATT&amp;CK framework to enhance your reconnaissance assessments**
 
-Hi Peerlysters,
 
- In this article we are going to explore how to enrich reconnaissance assessments using the MITRE Pre-ATT&amp;CK framework.
+ In this module we are going to explore how to enrich reconnaissance assessments using the MITRE Pre-ATT&amp;CK framework.
 
 ## MITRE ATT&amp;CK Framework
 
@@ -14,7 +13,7 @@ Nowadays the frameworks provide different matrices: [Enterprise](https://attack.
 
 According to its official website:
 
-_Building on ATT&amp;CK, PRE-ATT&amp;CK provides the ability to prevent an __ __ attack __ __ before the adversary has a chance to get in. The 15 tactic categories for PRE-ATT&amp;CK were derived from the first two stages (recon and weaponize) of a seven-stage Cyber __ __ Attack Lifecycle __ __ (first articulated by __ __ Lockheed Martin __ __ as the Cyber Kill Chain)_
+> Building on ATT&CK, PRE-ATT&CK provides the ability to prevent an attack before the adversary has a chance to get in. The 15 tactic categories for PRE-ATT&CK were derived from the first two stages (recon and weaponize) of a seven-stage Cyber Attack Lifecycle (first articulated by Lockheed Martin as the Cyber Kill Chain)
 
 ![](RackMultipart20200926-4-1ddq8vf_html_8634effc996d8cce.jpg)Image source: mitre.org
 
@@ -89,7 +88,7 @@ Active reconnaissance involves interaction with the target, for example, calling
 
 To perform network scanning you can use Nmap:
 
-_&quot;Nmap (&quot;Network Mapper&quot;) is a free and open source (__[license](https://nmap.org/data/COPYING)__) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime._
+> “Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime.
 
 ![](RackMultipart20200926-4-1ddq8vf_html_9453cc5b4e49a55f.png)
 
@@ -103,7 +102,7 @@ Passive reconnaissance involves acquiring information about the target without d
 
 By definition:
 
-_&quot;Open-source intelligence (OSINT) is data collected from publicly available sources to be used in an intelligence context&quot;. In the intelligence community, the term &quot;open&quot; refers to overt, publicly available sources (as opposed to covert or clandestine sources). It is not related to open-source software or public intelligence._
+> “Open-source intelligence (OSINT) is data collected from publicly available sources to be used in an intelligence context". In the intelligence community, the term "open" refers to overt, publicly available sources (as opposed to covert or clandestine sources). It is not related to open-source software or public intelligence.
 
 Open source intelligence is like any methodological process is going thru a defined number of steps.In order to perform an open source intelligence you can follow the following phases:
 
@@ -204,4 +203,4 @@ Shodan is a search engine that lets the user find specific types of computers (w
 
 **Summary**
 
-In this article we explore the MITRE PRE-ATT&amp;CK framework and we discovered some techniques used when performing reconnaissance against an organization
+In this module we explored the MITRE PRE-ATT&amp;CK framework and we discovered some techniques used when performing reconnaissance against an organization
