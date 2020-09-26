@@ -1,16 +1,13 @@
-# **TOP 20 tools every Blue Teamer should have in 2020**
+# **TOP 20 tools every Blue Teamer should have**
 
-Hi Peerlysters,
 
-I am taking this opportunity to present the TOP 20  free tools that every blue teamer should have in 2020:
+In this module we are going to explore the TOP 20 free tools that every blue teamer should have:
 
-![](RackMultipart20200926-4-1rlrx7g_html_24fe06ae0b1283b3.png)
 
-[Figure](https://miro.medium.com/max/3754/1*Ny4nCCBDTMiv_iylTsQZow.png)
 
 ### The Hive
 
-![](RackMultipart20200926-4-1rlrx7g_html_823894b03754b919.png)
+![](https://github.com/TheHive-Project/TheHiveDocs/raw/master/images/thehive-logo.png)
 
 TheHive is a scalable 4-in-1 open source and free security incident response platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. Thanks to [Cortex](https://github.com/TheHive-Project/Cortex/), our powerful free and open-source analysis engine, you can analyze (and triage) observables at scale using more than 100 analyzers.
 
@@ -20,7 +17,7 @@ Its official website: [https://thehive-project.org](https://thehive-project.org/
 
 ### OSSIM
 
-![](RackMultipart20200926-4-1rlrx7g_html_c064d46749a0353e.jpg)
+![](https://trademarks.justia.com/media/og_image.php?serial=87523860)
 
 OSSIM is an open-source security information and event management system (SIEM). It was developed in 2003. The project was acquired later by AT&amp;T.
 
@@ -30,7 +27,7 @@ You can download it from here: [https://cybersecurity.att.com/products/ossim](ht
 
 ### The HELK
 
-![](RackMultipart20200926-4-1rlrx7g_html_67e6e9fc8b0b55da.png)
+![](https://thehelk.com/_static/logo.png)
 
 If you are into threat hunting than you probabilly heard of the HELK project. The HELK was developed by Roberto Rodriguez ([Cyb3rWard0g](https://github.com/Cyb3rWard0g)) under GPL v3 License. The project was build based on the ELK stack in addition to other helpful tools like Spark, Kafka and so on.
 
@@ -40,7 +37,7 @@ Its official website: [Cyb3rWard0g/HELK: The Hunting ELK - GitHub](https://githu
 
 ### Nmap
 
-![](RackMultipart20200926-4-1rlrx7g_html_caafc553076a2926.jpg)
+![](https://miro.medium.com/max/2772/1*2kUvXyMSvnbejDuJYAHhgw.png)
 
 Scanning is one of the required steps in every attacking operation. After gathering information about a target you need to move on to another step which is scanning. If you are into information security you should have Nmap in your arsenal. Nmap (The abbreviation of Network mapper) is the most powerful network scanner. It is free and open-source. It gives you the ability to perform different types of network scans in addition to other capabilities thanks to its provided scripts. Also, you can write your own NSE scripts.
 
@@ -50,7 +47,7 @@ You can download it from here: [https://nmap.org/download.html](https://nmap.org
 
 ### Volatility
 
-![](RackMultipart20200926-4-1rlrx7g_html_805477bfdcc2b5e9.png)
+![](https://www.volexity.com/wp-content/uploads/2017/03/TVP_VolatilityLogo.png)
 
 Memory malware analysis is widely used for digital investigation and malware analysis. It refers to the act of analyzing a dumped memory image from a targeted machine after executing the malware to obtain multiple numbers of artifacts including network information, running processes, API hooks, kernel loaded modules, Bash history, etc. Volatility is the most suitable tool to do that. It is an open-source project developed by [volatility foundation](https://github.com/volatilityfoundation). It can be run on Windows,Linux and MacOS. Volatility supports different memory dump formats including dd, Lime format, EWF and many other files.
 
@@ -59,7 +56,7 @@ You can download Volatility from here: [https://github.com/volatilityfoundation/
 
 ### Demisto Community Edition
 
-![](RackMultipart20200926-4-1rlrx7g_html_86066c0c105d5a7.png)
+![](https://intezer.com//wp-content/uploads/2018/07/2-Demisto_Logo.png)
 
 Security Orchestration, Automation and Response or simply SOAR are very effective platforms and tools to avoid analysts fatigue by automating many repetitive security tasks. One of the most-known platforms is Demisto. The platform provides also many free playbooks.
 
@@ -69,6 +66,8 @@ You can download the community edition from here: [https://www.demisto.com/commu
 
 ## Wireshark
 
+![](https://wiki.arcoslab.org/lib/exe/fetch.php?media=ie0117_proyectos_i_2014:wireshark-logo.png)
+
 Communication and networking are vital for every modern organization. Making sure that all the networks of the organization are secure is a key mission. The most suitable tool that will help you monitor your network is definitely Wireshark. Wireshark is a free and open-source tool to help you analyse network protocols with deep inspection capabilities. It gives you the ability to perform live packet capturing or offline analysis. It supports many operating systems including Windows, Linux, MacOS, FreeBSD and many more systems.
 
 You can download it from here: [https://www.wireshark.org/download.html](https://www.wireshark.org/download.html)
@@ -77,7 +76,7 @@ You can download it from here: [https://www.wireshark.org/download.html](https:/
 
 ### Atomic Red Team
 
-![](RackMultipart20200926-4-1rlrx7g_html_207f3a0e35b29a23.png)
+![](https://camo.githubusercontent.com/3eb25137d0e56f9d9a96c43867780e63e918e5df/68747470733a2f2f72656463616e6172792e636f6d2f77702d636f6e74656e742f75706c6f6164732f41746f6d69632d5265642d5465616d2d4c6f676f2e706e67)
 
 _Atomic  __Red Team__  allows every  __security team__  to test their controls by executing simple &quot;atomic tests&quot; that exercise the same  __techniques__  used by adversaries (all mapped to _[_Mitre&#39;s ATT&amp;CK_](https://attack.mitre.org/wiki/Main_Page)_)_
 
