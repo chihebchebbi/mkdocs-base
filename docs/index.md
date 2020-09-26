@@ -1,6 +1,6 @@
 # Welcome to the Blue Teaming Free Training 
 
-![](https://lirp-cdn.multiscreensite.com/8217933a/dms3rep/multi/opt/A+4-Step+Guide+to+Building+An+Effective+Security+Operations+Center-640w.jpeg)
+![](A+4-Step+Guide+to+Building+An+Effective+Security+Operations+Center-640w.jpeg)
 
 ## Modules
 
