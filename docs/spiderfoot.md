@@ -1,11 +1,8 @@
 # **How to Perform Open Source Intelligence (OSINT) with SpiderFoot**
 
-Hi Peerlysters,
+In this module we are going to explore a powerful OSINT tool called &quot;SpiderFoot&quot;. OSINT or &quot;Open source intelligence&quot; is collecting publicly available information about a specific target.
 
-
- In this article we are going to explore a powerful OSINT tool called &quot;SpiderFoot&quot;. OSINT or &quot;Open source intelligence&quot; is collecting publicly available information about a specific target.
-
-![](RackMultipart20200926-4-18f5prg_html_a2778a27d4694e6c.jpg)
+![](https://securitytrails.com/user/pages/blog/099.steve-micallef-spiderfoot/spiderfoothx-visualize.png)
 
 [Image source](https://securitytrails.com/user/pages/blog/099.steve-micallef-spiderfoot/spiderfoothx-visualize.png)
 
@@ -15,7 +12,7 @@ Before discovering the tool, let&#39;s explore some important terminologies
 
 The fuel of intelligence gathering is to get publicly available information from different sources. Intelligence gathering is not important in information security and penetration testing, but it is vital for national security, and as many concepts are inspired by the military strategies, in the cyber security field intelligence gathering is also inspired by the battlefields.
 
-![](RackMultipart20200926-4-18f5prg_html_c5b69920fa840296.jpg)
+![](https://img.militaryaerospace.com/files/base/ebm/mae/image/2018/12/1812maesr_mar.png?auto=format&amp;w=720)
 
 [Image source](https://img.militaryaerospace.com/files/base/ebm/mae/image/2018/12/1812maesr_mar.png?auto=format&amp;w=720)
 
@@ -31,7 +28,7 @@ Human intelligence (HUMINT) is the process of collecting information about human
 
 - **Directed Gathering** : This is a specific targeting operation. Usually, all the resources are meant to gather information about a unique target
 - **Active Intelligence Gathering** : This process is more specific and requires less investment, and it targets a specific environment.
-- **Passive Intelligence Gathering** : This is the foundation of human intelligence. The information is collected in opportunistic ways such as through walk-ins or referrals. So there is no specific target, except collecting information and trying to find something. ![](RackMultipart20200926-4-18f5prg_html_2f14c15537d79866.jpg)
+- **Passive Intelligence Gathering** : This is the foundation of human intelligence. The information is collected in opportunistic ways such as through walk-ins or referrals. So there is no specific target, except collecting information and trying to find something. ![](https://www.incimages.com/uploaded_files/image/970x450/getty_935620656_397725.jpg)
 
 [Image source](https://www.incimages.com/uploaded_files/image/970x450/getty_935620656_397725.jpg)
 
@@ -39,9 +36,7 @@ Human intelligence (HUMINT) is the process of collecting information about human
 
 **Signal intelligence ** ( **SIGINT** ) is the operation of gathering information by intercepting electronic signals and communications. It can be divided into two subcategories:  **communications intelligence ** ( **COMINT** ) and  **electronic intelligence ** ( **ELINT** ).
 
-![](RackMultipart20200926-4-18f5prg_html_46c7693293e273e5.jpg)
 
-[Image source](https://www.armytimes.com/resizer/Pz8cctDFG4eM1VHY25DcZ59wusg=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/XFH645QALFH3DOMYOQVYLZCGOE.jpg)
 
 ## Open source intelligence
 
@@ -59,7 +54,7 @@ Open source intelligence is like any methodological process is going thru a defi
 - **Collection:**  in this phase you will collect and harvest information from the selected sources
 - **Processing and collation:**  during this phase you need to process information to get useful insights.
 - **Analysis and integration:**  in this phase you need to join all the information and analyse them
-- **Production, dissemination and feedback: ** finally when you finish the analysis you need to present the findings and report them. ![](RackMultipart20200926-4-18f5prg_html_e8ec89298dc249bc.jpg)
+- **Production, dissemination and feedback: ** finally when you finish the analysis you need to present the findings and report them. ![](https://www.supanet.com/upload/images/201911/osint-stages-52020.png)
 
 [Image source](https://www.supanet.com/upload/images/201911/osint-stages-52020.png)
 
@@ -93,23 +88,23 @@ Now let&#39;s explore how to install Spiderfoot.
 
 Install python3-pip:
 
-sudo apt-get install python3-pip
+`sudo apt-get install python3-pip`
 
 Clone the project from its Github repository using  **git clone** :
 
-git clone https://github.com/smicallef/spiderfoot.git
+`git clone https://github.com/smicallef/spiderfoot.git`
 
 Enter the project folder:
 
-cd spiderfoot
+`cd spiderfoot`
 
 Install the required libraries:
 
-sudo pip3 install -r requirements.txt
+`sudo pip3 install -r requirements.txt`
 
 Finally run the project using:
 
-sudo python3 sf.py -l 127.0.0.1:5001
+`sudo python3 sf.py -l 127.0.0.1:5001`
 
 Voila! Now you can use it freely to perform your OSINT operation.
 
@@ -135,10 +130,11 @@ The full list of modules can be found here: [https://github.com/smicallef/spider
 
 The tool gives you the ability to investigate data too:
 
-![](RackMultipart20200926-4-18f5prg_html_524703dc6753229e.png)
+![](https://www.spiderfoot.net/wp-content/uploads/2020/03/Screenshot_2020-03-01-SpiderFoot-HX1-1024x731.png)
 
 [Image source](https://www.spiderfoot.net/wp-content/uploads/2020/03/Screenshot_2020-03-01-SpiderFoot-HX1-1024x731.png)
 
 ## Summary
 
-In this article, we explored Open source intelligence and how to perform it using a powerful tool called &quot;SpiderFoot&quot;
+In this module, we explored Open source intelligence and how to perform it using a powerful tool called &quot;SpiderFoot&quot;
+
