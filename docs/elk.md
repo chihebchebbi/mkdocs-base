@@ -1,4 +1,4 @@
-# **Detailed Guide: How to deploy your Elastic Stack (ELK) SIEM **
+#  Detailed Guide: How to deploy your Elastic Stack (ELK) SIEM
 
 Security information and event management systems (SIEM) are very important tools in incident response missions. Every security operation centre is equipped with a SIEM. In this article, we are going to learn how to deploy a fully working SIEM using the amazing suite the Elastic stack (ELK).
 
@@ -19,9 +19,9 @@ In this article we are going to explore the following points:
 
 Before diving deep into the required steps to build a SIEM, it is essential to acquire a fair understanding of the different ELK components.
 
-**What is the ELK Stack? **
+## What is the ELK Stack?  
 
-![](RackMultipart20200926-4-122n7kb_html_5b9b3d0b2684b005.png)
+![](https://assets.digitalocean.com/articles/elk/elk-infrastructure.png)
 
 Image source: [ELK](https://assets.digitalocean.com/articles/elk/elk-infrastructure.png)
 
@@ -36,7 +36,7 @@ For the demonstration, I used a  **Ubuntu 18.04**  server hosted on Microsoft Az
 
 Update the sources.list file:
 
-\&lt;a class=&quot;mention&quot; href=&quot;/tags/sudo&quot; data-type=&quot;Tag&quot; data-id=&quot;wAGpMrfjv7ykyEKm4&quot; title=&quot;#sudo (search)&quot;\&gt;sudo apt update\&lt;/a
+`sudo apt update`
 
 ![](RackMultipart20200926-4-122n7kb_html_a3e131f7d91263a.png)
 
@@ -56,9 +56,14 @@ Now let&#39;s install Elasticsearch:
 
 ![](RackMultipart20200926-4-122n7kb_html_ef1561cc1b298c9f.png)
 
-\&lt;a class=&quot;mention&quot; href=&quot;/tags/wget&quot; data-type=&quot;Tag&quot; data-id=&quot;4v8Z7sw5ifiZte6zY&quot; title=&quot;#wget (search)&quot;\&gt;wget -qO - \&lt;a href=&quot;https://artifacts.elastic.co/GPG-KEY-elasticsearch&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -\&lt;/a\&lt;/a
+`wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -`
 
-\&lt;a class=&quot;mention&quot; href=&quot;/tags/echo&quot; data-type=&quot;Tag&quot; data-id=&quot;ST23Jcmnioh2F7G2X&quot; title=&quot;#echo (search)&quot;\&gt;echo &quot;deb \&lt;a href=&quot;https://artifacts.elastic.co/packages/7.x/apt&quot; target=&quot;\_blank&quot; rel=&quot;noopener&quot;\&gt;https://artifacts.elastic.co/packages/7.x/apt stable main&quot; | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list\&lt;/a\&lt;/a
+`echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list`
+
+`sudo apt update`
+
+`sudo apt install elasticsearch`
+
 
 `sudo apt install elasticsearch`
 
@@ -84,7 +89,7 @@ Start elasticsearch service:
 
 Check the installation:
 
-\&lt;a class=&quot;mention&quot; href=&quot;/tags/curl&quot; data-type=&quot;Tag&quot; data-id=&quot;jih39SvJ6xYz3iMcr&quot; title=&quot;#curl (search)&quot;\&gt;curl -X GET &quot;YOUR-IP-HERE:9200&quot;\&lt;/a
+`curl -X GET "YOU_IP:9200"`
 
 ![](RackMultipart20200926-4-122n7kb_html_80868b75efeae6fa.png)
 
@@ -222,5 +227,6 @@ A system Overviews:
 ![](RackMultipart20200926-4-122n7kb_html_32d1d3a50de1ef25.png)
 
 Voila, you learned how to build an ELK SIEM.
+
 
 
