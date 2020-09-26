@@ -12,7 +12,7 @@ _[Image Source](https://1.bp.blogspot.com/-cLWhyj0UdO8/Vqvp68xMPHI/AAAAAAAAHA4/c
 
  Intrusion detection systems are a set of devices or pieces of software that play a huge role in modern organizations to defend against intrusions and malicious activities.We have two major intrusion detection system categories:
 
-- **Host Based Intrusion Detection Systems (HIDS): **they run on the enterprise hosts to detect host attacks
+- **Host Based Intrusion Detection Systems (HIDS):** they run on the enterprise hosts to detect host attacks
 - **Network Based Intrusion Detection Systems (NIDS):** their role is to detect network anomalies by monitoring the inbound and outbound traffic.
 
 The detection can be done using two intrusion detection techniques:
@@ -22,11 +22,13 @@ The detection can be done using two intrusion detection techniques:
 
 ## How to Deploy Wazuh HIDS?
 
-![](RackMultipart20200926-4-zy362i_html_1b348dc05d3dff6a.png)
+![](https://d7umqicpi7263.cloudfront.net/img/product/caf0ea2f-b328-49c7-a793-f3c32cfa01df/5235ce4f-f702-4584-b507-727817ab5b7e.PNG)
 
 According to its official website: [https://wazuh.com](https://wazuh.com/)
 
-_Wazuh is a __ __ free __,__   __open source__   __and enterprise-ready__   __security monitoring__   __solution for__   __threat detection__ , __ __ integrity __ __ monitoring, __ __ incident response __ __ and compliance._
+> Wazuh is a free, open source and enterprise-ready security monitoring solution for threat detection, integrity monitoring, incident response and compliance.
+Wazuh is used to collect, aggregate, index and analyze security data, helping organizations detect intrusions, threats and behavioral anomalies.
+
 
 _Wazuh is used to collect, aggregate, index and analyze security data, helping organizations detect intrusions, threats and behavioral anomalies._
 
@@ -40,10 +42,11 @@ Now let&#39;s explore how to deploy it. For the demonstration i am using a Ubunt
 
 `sudo apt-get update`
 
+![](img/update.png)
 
 `sudo apt-get installcurl apt-transport-https lsb-release gnupg2`
 
-![](RackMultipart20200926-4-zy362i_html_d53c3744ad961b1d.png)
+![](img/curl.png)
 
 Install the GPG key:
 
@@ -85,13 +88,13 @@ NodeJS \&gt;= 4.6.1 is required in order to run the Wazuh API.
 
 `sudo curl -sL https://deb.nodesource.com/setup_8.x | sudo  bash -`
 
-![](RackMultipart20200926-4-zy362i_html_9dd3ea1e87a19d1b.png)
+![](img/nodejs1.png)
 
 and then, install NodeJS:
 
 `sudo apt-get install nodejs`
 
-![](RackMultipart20200926-4-zy362i_html_8b52760186b30d27.png)
+![](img/node2.png)
 
 Install the Wazuh API:
 
@@ -103,7 +106,7 @@ Once the process is complete, you can check the service status with:
 
 `sudo service wazuh-api status`
 
-![](RackMultipart20200926-4-zy362i_html_76e0f4edcb710c9a.png)
+![](img/wazapistatus.png)
 
 **Installing Filebeat**
 
@@ -127,7 +130,7 @@ Download the Wazuh module for Filebeat:
 
 `sudo vi /etc/filebeat/filebeat.yml`
 
-![](RackMultipart20200926-4-zy362i_html_7a91f95fd55a7af0.png)
+![](img/filebconf.png)
 
 Enable and start the Filebeat service:
 
@@ -137,7 +140,7 @@ Enable and start the Filebeat service:
 
 ## Installing Elastic Stack
 
-![](RackMultipart20200926-4-zy362i_html_ef1561cc1b298c9f.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Elasticsearch_logo.svg/1200px-Elasticsearch_logo.svg.png)
 
 Elasticsearch is a powerful open source distributed, RESTful, JSON-based search engine.You can see it as a search server.It is a NoSQL database.To install elasticsearch we need to make sure that we are already installed Java.
 
@@ -156,23 +159,23 @@ Elasticsearch is a powerful open source distributed, RESTful, JSON-based search 
 
 ` sudo service elasticsearch start`
 
-![](RackMultipart20200926-4-zy362i_html_8ff5f8f3b17d00df.png)
+![](img/ESstatus.png)
 
 Once Elasticsearch is up and running, it is recommended to load the Filebeat template. Run the following command where Filebeat was installed:
 
 `sudo filebeat setup --index-management -E setup.template.json.enabled=false`
 
-![](RackMultipart20200926-4-zy362i_html_dae9d6b87aa15bc.png)
+![](img/ilebeatindex.png)
 
 ## Installing Kibana
 
-![](RackMultipart20200926-4-zy362i_html_8282e73a606e5475.png)
+![](https://i.pinimg.com/originals/b3/90/4f/b3904fc82bcbd62f10c225a853405df3.png)
 
 Kibana is a Web interface for searching and visualizing logs. It is a data-log dashboard. It contains pie charts, bars, heat maps, bubble charts and scatter plots. It is an amazing solution to visualize your data and detect any unusual patterns
 
 `apt-get install kibana=7.4.2`
 
-![](RackMultipart20200926-4-zy362i_html_e18eebaf1ab24d59.png)
+![](img/kibana.png)
 
 Install the Wazuh app plugin for Kibana
 
@@ -191,7 +194,7 @@ Install the Wazuh app plugin for Kibana
 
 **Transform  data with Logstash (Optional)**
 
-![](RackMultipart20200926-4-zy362i_html_2099afabc2755b69.jpg)
+![](https://i.pinimg.com/originals/8b/29/ff/8b29ff73ef1f198e3598f1214901f323.png)
 
 Logstash is an open source to collect,parse and transform logs.
 
@@ -201,10 +204,9 @@ Logstash is an open source to collect,parse and transform logs.
 
 ` sudo systemctl enable logstash`
 
-![](RackMultipart20200926-4-zy362i_html_2eec7358c1070e16.png)
+![](img/installlogstash.png)
 
 Download the Wazuh configuration file for Logstash
-
 
 
  sudo systemctl restart logstash
@@ -226,11 +228,11 @@ Check if Logstash is reachable from Filebeat.
 
 sudo filebeat test output
 
-![](RackMultipart20200926-4-zy362i_html_568b5a235281850e.png)
+![](img/filebeattest.png)
 
 Replace the default credentials with your desired username where myUsername is shown below to protect your Wazuh API
 
-![](RackMultipart20200926-4-zy362i_html_c9c007090eaf6593.png)
+![](img/apicridentials.png)
 
 More information: [https://documentation.wazuh.com/3.3/installation-guide/installing-elastic-stack/connect\_wazuh\_app.html](https://documentation.wazuh.com/3.3/installation-guide/installing-elastic-stack/connect_wazuh_app.html)
 
@@ -238,11 +240,11 @@ Open a web browser and go to the Elastic Stack server&#39;s IP address on port 5
 
 Click on &quot;Add new API&quot; and fill the API fields. If everything goes fine, you will get this main Wazuh dashboard.
 
-![](RackMultipart20200926-4-zy362i_html_ff1e2396e9dac4f.png)
+![](img/dashboard.png)
 
 To add new agent just select the OS, curl the package and install it:
 
-![](RackMultipart20200926-4-zy362i_html_95f75164aaf9ca35.png)
 
-I hope you will find it helpful
+![](img/wazagent.png)
+
 
