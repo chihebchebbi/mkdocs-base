@@ -1,14 +1,10 @@
-Hands-on Guide to Digital Forensics
+# Hands-on Guide to Digital Forensics
 
-  **Introduction  **
-
-Hi Peerlysters,
 
 Digital forensics is one of the most interesting fields in information security. In this post, we will explore what digital forensics is and we will learn how to perform some digital forensics tasks using some powerful tools and utilities.
 
-![](RackMultipart20200926-4-4zxqee_html_6c6f274fbd9d1ae1.jpg)
+![](https://lifars.com/wp-content/uploads/2018/12/Digital-Forensic-Art-720x480.jpg)
 
-[Figure](https://lifars.com/wp-content/uploads/2018/12/Digital-Forensic-Art-720x480.jpg)
 
 In this article we are going to explore the following points:
 
@@ -20,19 +16,18 @@ In this article we are going to explore the following points:
 - **Practical Lab: Autopsy Forensics Browser**
 - **Practical Lab: Memory Analysis with Volatility **
 
-To get the most from this article, you can download this helpful document that contains more resources about Digital Forensics: [Digital Forensics Resources](https://static.peerlyst.com/image/upload/v1574535872/post-attachments/Digital_Forensics_Resources_fbxea2)
 
-**Digital Forensics Fundamentals**
+## **Digital Forensics Fundamentals**
 
 Before diving into the practical labs it is essential to explain many important terminologies. First, _what is digital forensics_?
 
 NIST is describing Forensics as the following:
 
-_The most common goal of performing forensics is to gain a better understanding of an event of interest by finding and analyzing the facts related to that event... Forensics may be needed in many different situations, such as evidence collection for legal proceedings and internal disciplinary actions, and handling of malware incidents and unusual operational problems. _
+> _The most common goal of performing forensics is to gain a better understanding of an event of interest by finding and analyzing the facts related to that event... Forensics may be needed in many different situations, such as evidence collection for legal proceedings and internal disciplinary actions, and handling of malware incidents and unusual operational problems. _
 
 Like any methodological operation, Computer forensic analysis goes through well-defined steps:  **Identification** ,  **Preservation** ,  **Collection** ,  **Examination** ,  **Analysis**  and  **Presentation**.
 
-![](RackMultipart20200926-4-4zxqee_html_f02d2e6db0f5a7df.png)
+![](https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/012216_2245_DigitalFore2.png)
 
 [Figure](https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/012216_2245_DigitalFore2.png)
 
@@ -47,19 +42,19 @@ let&#39;s explore these steps one by one:
 
 According to [worldsecuresystems](https://computer-forensics.worldsecuresystems.com/what-is-a-chain-of-custody.html):
 
-&quot;A chain of custody is a document that is borrowed from law enforcement that tracks evidence from the time the Computer Forensics Examiner gains possession of the item until it is released back to the owner. &quot;
+> &quot;A chain of custody is a document that is borrowed from law enforcement that tracks evidence from the time the Computer Forensics Examiner gains possession of the item until it is released back to the owner. &quot;
 
 The following illustration presents a chain of custody template:
 
-![](RackMultipart20200926-4-4zxqee_html_80ca4b3c8c751cf8.png)
+![](https://www.joshmoulin.com/wp-content/uploads/2015/05/Screen-Shot-2015-05-11-at-1.48.29-PM.png)
 
-[Figure](https://www.joshmoulin.com/wp-content/uploads/2015/05/Screen-Shot-2015-05-11-at-1.48.29-PM.png)
+[Figure]()
 
-**Digital Forensics Lab  **
+## **Digital Forensics Lab  **
 
 To perform digital forensics, obviously, you need to prepare a lab for it. It is essential to have both the required hardware and software.
 
-**Hardware **
+### **Hardware **
 
 During investigations, digital forensics experts are dealing with many hardware pieces and devices including RAMs and Storagemedia devices. Thus, it is important to acquire a suitable hardware equipment to perform the task in good condition. Some of the required hardware pieces are the following:
 
@@ -67,9 +62,9 @@ During investigations, digital forensics experts are dealing with many hardware 
 - A secondary machine with Internet connexion
 - A physical write blocker
 
-![](RackMultipart20200926-4-4zxqee_html_a29d8c2ecf895ed9.jpg)[Figure](https://upload.wikimedia.org/wikipedia/commons/8/8e/Portable_forensic_tableau.JPG)
+![](https://upload.wikimedia.org/wikipedia/commons/8/8e/Portable_forensic_tableau.JPG)[Figure](https://upload.wikimedia.org/wikipedia/commons/8/8e/Portable_forensic_tableau.JPG)
 
-**Software**
+### **Software**
 
 As I said previously, a digital forensics computer needs to be equipped with many DF tools. Some of the most used tools and operating systems are the following:
 
@@ -80,21 +75,21 @@ As I said previously, a digital forensics computer needs to be equipped with man
 - _Autopsy: the Sleuth Kit_
 - _Bulk Extractor_
 
-![](RackMultipart20200926-4-4zxqee_html_81ee24d860b49b67.jpg)
+![](http://linoxide.com/wp-content/uploads/2016/07/CAINE.jpg)
 
 [Figure](http://linoxide.com/wp-content/uploads/2016/07/CAINE.jpg)
 
-**Network evidence collection and Analysis **
+## **Network evidence collection and Analysis **
 
 An evidence is the information to be investigated. Digital forensics analysts are dealing with different categories of evidence including  **network-based evidence**  and  **host-based evidence**. Let&#39;s start exploring how to deal with network evidence. As we cited earlier, the first step is collecting the evidence. In networking, we can perform the collection using many techniques and tools. After identifying the source of evidence using for example network diagrams, you can use packet capture tools such as:
 
-**TCPdump **
+### **TCPdump **
 
 ![](RackMultipart20200926-4-4zxqee_html_c24d197499b9ae7c.png)
 
 &quot;_Tcpdump is a powerful command-line packet analyzer; and  __libpcap__ , a portable C/C++ library for  __network traffic__  capture.&quot; (Source: tcpdump.org)_
 
-**Wireshark **
+### **Wireshark **
 
 ![](RackMultipart20200926-4-4zxqee_html_6c36839be6b65087.png)
 
@@ -128,7 +123,7 @@ Voila! we extracted the included files:
 
 ![](RackMultipart20200926-4-4zxqee_html_7b81776a5d623af1.png)
 
-**Host-based evidence collection and Analysis **
+## **Host-based evidence collection and Analysis **
 
 As an investigator and digital forensics expert, it is essential to acquire knowledge about the different storage means and the different filesystems. By definition, a storage media is a device where we can store data and information. There are many used storage devices including:
 
@@ -137,7 +132,7 @@ As an investigator and digital forensics expert, it is essential to acquire know
 - _USB drive_
 - _Memory cards and so on _
 
-![](RackMultipart20200926-4-4zxqee_html_89b991f2290bfff2.jpg)
+![](http://vskills.in/certification/blog/wp-content/uploads/2016/01/storage-devices.jpg)
 
 [Figure](http://vskills.in/certification/blog/wp-content/uploads/2016/01/storage-devices.jpg)
 
@@ -150,7 +145,7 @@ The removable storage media pieces need to be formatted with a specific filesyst
 
 To collect host-based evidence, you need to know the difference between volatile data and non-volatile data. Volatile data is data that is lost after a shutdown or some system changes. CPU data and ARP cache are some forms of volatile data. Data stored in hard drives and Master File Table (MFT) entries are non-volatile data. The host-based evidence acquisition can be done locally or remotely. Also, it can be done online or offline. Evidence collection is performed with what we call &quot;Forensics Imaging&quot;
 
-**Forensics Imaging **
+## **Forensics Imaging **
 
 Forensics imaging is a very important task in digital forensics. Imaging is copying the data carefully with ensuring its integrity and without leaving out a file because it is very critical to protect the evidence and make sure that it is properly handled. That is why there is a difference between normal file copying and imaging. Imaging is capturing the entire drive. When imaging the drive, the analyst image the entire physical volume including the  **master boot record**. There are two imaging techniques:
 
@@ -168,15 +163,15 @@ For imaging, you can use [FTK Imager](https://accessdata.com/product-download/ft
 
 &quot;_FTK Imager is a data preview and imaging  __tool__  used to acquire data (evidence) in a  __forensically__  sound manner by creating copies of data without making changes to the original evidence.&quot;_
 
-![](RackMultipart20200926-4-4zxqee_html_7e91a50c4df4e13a.png)
+![](https://techtalk.gfi.com/wp-content/uploads/2016/02/FTK_Imager.png)
 
 [Figure](https://techtalk.gfi.com/wp-content/uploads/2016/02/FTK_Imager.png)
 
-**Practical Lab 1: Autopsy Forensics Browser **
+## **Practical Lab 1: Autopsy Forensics Browser **
 
 As a second demonstration, we are going to learn how to use a great forensics tool called &quot;Autopsy Forensics Browser&quot;. According to [https://www.linuxlinks.com/autopsy/](https://www.linuxlinks.com/autopsy/) :
 
-_The Autopsy  __Forensic__   __Browser__  is a graphical  __interface__  to the  __command line__  digital  __investigation__  tools in The Sleuth Kit. The two together enable  __users__  to investigate volumes and file  __systems__  including  __NTFS__ ,  __FAT__ , UFS1/2, and Ext2/3 in a &#39;File Manager&#39; style interface and perform  __key__   __word__  searches._
+> _The Autopsy  __Forensic__   __Browser__  is a graphical  __interface__  to the  __command line__  digital  __investigation__  tools in The Sleuth Kit. The two together enable  __users__  to investigate volumes and file  __systems__  including  __NTFS__ ,  __FAT__ , UFS1/2, and Ext2/3 in a &#39;File Manager&#39; style interface and perform  __key__   __word__  searches._
 
 If you are using Kali Linux, can found it directly there without the need to install it:
 
@@ -232,7 +227,7 @@ Now you can analyse the file freely:
 
 ![](RackMultipart20200926-4-4zxqee_html_8ae02b669ea19582.png)
 
-**Practical Lab 2: Memory Analysis with Volatility **
+## **Practical Lab 2: Memory Analysis with Volatility **
 
 Memory malware analysis is widely used for digital investigation and malware analysis. It refers to the act of analysing a dumped memory image from a targeted machine after executing the malware to obtain multiple numbers of artefacts including network information, running processes, API hooks, kernel loaded modules, Bash history, etc. ... This phase is very important because it is always a good idea to have a clearer understanding of malware capabilities.
 
@@ -357,24 +352,14 @@ For more information about the most used Volatility commands check these two hel
 - [Volatility foundation CheatSheet\_v2.4.pdf](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)
 - [SANS Volatility-memory-forensics-cheat-sheet.pdf](https://digital-forensics.sans.org/media/volatility-memory-forensics-cheat-sheet.pdf)
 
-**Further Readings: **
 
-To learn more about digital forensics I highly recommend you to explore the following posts and Wikis:
+## **References:** 
 
-- [The cyber and digital forensics wiki](https://www.peerlyst.com/posts/the-cyber-and-digital-forensics-wiki-peerlyst?trk=search_page_search_result)
-- [How to set up a secure digital forensics lab](https://www.peerlyst.com/posts/how-to-set-up-a-secure-digital-forensics-lab-sudhendu?trk=search_page_search_result)
-- [So you want to be a Digital Forensics professional...](https://www.peerlyst.com/posts/so-you-want-to-be-a-digital-forensics-professional-calvin-liu?trk=search_page_search_result)
-- [A definition of a digital forensics process](https://www.peerlyst.com/posts/a-definition-of-the-a-digital-forensics-process-peerlyst?trk=search_page_search_result)
-- [A brief introduction to malware analysis](https://www.peerlyst.com/posts/a-brief-introduction-to-malware-analysis-kimberly-crawley?trk=search_page_search_result)
-
-**References:**  [
-](https://www.peerlyst.com/posts/how-to-perform-memory-analysis-chiheb-chebbi?trk=search_page_search_result)
-
-- [How to Perform Memory Analysis](https://www.peerlyst.com/posts/how-to-perform-memory-analysis-chiheb-chebbi?trk=search_page_search_result)
 - [https://wiki.wireshark.org/SampleCaptures](https://wiki.wireshark.org/SampleCaptures)
 - [Digital Forensics and Incident Response](https://www.packtpub.com/networking-and-servers/digital-forensics-and-incident-response)
 - [Digital Forensics with Kali Linux](https://www.packtpub.com/networking-and-servers/digital-forensics-kali-linux-0)
 
-**Summary**
+## **Summary**
 
-In this article, we discovered what digital forensics is, what are the different steps to perform it, including evidence acquisition and analysis. Later, we explored some well-known digital forensics tools by analyzing some memory dumps using Autopsy and Volatility framework.
+In this module, we discovered what digital forensics is, what are the different steps to perform it, including evidence acquisition and analysis. Later, we explored some well-known digital forensics tools by analyzing some memory dumps using Autopsy and Volatility framework.
+
