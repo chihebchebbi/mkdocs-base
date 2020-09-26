@@ -1,20 +1,19 @@
-# **Incident Response and Threat hunting with OSQuery and Kolide Fleet**
+#  Incident Response and Threat hunting with OSQuery and Kolide Fleet 
 
-Hi Peerlysters,
 
 In this guide, we are going to explore some powerful tools to help you enhance your incident response and threat hunting assessments. These tools are OSQuery and Kolide Fleet.
 
-![](RackMultipart20200926-4-17gj2ps_html_0.png)Image source: [Kolide Fleet dashboard](https://github.com/kolide/fleet/raw/master/assets/images/dashboard-screenshot.png)
+![](https://github.com/kolide/fleet/raw/master/assets/images/dashboard-screenshot.png)Image source: [Kolide Fleet dashboard](https://github.com/kolide/fleet/raw/master/assets/images/dashboard-screenshot.png)
 
 Let&#39;s start exploring the first tool OSQuery
 
-**OSQuery Overview**
+##  OSQuery Overview 
 
 According to its official Github [repository](https://github.com/osquery/osquery):
 
 ![](RackMultipart20200926-4-17gj2ps_html_bc0fff99401b647b.png)
 
-_Osquery is a __ __ SQL __ __ powered __ __ operating system __ __ instrumentation, __ __ monitoring __, and__   __analytics__   __framework. It is Available for__   __Linux__ , __ __ macOS __,__   __Windows,__  __and FreeBSD._
+> _Osquery is a __ __ SQL __ __ powered __ __ operating system __ __ instrumentation, __ __ monitoring __, and__   __analytics__   __framework. It is Available for__   __Linux__ , __ __ macOS __,__   __Windows,__  __and FreeBSD._
 
 Its official website is [https://osquery.io](https://osquery.io/)
 
@@ -26,9 +25,9 @@ To download OSQuery visit: [https://osquery.io/downloads/official/4.3.0](https:/
 
 For the demonstration, we are going to use a Ubuntu 18.04 TLS server machine. To install it on our Ubuntu server type the following commands:
 
-export OSQUERY\_KEY=1484120AC4E9F8A1A577AEEE97A80C63C9D8B80B
+`export OSQUERY\_KEY=1484120AC4E9F8A1A577AEEE97A80C63C9D8B80B`
 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys $OSQUERY\_KEY
+`sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys $OSQUERY\_KEY`
 
 ![](RackMultipart20200926-4-17gj2ps_html_f702731b934420d1.png)
 
@@ -36,11 +35,11 @@ sudo add-apt-repository &#39;deb [arch=amd64] [https://pkg.osquery.io/deb](https
 
 ![](RackMultipart20200926-4-17gj2ps_html_a0e8dbbe6d54dfe3.png)
 
-sudo apt-get update
+`sudo apt-get update`
 
 ![](RackMultipart20200926-4-17gj2ps_html_9263e8e83181f2d6.png)
 
-sudo apt-get install osquery
+`sudo apt-get install osquery`
 
 ![](RackMultipart20200926-4-17gj2ps_html_31aebc206fc1c1d8.png)
 
@@ -51,7 +50,7 @@ OSQuery delivers these modes:
 
 To start using OSQuery simply type:
 
-osqueryi
+`osqueryi`
 
 To explore the available commands type  **.help**
 
@@ -59,25 +58,25 @@ To explore the available commands type  **.help**
 
 To explore the available tables type
 
-.tables
+`.tables`
 
 ![](RackMultipart20200926-4-17gj2ps_html_535e8b7a789bf7e7.png)
 
 To explore the schema of a specific table type
 
-.schema \&lt;TABLE\_HERE\&gt;
+`.schema \&lt;TABLE\_HERE\&gt;`
 
 ![](RackMultipart20200926-4-17gj2ps_html_962a4ebb8e0a9728.png)
 
 For example if you want to get the users type:
 
-select \* from users ;
+`select \* from users ;`
 
 ![](RackMultipart20200926-4-17gj2ps_html_f5f44694349952ed.png)
 
 To select loggedin users type:
 
-select \* from logged\_in\_users ;
+`select \* from logged\_in\_users ;`
 
 ![](RackMultipart20200926-4-17gj2ps_html_4970d5ddda6efb88.png)
 
@@ -87,7 +86,7 @@ The official website contains the list of all the available tables and its schem
 
 For example to select the version of the kernel type:
 
-select version from Kernel\_info
+`select version from Kernel\_info`
 
 ![](RackMultipart20200926-4-17gj2ps_html_d83a7545a0e2afd1.png)
 
@@ -110,11 +109,11 @@ This is a query from [https://github.com/osquery/osquery/blob/master/packs/incid
 
 But now, what to do if we want to deploy OSQuery in large scale environments and we want to manage them all easily. In this situation we need another powerful platform called &quot;Kolide Fleet&quot;
 
-## Kolide Fleet (OSQuery Management)
+##  Kolide Fleet (OSQuery Management)
 
 According to its official [Github repository](https://github.com/kolide/fleet):
 
-_Fleet is the most widely used __ __ open-source __ __ osquery Fleet manager. Deploying osquery with Fleet enables live queries, and effective __ __ management __ __ of osquery infrastructure._
+> _Fleet is the most widely used __ __ open-source __ __ osquery Fleet manager. Deploying osquery with Fleet enables live queries, and effective __ __ management __ __ of osquery infrastructure._
 
 ![](RackMultipart20200926-4-17gj2ps_html_e0b0f7489c084926.png)Image source: [Kolide fleet ](https://miro.medium.com/max/1400/1*t17v4ZaUn-4Nz7tmAJWElQ@2x.png)
 
@@ -124,11 +123,11 @@ wget [https://github.com/kolide/fleet/releases/latest/download/fleet.zip](https:
 
 ![](RackMultipart20200926-4-17gj2ps_html_c9c92d6d20e94031.png)
 
-sudo apt-get install unzip
+`sudo apt-get install unzip`
 
 Unzip the file:
 
-sudo unzip fleet.zip
+`sudo unzip fleet.zip`
 
 ![](RackMultipart20200926-4-17gj2ps_html_3c2c99eacbfbb0d7.png)
 
@@ -142,41 +141,41 @@ sudo cp \* /usr/bin/
 
 Install this required program:
 
-sudo apt install software-properties-common
+`sudo apt install software-properties-common`
 
   ![](RackMultipart20200926-4-17gj2ps_html_632f8ed4befe6af8.png)
 
-sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+`sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8`
 
 add-apt-repository &#39;deb [arch=amd64,arm64,ppc64el] [http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.4/ubuntu](http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.4/ubuntu) bionic main&#39;
 
 ![](RackMultipart20200926-4-17gj2ps_html_864253aebc33e6c0.png)
 
-sudo apt-get update
+`sudo apt-get update`
 
 ![](RackMultipart20200926-4-17gj2ps_html_3f2c1bd5a6f47bea.png)
 
 Install Maria database server and its client:
 
-sudo apt install mariadb-server mariadb-client
+`sudo apt install mariadb-server mariadb-client`
 
 ![](RackMultipart20200926-4-17gj2ps_html_23ca584f11f74b5e.png)
 
 Check its status:
 
-sudo systemctl status mariadb
+`sudo systemctl status mariadb`
 
 ![](RackMultipart20200926-4-17gj2ps_html_5c6946116b821cca.png)
 
 Enable Mariadb service:
 
-sudo systemctl is-enabled mariadb
+`sudo systemctl is-enabled mariadb`
 
 ![](RackMultipart20200926-4-17gj2ps_html_f19ebaa35f590da6.png)
 
 Enter mysql and type the following commands:
 
-sudo mysql -u root -p
+`sudo mysql -u root -p`
 
 ![](RackMultipart20200926-4-17gj2ps_html_7b0c8f6731a4764f.png)
 
@@ -186,13 +185,13 @@ grant all on kolide.\* to kolideuser@localhost identified by &#39;Passw0rd!&#39;
 
 ![](RackMultipart20200926-4-17gj2ps_html_eaf5fc5bb55a0d.png)
 
-flush privileges;
+`flush privileges;`
 
-exit
+`exit`
 
 Install Redis:
 
-sudo apt install redis
+`sudo apt install redis`
 
 ![](RackMultipart20200926-4-17gj2ps_html_9b49b1ea1ae69d35.png)
 
@@ -252,7 +251,7 @@ sudo unzip launcher\_v0.11.10.zip
 
 Enter the Linux file:
 
-cd linux
+`cd linux`
 
 Start the launcher
 
@@ -274,11 +273,10 @@ Select the targets/hosts
 
 Click on &quot;Run&quot;. You will get the query outputs below:
 
-## ![](RackMultipart20200926-4-17gj2ps_html_7447babd4000c87f.png)
 
-I hope you will find this guide helpful.
 
 ## References
 
 1. [https://medium.com/@sroberts/osquery-101-getting-started-78e063c4e2f7](https://medium.com/@sroberts/osquery-101-getting-started-78e063c4e2f7)
 2. [https://www.digitalocean.com/community/tutorials/how-to-monitor-your-system-security-with-osquery-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-monitor-your-system-security-with-osquery-on-ubuntu-16-04)
+
