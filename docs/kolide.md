@@ -13,7 +13,7 @@ According to its official Github [repository](https://github.com/osquery/osquery
 
 ![](https://engineering.fb.com/wp-content/uploads/2014/10/1_XC-k2QigREIwZnBpFZ4StA@2x.png)
 
-> _Osquery is a __ __ SQL __ __ powered __ __ operating system __ __ instrumentation, __ __ monitoring __, and__   __analytics__   __framework. It is Available for__   __Linux__ , __ __ macOS __,__   __Windows,__  __and FreeBSD._
+> _Osquery is a __ __ SQL __ __ powered __ __ operating system __ __ instrumentation, __ __ monitoring __, and__   __analytics__   __framework. It is Available for__   __Linux__ , __ __ macOS __,__   __Windows,__and FreeBSD._
 
 Its official website is [https://osquery.io](https://osquery.io/)
 
@@ -31,7 +31,7 @@ For the demonstration, we are going to use a Ubuntu 18.04 TLS server machine. To
 
 ![](https://lh5.googleusercontent.com/5JPbLZvAcj_XdQHO-oWx8MpOi_e7ycjYqz_8IK3k32L1ZxFeOjDlmXXesAmpWQG1_CuwTcN6zUQIb6KjZsa5UWBMwriJgATfAOWy0wHVHvoBVvWZX218KRq_YgQ8m61x2zSQdH0)
 
-sudo add-apt-repository &#39;deb [arch=amd64] [https://pkg.osquery.io/deb](https://pkg.osquery.io/deb) deb main&#39;
+`sudo add-apt-repository &#39;deb [arch=amd64] [https://pkg.osquery.io/deb](https://pkg.osquery.io/deb) deb main&#39;`
 
 ![](https://lh5.googleusercontent.com/zHiMKUT8-0C3WkgpX3aNfZMfo9VMb5DH668Zq71SefYwVnYgSXRqth1ZL8PdwHwv5ntRxlZvPKBX-njd70gz742WY5lK7AdCcEGbYtbVWDH7cY6ZLLtRtNEt_KjatKNUacVHw_g)
 
@@ -64,19 +64,19 @@ To explore the available tables type
 
 To explore the schema of a specific table type
 
-`.schema \&lt;TABLE\_HERE\&gt;`
+`.schema <TABLE_HERE>`
 
 ![](img/schema.png)
 
 For example if you want to get the users type:
 
-`select \* from users ;`
+`select * from users ;`
 
 ![](img/users.png)
 
 To select loggedin users type:
 
-`select \* from logged\_in\_users ;`
+`select * from logged_in_users ;`
 
 ![](img/loggedin.png)
 
@@ -86,7 +86,7 @@ The official website contains the list of all the available tables and its schem
 
 For example to select the version of the kernel type:
 
-`select version from Kernel\_info`
+`select version from Kernel_info`
 
 ![](https://lh5.googleusercontent.com/OSOVd2rvHHWWemCsOEO2g_UZbqS1F1Xr1vvDpPmX0-eBJOEQNjGWBhH7udxUGMYtnBCC4Q2OstxgEhhei3eisVmmJkvzAzLG-ZLe_jgBfnmCn9uck0zelnO4FEZA0k6qD1s5uEU)
 
@@ -119,7 +119,7 @@ According to its official [Github repository](https://github.com/kolide/fleet):
 
 To install it use the following commands:
 
-wget [https://github.com/kolide/fleet/releases/latest/download/fleet.zip](https://github.com/kolide/fleet/releases/latest/download/fleet.zip)
+`wget https://github.com/kolide/fleet/releases/latest/download/fleet.zip `
 
 ![](https://lh6.googleusercontent.com/EHlTQG_k8pkDnxfsBskiq18F4W5ruS_YQkeYygyfe1mWeEa5KagUiWvZmBHF2Oii6XzkIDk1u9RNSK3zZ1JbKpaXOx-JOpU9o2uz7YhKhmJFBVdohQVESw1t_6k6Ydw90KYs5Bo)
 
@@ -137,7 +137,7 @@ Enter the linux folder:
 
 Copy the binaries in /usr/bin
 
-sudo cp \* /usr/bin/
+`sudo cp * /usr/bin/`
 
 Install this required program:
 
@@ -147,7 +147,7 @@ Install this required program:
 
 `sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8`
 
-add-apt-repository &#39;deb [arch=amd64,arm64,ppc64el] [http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.4/ubuntu](http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.4/ubuntu) bionic main&#39;
+`add-apt-repository 'deb [arch=amd64,arm64,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.4/ubuntu bionic main'`
 
 ![](https://lh3.googleusercontent.com/SoyNCaMipr02T1MgvFKHJ1_-Un5C2lONbX-FbZhJgIbuU5UDeZMfjPjVJ5M3SBTd3KEUpAiHL_8LC-K623CocFTMOREXQDTaeOO-7uVR9Ku5tPcjo2P3-aPcOzVt3uUPT3P9jk4)
 
@@ -179,9 +179,9 @@ Enter mysql and type the following commands:
 
 ![](img/mysql.png)
 
-create database kolide;
+`create database kolide;`
 
-grant all on kolide.\* to kolideuser@localhost identified by &#39;Passw0rd!&#39;;
+`grant all on kolide.* to kolideuser@localhost identified by 'Passw0rd!';`
 
 ![](https://lh3.googleusercontent.com/MxO3odbh6eRGljfS1ZQArabqwgNtGH6Sb6JKjJBgbSKDnIOXgR2Hh3C9qa5qCZOSEanzqSpdH8qHeCPhdYl8847Fwd259LYvhlsJSSsIlTiIvPj7UQ6_Y-VN-RgeETiCmwcxjuE)
 
@@ -197,25 +197,25 @@ Install Redis:
 
 Prepare fleet:
 
-fleet prepare db --mysql\_address=127.0.0.1:3306 --mysql\_database=kolide --mysql\_username=kolideuser --mysql\_password=Passw0rd!
+`fleet prepare db --mysql_address=127.0.0.1:3306 --mysql_database=kolide --mysql_username=kolideuser --mysql_password=Passw0rd!`
 
-fleet serve --mysql\_address=127.0.0.1:3306 \
+`fleet serve --mysql_address=127.0.0.1:3306 \`
 
- --mysql\_database=kolide --mysql\_username=kolideuser --mysql\_password=Passw0rd! \
+`--mysql_database=kolide --mysql_username=kolideuser --mysql_password=Passw0rd! \`
 
- --server\_cert=/etc/ssl/certs/kolide.cert --server\_key=/etc/ssl/private/kolide.key \
+`--server_cert=/etc/ssl/certs/kolide.cert --server_key=/etc/ssl/private/kolide.key \`
 
- --logging\_json
+` --logging_json`
 
 ![](https://lh5.googleusercontent.com/8xH5mWapu5b3sI2F5j2cKad-MkW8lwvXFmJXOB59nh0poTm2ARFUybjeVJfdyT0VIoMgsh1Yqqjy4M0Xlbs5wHR0W4sILKlZSIuMGJnfjjZC5uBN8k7SCifJTZxe7Dxy_c4nApo)
 
-sudo fleet serve --mysql\_address=127.0.0.1:3306 \
-
- --mysql\_database=kolide --mysql\_username=kolideuser --mysql\_password=Passw0rd! \
-
- --server\_cert=/etc/ssl/certs/kolide.cert --server\_key=/etc/ssl/private/kolide.key \
-
- --logging\_json --auth\_jwt\_key=9yKI2MeThUSLtsYiCS7etUSJZD1lgHLr
+    sudo fleet serve --mysql_address=127.0.0.1:3306 \
+    
+    --mysql_database=kolide --mysql_username=kolideuser --mysql_password=Passw0rd! \
+    
+    --server_cert=/etc/ssl/certs/kolide.cert --server_key=/etc/ssl/private/kolide.key \
+    
+    --logging_json --auth_jwt_key=9yKI2MeThUSLtsYiCS7etUSJZD1lgHLr
 
 Start fleet:
 
@@ -247,7 +247,7 @@ wget [https://github.com/kolide/launcher/releases/download/v0.11.10/launcher\_v0
 
 Unzip the file:
 
-'sudo unzip launcher\_v0.11.10.zip'
+`sudo unzip launcher\_v0.11.10.zip`
 
 ![](https://lh4.googleusercontent.com/UVvLk5WrC8dVw4zuXhLzQqmBuW5ZntvtPtFBrMu8yP8wZpzRYZTOrcoohSvx4vucCdBeiDae1h6fuwkkaXz13RniiJD4Ezt1JaWBMu3DYZcDjW7zGU9USFzs8XBg2kns0zTgQMI)
 
@@ -257,7 +257,7 @@ Enter the Linux file:
 
 Start the launcher
 
-./launcher --hostname=127.0.0.1:8080 --root\_directory=$(mktemp -d) --enroll\_secret=\&lt;COPY SECRET KEY HERE\&gt; --insecure
+`./launcher   --hostname=127.0.0.1:8080   --root_directory=$(mktemp -d)   --enroll_secret=<COPY SECRET KEY HERE> --insecure`
 
 Congratulation! if you refresh the Kolide fleet dashboard you will see the newly added host
 
@@ -282,4 +282,5 @@ Click on &quot;Run&quot;. You will get the query outputs below:
 
 1. [https://medium.com/@sroberts/osquery-101-getting-started-78e063c4e2f7](https://medium.com/@sroberts/osquery-101-getting-started-78e063c4e2f7)
 2. [https://www.digitalocean.com/community/tutorials/how-to-monitor-your-system-security-with-osquery-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-monitor-your-system-security-with-osquery-on-ubuntu-16-04)
+
 
