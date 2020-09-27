@@ -38,13 +38,13 @@ Update the sources.list file:
 
 `sudo apt update`
 
-![](RackMultipart20200926-4-122n7kb_html_a3e131f7d91263a.png)
+![](https://lh3.googleusercontent.com/k-upOTt8JOwxY7G6p7LfDlkGtrC9Pj1t8pAPQmEtxEm8vYbxQ7JhW7ieOEmYlm-gANX6YMfVgVifF2NUPwqTl2dSCUKmP8gAoxotVMkmWDycy8eRGTRYGuCRi2LEbp1G7Wm1XBQ)
 
 Install Java JDK 8 (and _apt-transport-https_ if you are using Debian)
 
 `sudo apt install -y openjdk-8-jdk`
 
-![](RackMultipart20200926-4-122n7kb_html_368905f391c68594.png)
+![](https://lh5.googleusercontent.com/B2UxXW2O5uXCAP3bWwjLCDvA3GxVxsu-OU1KieFWOrapmnMY5BM4_diLZXSs-gTXS-IVCglNXQtNJj7w8j9KF9aDQUGNKay1KATMQxaVA4_EHF8Fnt9GiwrlKCxvTNBDs-zvl0Y)
 
 Check the Java version with:
 
@@ -54,7 +54,7 @@ Check the Java version with:
 
 Now let&#39;s install Elasticsearch:
 
-![](RackMultipart20200926-4-122n7kb_html_ef1561cc1b298c9f.png)
+![](https://lh4.googleusercontent.com/civNjJFKfx-ggDY02MITB82Z0p58QpaK_bVBRaQUwtIwnRwKkIznUniI8AUfIN9bcLKiTGpzFLcI5WZP03jI_JNWwh3cdHz17u00SPsXffUQrS6to7hwAnzjxcZhPtCTz0bntdg)
 
 `wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -`
 
@@ -65,15 +65,13 @@ Now let&#39;s install Elasticsearch:
 `sudo apt install elasticsearch`
 
 
-`sudo apt install elasticsearch`
-
-![](RackMultipart20200926-4-122n7kb_html_a7b1fbcbe1b99b48.png)
+![](https://lh3.googleusercontent.com/bxruaWQ39xyEt7K5PqoNRaly9H1RlwuAzQRvtaEqyv7wo7fcYKzeqpSlP-EKsWhQ6sYlo7c0jiNSy46WE3pRntPylaMP25FdmljqWm8wtpsWIqOFRK9rik0pAkY28xHjSPa-vvE)
 
 After installing elasticsearch you need to configure it by modifying  **/etc/elasticsearch/elasticsearch.yml ** file
 
 `sudo vi  /etc/elasticsearch/elasticsearch.yml`
 
-![](RackMultipart20200926-4-122n7kb_html_6963ce1b4b537ab2.png)
+![](https://lh3.googleusercontent.com/5noXChiXI98UOvV7qpId532ncXLSKORk8O69ia9JUV_JPx-DaCkQif_LaDrPBm961FY4m1Pmu7N3fu8TWYQJ17T7I7iSjvEpgbGKouxAL7udCgD1MJbmo-_F-cEv04faE0qRax8)
 
 Un-comment  **network.host**  and  **http.port**  and assign values to them. Don&#39;t use &quot;0.0.0.0&quot; in your production servers. I am using it just for a demonstration.
 
@@ -91,21 +89,21 @@ Check the installation:
 
 `curl -X GET "YOU_IP:9200"`
 
-![](RackMultipart20200926-4-122n7kb_html_80868b75efeae6fa.png)
+![](https://lh6.googleusercontent.com/PQcmB_fWG991yyG4q1ZaJgQe_jhoRgIsRVhHtq-CuKY6MPW_AhNqXvhGB-VesY3lcLgofCY9PVMSb96zMqe0yzltpq677yw638w5MhNpwTckFhTj2IMboQwbzetQWt6BReQBKT4)
 
 Now let&#39;s install Kibana:
 
-![](RackMultipart20200926-4-122n7kb_html_8282e73a606e5475.png)
+![](https://lh5.googleusercontent.com/v-VhNBRNlulkZ2LegsUi-nsJLU6aOC87LP8JCBmlZojCaCTh_oypIb8zsSWwTuQ5uDQoH-NINJs3kveWVMR0K9mtjzJLyahbJ8ec6hoxIVHWiZOTCyy_JgmpJSstQEZE9uHVcVU)
 
 `sudo apt install -y kibana`
 
-![](RackMultipart20200926-4-122n7kb_html_41fb492ef379d917.png)
+![](https://lh4.googleusercontent.com/7oiS00elufF2XPRAokvkcRHChbubp-s5sDDVC9fhGh5bdJ7baGXaPrGyM8jrJ3bCKDw-b6GmaNAW66C3QEPAJg0fmymVgV98ph5XMWfT8Xxyi-DoozbpNfduu4T3iV6ruiEYrFU)
 
 And like what we did with elasticsearch we need to configure it too:
 
 `sudo vi /etc/kibana/kibana.yml`
 
-![](RackMultipart20200926-4-122n7kb_html_3a323235e05795d2.png)
+![](https://lh6.googleusercontent.com/Kd2deBruvxeXQSHyTuCbPULnbkqSmppzu_34N3cJroHzfdGNjwOlh8EMe46Y0B4gmDDqNUzDm_dw0D2F1Bcik43ZGjHkp8k3j7qT4xZXKKk1p4JHaSSlfO-EUDNHFsheDvgRQ38)
 
 Un-comment and modify the following values:
 
@@ -123,17 +121,17 @@ Save the file, and perform what we did previously
 
 Now go to [**https://YOUR-IP-HERE:5601**](https://YOUR-IP-HERE:5601/)
 
-Voila, you can start exploring the dashboard of some pre-installed Sample Log data: ![](RackMultipart20200926-4-122n7kb_html_b6dae142943594d3.png)
+Voila, you can start exploring the dashboard of some pre-installed Sample Log data: ![](https://lh5.googleusercontent.com/Jns1eR4qb6jjDIjE9CAoGSdD7vieqFJaZmn44fFYmZ6yDkB10uXBAVuvyFimN709C-KEQ9I-EVynfJA7FZO0eXmxGz8H3uWRHeJCH3cZom5w5us95neYADMEvMZzMpo1leCg-zo)
 
-![](RackMultipart20200926-4-122n7kb_html_90c8066d5a1a6c61.png)
+![](https://lh3.googleusercontent.com/XB6rTU1BwkkAgMBBZQkA5Dbt0BNRPc6f1V1lcwpD3PsBTudOISLij5-0a6v6KMaRBaySmZ_w5D8a9IwvFpSxyvR_ZzT6oQlw-KFQGi5MAicVeZevyNZKjHrnKU4tFLGlO_D2Xv4)
 
 Install  **logstash**  to collect, parse and transform logs if needed:
 
-![](RackMultipart20200926-4-122n7kb_html_deec5e4f8cbb0f66.jpg)
+![](https://lh5.googleusercontent.com/VBgELIP6OjcfkIayXw-Lo7JG5EfrXnHOcSYnPmLLfu1UtLp4cY_fW2LeOZmM7FRZiBwXufciQkt25iGI4K5tu2WLOQHt1WNSvJ4A-iLfN17c-PJQ1wuOy4xjI6v1y73M--8hiuE)
 
 `sudo apt install -y logstash`
 
-![](RackMultipart20200926-4-122n7kb_html_5426d067add6fb5c.png)
+![](https://lh3.googleusercontent.com/3T9QEBc6gJQFez-72ixFaFC3uGwX6ziMdcjberAPrciMaHSWqIpeNmA6kT7i38tObWWAN2TYA7iI1Q2hhJzGejSR1UJnsLhbRvt7FKQUQgf0Xh1XOSPK4GXIRORW4q1OiWkN810)
 
 But wait how can we use our own data?
 
@@ -144,7 +142,7 @@ As a demonstration i am going to use &quot;[Metricbeat](https://www.elastic.co/p
 
 `sudo apt-get install metricbeat`
 
-![](RackMultipart20200926-4-122n7kb_html_964e6e7f8f2e763b.png)
+![](https://lh6.googleusercontent.com/K01V0LfZBOHlfnsrrEodDtvD509i57jTQ5JZk_IQ6ibsas6yqaCKAoWAnTHFngwt5w2jKs11oDla-U819-kmUguWDENgCBuzzJm1t1CIukg9cGZwL7jX9lQjpx-oiMRgNdyr9UU)
 
 Configure the beat by typing
 
@@ -162,11 +160,11 @@ Now go to the main dashboard and create a new index:
 
 If everything went well you will see your beat:
 
-![](RackMultipart20200926-4-122n7kb_html_17363eb655e2f8b6.png)
+![](https://lh3.googleusercontent.com/k1xJ5Q-wgKb5GWmZGXy0J6HMszgKDJqFItHzFvBZRxproMfdJ3E8nrwNtGNROw2WcDh1MHcDKAA_SNPvKY6kHufT5jKVXsqn8UMeHEI6U5g5jqgLpzATKgKJEauqOT8Z9zwmCFI)
 
 Select the time filter by selecting @timestamp:
 
-![](RackMultipart20200926-4-122n7kb_html_653b995d7b2bece2.png)
+![](https://lh3.googleusercontent.com/zoEHYQcixMbEDktdQTJaHALZFUQ1LTDyxvYlWdbqTbW6QTStG76moe0bMq-cZrhpv2zkJRlpWciYnEy_DIzkNj2K43erDUBq5GDCNsQx7oLtHimS7S75-QwM6lBmPFxb2PHa96Q)
 
 Then, you can visualize any data you want from that beat.
 
@@ -174,15 +172,15 @@ By now we deployed the most important parts. Let&#39;s learn how to deploy the E
 
 Go to the sidebar and you will find SIEM option:
 
-![](RackMultipart20200926-4-122n7kb_html_1644059ad434fb8c.png)
+![](https://lh3.googleusercontent.com/GqUKMqmmwmQp6vPoos2uzU0cuknWV5ZLXjmvKoweRYi2HYKHKAqsFnmU33AhEV_0IoxOrEscQp5GbKGGDFHUVItdGst_HPRMPycAiiTfOXsLmzHsJYulazL_y_RTldsGvs7Q78A)
 
 It will take you to the main SIEM page:
 
-![](RackMultipart20200926-4-122n7kb_html_cd9bb12ade71e7d7.png)
+![](https://lh6.googleusercontent.com/XzMdJDVXnlNHYu-sYKkLy5RhxqwmAi6d73fKJu5xf1Sms5oKttItYbQSEb3Io45TBAObv3ZPbjEDlJGDfGhdDWmUj9HcxtdGuL9SJYg80dnmN8KMKZU9SBBRHdhb3SdgY780zSs)
 
 But now we need data to run the SIEM. In order to do that we need to install other beats from sources like the following:
 
-![](RackMultipart20200926-4-122n7kb_html_3518c7fd9c74aa6c.png)
+![](https://lh5.googleusercontent.com/onayh7HT6Nn9zDc-JSzXWRJ08wPjQdy4vPx82qPE31t0bCdC4T89RmxX1ocxS-UVN3IT5VZQIXtUOAzyxoKYK-Fft1m1vfmgoRwEoM4TSIxpB1PoERlcx6S0QbeqCW52n9Gjyps)
 
 For the demonstration i am going to use the &quot; **Auditbeat**&quot;:
 
@@ -196,7 +194,7 @@ Check the setup:
 
 `sudo auditbeat setup`
 
-![](RackMultipart20200926-4-122n7kb_html_7fdadf4d6ffc9ce2.png)
+![](https://lh3.googleusercontent.com/Wv3x6cQJ8tF0qA2TrVxm_dzbPcyF4ddXwRCi2Nc_ZlgY8rq-nSxKnlLY-xWlpev2HXLt8VTT5Jy7NUyvhq0s3hgYpfnvX_yzTxE1hDm-eQAu5dtL74Z8Q2OoSq31uAuyLmzPcmU)
 
 Run the beat:
 
@@ -204,27 +202,27 @@ Run the beat:
 
 If you did everything correctly you will see this on the SIEM Dashboard:
 
-![](RackMultipart20200926-4-122n7kb_html_aae8a38d3b9d4c5.png)
+![](https://lh3.googleusercontent.com/_uXL_LXpY-ooqreP_qalxpx7V5YLSOhLUZa829ph5cqtdsB-Z6df2vcrw0JJlStLJ53DBxXcd0C5jr5nsmRIZzO-CgETvD1h6X7AMRNL11PeDsW_qTfTY8sH6MDzlNTaD_QLQfk)
 
 Congratulations! Now you can see the dashboard of your SIEM.
 
-![](RackMultipart20200926-4-122n7kb_html_f93d6ec7f1dbf4aa.png)
+![](https://lh4.googleusercontent.com/ZCTe7JJtTS984bRFyqaR7IfTBS2AOGjyAubcWLzsvBikE4NBrilp0a9nh645mBvt06qFEyHZfj55dEaG_86-2FqFOZ3QFQ-GFCo4dilwL0gpHvwcL-ZKjKNQaXlSRQ1-I0nN4wE)
 
 Check the hosts:
 
-![](RackMultipart20200926-4-122n7kb_html_1e1df9204c352d21.png)
+![](https://lh3.googleusercontent.com/xfkQR4dqJih3m4kjV5losgf8XrjSpdSHzUExY6upC6gSg8KJVdvn4Yzk3Spi_61OQ57K2sy846q0mj2n30UN07G1xJjnnMpY9Xz95NGZJR84m3a9x2TswNiZeDr0M-xquPj4JcE)
 
-![](RackMultipart20200926-4-122n7kb_html_dbcdc17289a48711.png)
+![](https://lh3.googleusercontent.com/LylO9HDkVGgRC_b-ogp5qb0GgdGNzDTn0r1JsOaqGGQlzhiA78qQaNx5dk0s68VXp0goxiS0U1IPcBwSQTwFt-Hlszty2sZZcB-0-6dBTyzmHoZdtUslgy_m4iZR4dzfdbo2qUU)
 
 Check the Network Dashboard:
 
-![](RackMultipart20200926-4-122n7kb_html_2a770803c198215.png)
+![](https://lh6.googleusercontent.com/PvI4sTvSPV1TiPANlLykwXDjYlPKDoOCOSk7tNpmKd9VVhJRDvFxKqWcMkRXS98vAQjdwuL3BkOKzT2dvv03m2Z8HlIyv9xL1K965SV9aPb4xEmLRGWd-vINPZy20ivZaZgq5co)
 
 A system Overviews:
 
-![](RackMultipart20200926-4-122n7kb_html_62736cd00bc9744.png)
+![](https://lh5.googleusercontent.com/ba1MI1ylHnnX1MP16_sMWPuyBPufQmYDDBThq91yACZQSVYXMMNa0TbPkhZkh3k6vnYjMMVzjotl_q7FGoQUP_Z2GUrMbIxzdgLeBbksWHXQU-iyBrU39nzfyPy2jGdStBzmGVU)
 
-![](RackMultipart20200926-4-122n7kb_html_32d1d3a50de1ef25.png)
+![](https://lh4.googleusercontent.com/T1XCEuu5frtM6LReozWUjkuqnipiv999f3rQ43JipYirz8hvedL_bFqd_MEi4cw0I_rnoK2klOz6JG3AJty5DpRHTzUxsBrRv2yHdBSS7IZ0GzPs75CZ9WoeWYNlg4ndgvGZFTY)
 
 Voila, you learned how to build an ELK SIEM.
 
