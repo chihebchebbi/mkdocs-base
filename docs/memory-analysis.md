@@ -2,7 +2,7 @@
 
 **How to Perform Memory Analysis**
 
-![](RackMultipart20200926-4-1glblx6_html_f26529888304b113.png)
+![](https://lh4.googleusercontent.com/e4exMR2vLc14SOesRrLi_GMXty3_SCJjFdmwgjh4UPjbPPh_EiOOE3JtRsgS7ERSrGMROnZ_LFD9_bT3zIumLp-s3xrpLHro4jd5dyaAKYXi98lHlmhtuxX_u1QOe0kraeacwFc)
 
 Source: [malware-analysis-virtual-box-cyber-forensicator.jpg](http://cyberforensicator.com/wp-content/uploads/2017/02/malware-analysis-virtual-box-cyber-forensicator.jpg)
 
@@ -52,13 +52,13 @@ Memory is a vital component in the computer architecture. Computers are composed
 
 The full architecture is described in the following graph:
 
-![](RackMultipart20200926-4-1glblx6_html_3ebefd48d73f8c9b.png)source [overall.gif](https://www.doc.ic.ac.uk/~eedwards/compsys/overall.gif)
+![](https://lh4.googleusercontent.com/WPQnL7PehmH1VLn0uL0b6nRrxfikhloMQtWGaEFoBL1_IilQFC2UbIuNoTa-uqbtN1LOKXhuJ-xJTEebuhH5bSViHW5yfNWfSCU25FmaM0CNcOQjjnpSerGynREbEMf46dtOSlk)source [overall.gif](https://www.doc.ic.ac.uk/~eedwards/compsys/overall.gif)
 
 In memory analysis, we are dealing with  **RAM** s.
 
 _A  __**RAM**__  (pronounced ramm) is an acronym for random access memory, a type of computer memory that can be accessed randomly; that is, any byte of memory can be accessed without touching the preceding bytes.  __**RAM**__  is found in servers, PCs, tablets, smartphones and other _[_devices_](https://www.peerlyst.com/tags/devices)_, such as printers.  __ **RAM is volatile** _
 
-![](RackMultipart20200926-4-1glblx6_html_f1146496ab149a69.jpg)
+![](https://lh4.googleusercontent.com/3K9Y2uihKcwAVuZFcrDtrhBeHey6nZeJJyDPetw_XY8X900KtlsH9IPCsMuHHn3J1K20UOhjcfx2vRomDQ16SeCQqHjovrNS7OuxdakQpqLkFyPnI0YDBJadq6DMM27CVX3WUzg)
 
 source: [RAM061711.jpg](http://www.dfinews.com/sites/dfinews.com/files/u739/RAM061711.jpg)
 
@@ -74,7 +74,7 @@ The memory is divided into 4,096-byte memory chunks named pages, to facilitate i
 
 You can explore the detailed sections of memory check this great [cheat sheet](https://www.peerlyst.com/tags/cheat-sheet):
 
-![](RackMultipart20200926-4-1glblx6_html_a463dc52888a76f3.png)
+![](https://lh4.googleusercontent.com/xndYGAhQ9AjPjqVhzFXsptsSAD0oTPc9oVSNePNF-qEu97xBVyQ1FSNaDPdmYbJ6PKM3jd3hkhBggBPtOwdo2xCTaFfFAddrCOKmd6M3zsMtB669TnLvldoYuxM6lWGCiGYdws4)
 
 Better resolution here  [Memory Segmentation sheet ](https://www.0x0ff.info/wp-content/uploads/2014/02/cheat-sheet.png)
 
@@ -103,7 +103,7 @@ Like any methodological operation, Computer [forensic analysis](https://www.peer
 
 The steps are based on the [**NIST Guide to Integrating Forensic Techniques into Incident Response**](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-86.pdf). I highly recommend exploring the Process in details (Performing the [Forensic](https://www.peerlyst.com/tags/forensic) Process)
 
-![](RackMultipart20200926-4-1glblx6_html_b26760db1d122a0b.png)
+![](https://lh3.googleusercontent.com/Yh5H6Itbvx8GmzbYI6tfkh5IshUkXcVpeva6d6ChMX4S5188Xeg62Qkm3BLgUvOrkejbX6FpoHu1MS6NZ7W3WRthEKj1heSvEAqUpV3WBqp4HOMcdTiklpqPfNaM7Eybcz-4X20)
 
 source: [nist+process.jpg](http://4.bp.blogspot.com/_Jgk3LbZWY8I/TL4_gGa186I/AAAAAAAAAIU/P4V8Y9lbZFo/s1600/nist+process.jpg)
 
@@ -142,23 +142,23 @@ After having a memory dump, it is time to analyze the memory image.
 
 **Memory Analysis with Volatility Framework**
 
-![](RackMultipart20200926-4-1glblx6_html_8e011f6750a0963e.jpg)
+![](https://lh6.googleusercontent.com/Sw7Zt2Z61JUpRo56UBAYpz13Yiad_Ekkugdaen1vMICmvX0g943nJt5wqG-waTX1alVl2XSvuEpOE-VJ_PpM8Ad8NzOGhabgd7mbpPl2oYUluNmXDb5yauuJrpYaQL4nuH_goHc)
 
 To analyse memory You can simply use volatility [framework](https://www.peerlyst.com/tags/framework), which is an [open source](https://www.peerlyst.com/tags/open-source) [memory forensics](https://www.peerlyst.com/tags/memory-forensics) tool written in Python. It is available under GPL. Volatility comes with various plugins and a number of profiles to ease obtaining basic forensic information about memory image files. To download it you can visit this website: [The Volatility Foundation - Open Source Memory Forensics](https://www.volatilityfoundation.org/) or [GitHub - volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility)
 
-![](RackMultipart20200926-4-1glblx6_html_42509827492d6b1.png)
+![](https://lh4.googleusercontent.com/fvGkLQLQ6PS7FkPb_el-HWvCXCbvmphmoWhWheqWryxpKAaM5cWbx-wKNDxx3oVlMONlJnnnRpCVMO6sr3mk7osnyDX-Qg3d2-vgdrFSmbEsoJolZnWqi9z7o6MiLoUFYgFv9T4)
 
 source: [volatility-sockets.gif](https://xerocrypt.files.wordpress.com/2014/06/volatility-sockets.gif)
 
 To identify [malicious](https://www.peerlyst.com/tags/malicious) network activities many experts recommend following these steps. First, you can identify Process IDs of network connections.
 
-![](RackMultipart20200926-4-1glblx6_html_791199199b23e0c8.png)
+![](https://lh6.googleusercontent.com/4RBMs4CbDRoyfVc5TXg-g6sYJmoPZVvVLSrkv6B4KYXT-x2AJBFvNk2bXUj6MFvMeISyaTs92mR2fUvRRRnh_fiRuAx5V7aKVyL1mLxFQXhi_BvYHd13QXxZBDeI9dPLE1PL53A)
 
 source: [pslist.png](https://linoxide.com/wp-content/uploads/2016/07/pslist.png)
 
 Later you need to map that IDs to Process Names and later terminate every step and process by collecting the artefacts by taking notes, screenshots and of [course](https://www.peerlyst.com/tags/course) time-stamps.
 
-![](RackMultipart20200926-4-1glblx6_html_85860c5586fa0814.png)
+![](https://lh5.googleusercontent.com/V9xhfPWZOAERwFE0fziWTxzIiPT5vG25ob_Ce5SdEZEcvVAPm-6brmif0riGPJdfaieUVTdKz-b7JolDFoW1d3La9LILmTIqfrvVDK-TwgfuS7wpeEdU4eLgKuN2YhHK5Jwt58k)
 
 source: [Fig2lg061711.jpg](http://www.dfinews.com/sites/dfinews.com/files/u739/Fig2lg061711.jpg)
 
