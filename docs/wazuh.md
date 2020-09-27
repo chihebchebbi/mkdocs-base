@@ -46,41 +46,41 @@ Now let&#39;s explore how to deploy it. For the demonstration i am using a Ubunt
 
 `sudo apt-get installcurl apt-transport-https lsb-release gnupg2`
 
-![](img/curl.png)
+![](https://lh4.googleusercontent.com/rPGSrniewefygNejAp0QdlOS6Zb-cXXZVnjSQa5A3f8SA6IxIlZsFAF-HKvaSXSJs79xZ3S888c2KSctbF38CW4uhH83CZr0Mu_dladGL5ZIG03ajKsNufIlLZICq8iAS8TR0sU)
 
 Install the GPG key:
 
 `wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -`
 
-![](RackMultipart20200926-4-zy362i_html_73623269c21834e.png)
+![](https://lh6.googleusercontent.com/kXCT-lx-YV3WoieP55itv5Q_hPodKNC-sqPsbyW4BJpiIrSfICdP8fmMXqBeC79RFhyylNwOE5pkV4VkFyNHQe-_v6rmDGDpd-TSa6H6yoh7oRoxf1osOZX_QZpcmzS_gheEDCE)
 
 Add the repository
 
 `echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list`
 
-![](RackMultipart20200926-4-zy362i_html_c88d03aae000f1c3.png)
+![](https://lh4.googleusercontent.com/X6rA11OoboyiR1qlP8h7edNPR_wN64uMH2gAc6Fs5k9wpToCXf5G4Ej1tbmNgGbMF8i1CctfrzQ7Udrs41M7gIP2rBvwXjo9dJ2p0dX6XKQejWij_28B7PXsz4WJZyqFci8kUDA)
 
 Update the package information:
 
 `sudo apt-get update`
 
-![](RackMultipart20200926-4-zy362i_html_c18fcb27a994bd3b.png)
+![](https://lh6.googleusercontent.com/Y22Fq1ckWXXVGskuRt9tibDBe_YinQNk4lWIpRbqWV6QrbX-sp5nfHHVmQkwIYJKKoU2kJ3PR1nuI3GHW1xOR5jH_aIEMXdx7g6M45V5Z-kL3LByRqUWRZIDQhIXVt-4QgecKws)
 
 **Installing the Wazuh manager**
 
-![](RackMultipart20200926-4-zy362i_html_b9e05eb397321cab.png)
+![](https://lh4.googleusercontent.com/1QPbDSCiZgDA7RSWS8QMROWCRktHZCPs6OtrAbkp56mxa2trJ4MwSziV5kRqPa3Dzif4ZBMPW2rpVhY-QGUuyXDxRbhuVJinTC0JIaTuLGg2r-1Gz8ook9XnIT0VExm0I53LFHc)
 
 On your terminal, install the Wazuh manager:
 
 `sudo apt-get install wazuh-manager`
 
-![](RackMultipart20200926-4-zy362i_html_bfed41c12b56c01a.png)
+![](https://lh4.googleusercontent.com/3CCeEv6kVLqGfCRiltizJ45LfmAF68CQIaDcy6BrlxoqxU_Upg-zvRPvExmBRkWDWenK3Yyc8qytLLNCHhtSOkRPAqdBzz9Ky1s4-iJThoR9nKZKD28j7HHHXx3kbxZ-kI2byNA)
 
 Once the process is completed, you can check the service status with:
 
 `service wazuh-manager status`
 
-![](RackMultipart20200926-4-zy362i_html_89db1a79726c368b.png)
+![](https://lh4.googleusercontent.com/wzWF1yOJCYNEpSq4Ae98VTeWPrCFfNUHVwjNFN0ZY75P8BlJp1_x7PN6mqtb60vRd4Dhrgy3hGQsjXktB6zgpFCcaJ9bq3j9vai4FVbzfUtSj0lu49KIk84bLKnb4FHYzTmYZ4k)
 
 Installing the Wazuh API:
 
@@ -100,19 +100,19 @@ Install the Wazuh API:
 
 `sudo apt-get install wazuh-api`
 
-![](RackMultipart20200926-4-zy362i_html_156a3cab0f23ed3d.png)
+![](https://lh4.googleusercontent.com/iWhNmLfK8v-CFon8yNYEYO8yFaApeagGEv--E8lBWwg1FDNpODASeTUdFDCpOH52kZfOLeQ7YfchP5F52xWKsHX3B8xdfu1cGZrPqx0ePan9AhZsFbfVB63mJ6byvVPboEHilHA)
 
 Once the process is complete, you can check the service status with:
 
 `sudo service wazuh-api status`
 
-![](img/wazapistatus.png)
+![](https://lh3.googleusercontent.com/PomeXscKz-g0vX9udvsWkg-ChqW0BgrHFAKbqYL2GRoYhIzbiExfGl4VArD4dSr0bFfDir7Z-DOMTw1p9xt3uphYnARZEeXKeJsiRuw5hJbk8xwLnQX4HU93dd8WUaRV4NWuK7w)
 
 **Installing Filebeat**
 
 `apt-get install filebeat=7.4.2`
 
-![](RackMultipart20200926-4-zy362i_html_63fffa821960a016.png)
+![](https://lh3.googleusercontent.com/bxByNNLHDEbiUahWid046QzylcB3wwte4degfhLesH-cTdXNCOYN8Aq5ripN_eNx1o1aIaFQaY0RQAjhNqephmR8xGTm6RuDZ9EzT65KKRsviQBlPVH8vfta4Npho0JiJM6T5DE)
 
 This is pre-configuration to forward Wazuh alerts to Elasticsearch
 
@@ -126,7 +126,7 @@ Download the Wazuh module for Filebeat:
 
 `curl -s https://packages.wazuh.com/3.x/filebeat/wazuh-filebeat-0.1.tar.gz | sudo tar -xvz -C /usr/share/filebeat/module`
 
-![](RackMultipart20200926-4-zy362i_html_6b38c4b249efe4c6.png)
+![](https://lh4.googleusercontent.com/UD5gpOzNVzhZG-FjjdwOu9G_P64Hqqrwq8TC9dKGiUDbNOnNVgbnmhctU0pDdsASyFmm_WJtYOCCIgani8mv0jdm2oQDN-bwbpGzlSdbriIfnlaUlTgOn-78nsRdokC7o3I2LnU)
 
 `sudo vi /etc/filebeat/filebeat.yml`
 
@@ -159,7 +159,7 @@ Elasticsearch is a powerful open source distributed, RESTful, JSON-based search 
 
 ` sudo service elasticsearch start`
 
-![](img/ESstatus.png)
+![](https://lh5.googleusercontent.com/tlBDNOKL8EndSBNdx0ayyUyX0eu4sL_pPADaKZfRcSvt5AIRfoHO-5RY5chAHxTaQ6u83VoHPvGoF9QCOc6zd4Vm6FSIHLUwuH00uLV-IlA5O-JuO7YJ_GZCCdgKhxqwO76yAE8)
 
 Once Elasticsearch is up and running, it is recommended to load the Filebeat template. Run the following command where Filebeat was installed:
 
@@ -175,7 +175,7 @@ Kibana is a Web interface for searching and visualizing logs. It is a data-log d
 
 `apt-get install kibana=7.4.2`
 
-![](img/kibana.png)
+![](https://lh5.googleusercontent.com/m9IWpob3hPgugAgCCpmOkEYwuMrOpjpuE0Z_hrojc1JB9Tmdp8mHXMY046_KMqMTCZ2cAllrX9EAE0ZHL6QLIjcAJ_sQQBBUdVMOhyZDGcQKl2YOa5CNLO63dUVC0pJo5Pgwp7A)
 
 Install the Wazuh app plugin for Kibana
 
