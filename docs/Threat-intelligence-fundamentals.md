@@ -12,16 +12,18 @@ There are three main types of threats:
 ### What is an advanced Persistent Threat (APT)? 
 Wikipedia defines an "Advanced Persistent Threat" as follows:
 
-"An advanced persistent threat is a stealthy computer network threat actor, typically a nation-state or state-sponsored group, which gains unauthorized access to a computer network and remains undetected for an extended period"
+> "An advanced persistent threat is a stealthy computer network threat actor, typically a nation-state or state-sponsored group, which gains unauthorized access to a computer network and remains undetected for an extended period"
 
 ![GitHub Logo](https://images.idgesg.net/images/article/2018/02/security_threats_hackers_malware_spyware_phishing_virus_thinkstock_905222206-100749995-large.jpg)
 
 To explore some APTs Check this great resource by: FireEye
 
-###What is Threat Intelligence? 
+### What is Threat Intelligence? 
 
-“Cyber threat intelligence is information about threats and threat actors that helps mitigate harmful events in cyberspace. Cyber threat intelligence sources include open source intelligence, social media intelligence, human Intelligence, technical intelligence or intelligence from the deep and dark web "[Source: Wikipedia]
+> “Cyber threat intelligence is information about threats and threat actors that helps mitigate harmful events in cyberspace. Cyber threat intelligence sources include open source intelligence, social media intelligence, human Intelligence, technical intelligence or intelligence from the deep and dark web "[Source: Wikipedia]
+
 In other words, intelligence differs from data and information as completing the full picture. 
+
 Threat Intelligence goes through the following steps: 
 
 1.	Planning and direction 
@@ -33,6 +35,7 @@ Threat Intelligence goes through the following steps:
 ![GitHub Logo](https://miro.medium.com/max/500/1*GinpKSzxpyPGUgbUz9E1ZQ.png)
  
 ### What are the Indicators of compromise (IOCs)?
+
 Indicators of compromise are pieces of information about a threat that can be used to detect intrusions such as MD5 hashed, URLs, IP addresses and so on.
  
 These pieces can be shared accross different organizations thanks to bodies like: 
