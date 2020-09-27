@@ -90,7 +90,7 @@ To perform network scanning you can use Nmap:
 
 > “Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime.
 
-![](RackMultipart20200926-4-1ddq8vf_html_9453cc5b4e49a55f.png)
+![](https://www.unixmen.com/wp-content/uploads/2015/06/nmap.png)
 
 To learn more about active scanning and nmap read my articles:
 
@@ -116,7 +116,7 @@ One of the available OSINT datasets is  **Global Terrorism Database**
 
 During many OSINT missions, you will be dealing with terrorism threats. Thus, it is essential to collect many pieces of information about terrorism online. One of the most used services is the &quot;Global Terrorism Database&quot;. The project is managed by the National Consortium for the Study of Terrorism and Responses to Terrorism (START) and it contains information about more than 190,000 terrorist attacks.
 
-![](RackMultipart20200926-4-1ddq8vf_html_2a792fadf40302b0.jpg)Image source: theconversation.com
+![](https://elvinouyang.github.io/assets/images/gtd/GTD_photo.png)Image source: theconversation.com
 
 ###
 
@@ -132,13 +132,13 @@ To obtain information about the domains, subdomains, IP addresses of the targete
 
 Firmware is a set of software that takes control of the device&#39;s hardware. You can use a lot of tools and utilities. One of them is binwalk, which is a great tool developed also by Craig Heffner that helps pentesters to analyze the firmware of an IoT device. You can simply grab it from this GitHub link: [https://github.com/ReFirmLabs/binwalk/blob/master/INSTALL.md.](https://github.com/ReFirmLabs/binwalk/blob/master/INSTALL.md.)
 
-![](RackMultipart20200926-4-1ddq8vf_html_bab6a497519ecdd9.png)Image source: securityonline.info
+![](https://securityonline.info/wp-content/uploads/2017/07/binwalk.png) 
 
 ### T1261 Enumerate externally facing software applications, languages and dependencies
 
 When performing reconnaissance, it is essential to identify the used technologies. For examlpe, to identify the used web technologies you can use: [https://www.wappalyzer.com](https://www.wappalyzer.com/)
 
-![](RackMultipart20200926-4-1ddq8vf_html_3ff197d01bdfb605.png)Image source: [https://medium.com/@hari\_kishore](https://medium.com/@hari_kishore)
+![](https://blog.samuel.domains/img/blog/why-you-really-shouldn-t-use-wappalyzer-as-a-browser-extension_1.png)Image source: [https://medium.com/@hari\_kishore](https://medium.com/@hari_kishore)
 
 ###
 
@@ -155,7 +155,7 @@ job announcements could be a valuable source of information. Job postings can gi
 
 A web application firewall (WAF) is a security solution that filters out bad HTTP traffic between a client and web application. It is a common security control to help you protect your web application security. Most Web application firewalls are helping you to defend against many of the previously discussed web application vulnerabilities (XSS, SQLi and so on). For example to detect WAFs you can use [https://github.com/EnableSecurity/wafw00f](https://github.com/EnableSecurity/wafw00f)
 
-![](RackMultipart20200926-4-1ddq8vf_html_687f380968a83dfa.png)Image source: offensivesec.blogspot.com
+![](https://www.systemconf.com/wp-content/uploads/2020/07/img_5f0320601b6c7.png)Image source: offensivesec.blogspot.com
 
 ###
 
@@ -163,7 +163,7 @@ A web application firewall (WAF) is a security solution that filters out bad HTT
 
 To map network topology you can use many online tools including: [https://dnsdumpster.com](https://dnsdumpster.com/)
 
-![](RackMultipart20200926-4-1ddq8vf_html_92bebb33f533faa6.png)
+![](https://geekflare.com/wp-content/uploads/2016/08/dnsdumpster.png)
 
 ### T1257 Mine technical blogs/forums
 
