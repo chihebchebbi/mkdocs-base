@@ -109,7 +109,7 @@ The techniques can be found in the first downloaded project
 ![](img/techniques.png)
 
 
-## References:  [
+## References:   
 
 - [https://bestestredteam.com/2019/07/30/atomic-red-team/](https://bestestredteam.com/2019/07/30/atomic-red-team/)
 - [https://bleepsec.com/2018/11/26/using-attack-atomic-red-team-part1.html](https://bleepsec.com/2018/11/26/using-attack-atomic-red-team-part1.html)
