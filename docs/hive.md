@@ -173,7 +173,7 @@ Select any available dashboard to explore it
 
 ![](img/dash2.png)
 
-![](img/dash2.png)
+![](img/dash3.png)
 
 **Cortex:**
 
