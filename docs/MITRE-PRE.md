@@ -51,7 +51,7 @@ Now let&#39;s explore some techniques:
 
 ### T1279 Conduct social engineering
 
-![](img/SE.png)
+![](https://securityonline.info/wp-content/uploads/2018/08/set.png)
 
 Social engineering is the art of hacking humans. In other words, it is a set of techniques (technical and nontechnical) used to get useful and sensitive information from others using psychological manipulation. These are some causes why people and organizations are vulnerable to Social engineering attacks:
 
