@@ -54,7 +54,7 @@ Check the Java version with:
 
 Now let&#39;s install Elasticsearch:
 
-![](https://lh4.googleusercontent.com/civNjJFKfx-ggDY02MITB82Z0p58QpaK_bVBRaQUwtIwnRwKkIznUniI8AUfIN9bcLKiTGpzFLcI5WZP03jI_JNWwh3cdHz17u00SPsXffUQrS6to7hwAnzjxcZhPtCTz0bntdg)
+![](https://lh5.googleusercontent.com/I8thY8VQY4G_PVrBdOwTgTQjFZcySMi_25q3ftMkVdZSFqlYNp1ZqmF7Ft05XY8kD2XGBp6rd91-FYlSWnak1uAzf4HwhYM2i8e9T42lWO40__I39F3f4xslkzz3QvmuXsqM2zM)
 
 `wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -`
 
