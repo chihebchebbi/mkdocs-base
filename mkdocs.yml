@@ -6,5 +6,6 @@ nav:
     - Module 3 - Getting started with IDA Pro: ida.md
     - Module 4 - Threat Intelligence Fundamentals: Threat-intelligence-fundamentals.md
     - Module 5 - Malware Analysis- How to use Yara rules to detect malware: test.md
+    - Module Incident Response and Threat hunting with OSQuery and Kolide Fleet : kolide.md
     
 theme: material
