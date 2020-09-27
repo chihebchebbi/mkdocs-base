@@ -15,7 +15,7 @@ According to its official website:
 
 > Building on ATT&CK, PRE-ATT&CK provides the ability to prevent an attack before the adversary has a chance to get in. The 15 tactic categories for PRE-ATT&CK were derived from the first two stages (recon and weaponize) of a seven-stage Cyber Attack Lifecycle (first articulated by Lockheed Martin as the Cyber Kill Chain)
 
-![](RackMultipart20200926-4-1ddq8vf_html_8634effc996d8cce.jpg)Image source: mitre.org
+
 
 The Cyber Kill Chain is a military inspired model to describe the required steps and stages to perform attacks. The Cyber Kill Chain framework is created by Lockheed Martin as part of the Intelligence Driven Defense model for identification and prevention of cyber intrusions activity.
 
