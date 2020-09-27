@@ -1,7 +1,7 @@
 # Red Teaming Attack Simulation with "Atomic Red Team"
 
 
-Modern organizations face cyber threats on a daily basis. Black hat hackers do not show any indication that they are going to stop. New hacking techniques appear regularly. According to multiple information security reports, the number of APT attacks is increasing in a notable way, targeting national defenses, manufacturing, and the financial industry. Thus, classic protection techniques are, in many cases, useless. Deploying suitable platforms and solutions can help organizations and companies defend against cyber attacks, especially APTs. Some of these platforms are attack simulation tools. In this article we are going to learn how to deploy a red teaming simulation platform called _ **Atomic Red Team** 
+Modern organizations face cyber threats on a daily basis. Black hat hackers do not show any indication that they are going to stop. New hacking techniques appear regularly. According to multiple information security reports, the number of APT attacks is increasing in a notable way, targeting national defenses, manufacturing, and the financial industry. Thus, classic protection techniques are, in many cases, useless. Deploying suitable platforms and solutions can help organizations and companies defend against cyber attacks, especially APTs. Some of these platforms are attack simulation tools. In this article we are going to learn how to deploy a red teaming simulation platform called **Atomic Red Team** 
 
 ![](https://www.redcanary.com/wp-content/uploads/image2-25.png)
 
@@ -110,7 +110,6 @@ The techniques can be found in the first downloaded project
 
 
 ## References:  [
-](https://bestestredteam.com/2019/07/30/atomic-red-team/)
 
 - [https://bestestredteam.com/2019/07/30/atomic-red-team/](https://bestestredteam.com/2019/07/30/atomic-red-team/)
 - [https://bleepsec.com/2018/11/26/using-attack-atomic-red-team-part1.html](https://bleepsec.com/2018/11/26/using-attack-atomic-red-team-part1.html)
