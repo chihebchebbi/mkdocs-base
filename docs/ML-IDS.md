@@ -18,7 +18,7 @@ This module will cover:
 
 Artificial intelligence is the art of making computer programs to behave like a human and by behave i mean perceiving, learning, understanding and knowing. AI is involving many areas such as computer science, neuroscience, psychology and so on. 
 
-![](RackMultipart20200926-4-kmxakm_html_69942718d81c4342.jpg)
+![](https://lh3.googleusercontent.com/MnFuCv7lxfbIsZSW9CnPZsd34Mxd_9UhE6fnkKqf7xQh5iEKOxufMRDOMg--7YF6LEnLGHZAKlM1jrDdr3WjxSh_TNXKg4wfi7eiWHsRP5bg3h7uqp5UsMAffmmfwUe2TOiQMHY)
 
 ## Machine Learning models 
 
@@ -32,20 +32,20 @@ Let&#39;s discover some supervised learning algorithms:
 
 - **Naive Bayes: ** this classification algorithm is based on the the Bayes&#39; theorem.
 
-![](RackMultipart20200926-4-kmxakm_html_5fcc0af514b064d5.png)
+![](https://lh3.googleusercontent.com/Wdm7E9xgd7z94ZulmzOalY02yXocq5LqXgPSk6B7rXptWQ5k1f9lz_BHEDJzBeqRoFAx9aI4_gntL51NJgYniO2GYK-3Y4JgEFIZJ4IBmTH1YsgDZFI8rGDXw-lcw1fXn_iUGYo)
 
 - **Decision Trees:**  are machine learning algorithms that predict the possible outputs thanks to a tree-like graph,the entire data is represented as a root node and the final leafs are called Terminal Nodes.Dividable nodes are known as Decision Nodes.
 - **Support Vector Machines:**  are binary classifiers used to identify a separating hyper-plane of data that are represented in a multi-dimensional space.Thus, that hyper-plane is not necessary a simple line.
 
-![](RackMultipart20200926-4-kmxakm_html_77ae3c301d44d0d8.gif)
+![](https://lh3.googleusercontent.com/m2Z5cyqcscBRFSpYT18AJn_AaCS9Z0cCIFu_ktUR0S3y9RDLxzlUzFfmgmL6XzqtXyexWWXftNrHtVPFRtTZa_CmBuqxbD8N-j9HGsTBMX8Cj5IILHienCZnQbPHgbpiehf7MH8)
 II.  **Semi-supervised:**  this model is not fully supervised while it contains both labeled and unlabeled data. This model is used generally to improve the learning accuracy.
 - **Unsupervised: ** If we don&#39;t have information about the output variables then it is unsupervised learning.The model is trained totally with unlabeled data.Clustering is one of the most well known unsupervised techniques.
 
-![](RackMultipart20200926-4-kmxakm_html_bf051b4e6f277f60.jpg)
+![](https://lh6.googleusercontent.com/-OH5Riig1FZz4yY48tVWG81wp_cKv93VbNAmQ-jliggKIQdHqMLjTMLMkT45Z6dbn5NBxeDH0nGN6sFkHL4cDUV9xf4vK56TtKvkVT58FYi6w_v5f7cEsu4XScWbzpZCiTJIdwc)
 
 III. **Reinforcement:**  in this model the agent is being optimized based on the feedback from the environment (the reward)
 
-![](RackMultipart20200926-4-kmxakm_html_5ced71150a1c873a.png)
+![](https://lh6.googleusercontent.com/SsZdy8G2GDYJTH_vp6QUgTXWEOt4hvNp0H7tX5l6cMlr2I4LqTYzS99tgbgXaEXRIPZTxqS_GdSdXOvKZRBR8luO53ukSzM2yySrF-mtRtiCUiEzQuNGU91eEQ1dzIw6Rnbtafg)
 
 
 
@@ -57,7 +57,7 @@ In order to build a Machine learning model our project need to follow two major 
 
 Building a machine learning model is a methodological process. Thus, in order to test our machine learning model performance we need to use a well-defined metrics based on scientific formulas: all these formulas are needing four parameters; false positive, true positive, false negative and true negative.
 
-![](RackMultipart20200926-4-kmxakm_html_d2f210b13efbe5e.png)
+![](https://lh4.googleusercontent.com/NYKsl25TI9GKecQPIxIpm749ONeVwrxJCl8AEWb2VWiIpacpshPSgnH1bB1OGtsud-0kMMuEP2WQPQNShv1hXhuhWu8JifUUqpvSCFdKxi2jt_kZNRpQxAQ9Ssok4eytIempZ-o)
 
 Notation
 
@@ -68,13 +68,13 @@ Notation
 
 #### **Precision **
 
-Precision or Positive Predictive Value, is the ratio of the positive samples that are correctly classified by the the total number of positive classified samples.Simply it is the number of the found samples were correct hits. ![](RackMultipart20200926-4-kmxakm_html_f57a30dabb29d977.png)
+Precision or Positive Predictive Value, is the ratio of the positive samples that are correctly classified by the the total number of positive classified samples.Simply it is the number of the found samples were correct hits. ![](https://lh4.googleusercontent.com/8ESpHjRcr5ZxD35caPQYoVyGvguNF0mgctydqf0O07WJ51N9Rw0vDIh7GCuVtlQGXj_6Xp_j-4CsfOWumAzZ7CYb0yC7ncZ7Ux4vgkiUErl1plgC_QYZuYyDtWfO0wyu1M4FqdI)
 
 #### **Recall**
 
 Recall or True Positive Rate, is the ratio of true positive classifications by the total number of positive samples in the dataset. It represents how many of the true positives were found.
 
-![](RackMultipart20200926-4-kmxakm_html_2a5c8ca979c8b33a.png)
+![](https://lh3.googleusercontent.com/IITOzDBgKMTTxClyTlYnrm0z1rinzjr6jIXumIr8yKCk3sb7oPxzdEkmDj_o9XjrOlAGoNP86TPGE5RRPYyMWyFYDaZpKEWL3NYaEo85eXmxGWZUs2HWTYJLDe4L-a4GETcky6Q)
 
 #### **F-Score**
 
@@ -84,7 +84,7 @@ F-Score of F-Measure, is a measure that combines precision and recall in a one h
 
 Accuracy is the ratio of the total correctly classified samples by the total number of samples. This measure is not sufficient by itself,because it is used when we have equal number of classes.
 
-![](RackMultipart20200926-4-kmxakm_html_202cb22ff9823bc1.png)
+![](https://lh5.googleusercontent.com/EFJnbNPdG-5MepmpumEmdZWppxru3lu5vlSkuGBCZRun8XDCcsY0wiQjm1hZB9FdyBE9-uwrVTZhSaHqmKYJA7jIfEiAQj2Npza-3Xftv5U0XFuqxGkP2pgJc64axICCs1sdLfY)
 
 #### **Confusion Matrix**
 
@@ -110,7 +110,7 @@ To install any Python library this command will do the job : _pip install Packag
 
 The following graph illustrates a comparison between some machine learning frameworks made by [Favio Vázquez](https://becominghuman.ai/@favio.vazquezp?source=post_header_lockup) especially Deep learning frameworks
 
-![](RackMultipart20200926-4-kmxakm_html_50540eba7fd17ccc.png)
+![](https://lh4.googleusercontent.com/dhOMX7ku_uSAlMx0YojrCde2iWlhqUqN2ebBKAzhSMI4vO_iM7SRdGUSZZwdzC5LFXudRTwXaQd8vvFmUJ7mY3jFqwIoNWQWCqK6MlpvSXpMxl9akQW0O6h_nULQr8FZNFtALf4)
 
 Wait, but what is Deep Learning?
 
@@ -118,11 +118,11 @@ Wait, but what is Deep Learning?
 
 The main goal of Artificial neural networks is to mimic how the brain works.To have a better understanding let&#39;s explore how a human brain actually works.Human brain is a fascinated complex entity with many different regions to perform various tasks like listening, seeing, tasting and so on. If the human brain is using many regions to perform multiple tasks so logically every region act using a specific algorithm for example an algorithm for seeing, an algorithm for hearing etc...Right? Wrong! The brain is working using ONE Algorithm. This hypothesis It is called The &quot;one learning algorithm&quot; hypothesis. There is some evidence that the human brain uses essentially _the same algorithm_ to understand many different input modalities. For more information check Ferret experiments, in which the &quot;input&quot; for vision was plugged into auditory part of brain, and the auditory cortex learns to &quot;see.&quot; The cell that compose the neuron system is called a neuron.The information transmission is happening using electrochemical signalling and propagation is done thanks to the neuron dendrites.
 
-![](RackMultipart20200926-4-kmxakm_html_d7bd6db465b739ef.jpg)
+![](https://lh3.googleusercontent.com/bIRbA01i2CRmUvdrXJoefyoVbqPLIxvBfkk1R-2PGQMkeXRDjE4DgneN8Eh2za7v9n9cAkkCPnFQqFS1UpuSb5dNF8Jb_upkCxmePuiDKkYBPfx6rLzbIO2uFP5bmBTw9fWOkKU)
 
 The analogy of the human brain neuron in machine learning is called a perceptron. All the input data is summed and the output applies an activation function. We can see activation functions as information gates.
 
-![](RackMultipart20200926-4-kmxakm_html_70064f64d2a4962.png)
+![](https://lh4.googleusercontent.com/8TDRwiTzkRX2V2cFfrRHCbhbvL8Hrht7jV0EkVijvdhU3U5Ns-dfzLdpmLmOce_bxhdzkne8-zm86QxKBL41fdIaAgKbBfRwMmpxzEoiWEGjF_vYkc1KVTVbfTWzgevDCks0axI)
 
 > **PS:**  &quot; **The analogy between a perceptron and a human neuron is not totally correct. It is used just to give a glimpse about how a perceptron works. The human mind is so far more complicated than Artificial neural networks. There are few similarities but a comparison between the mind and Neural networks is not really correct.&quot;**
 
@@ -133,11 +133,11 @@ There are many used activation functions:
 - **Tanh Function** : Another activation function used is the Tanh function
 - **ReLu Function** : It is also called a rectified linear unit.It gives an output x if x is positive and 0 otherwise.
 
-![](RackMultipart20200926-4-kmxakm_html_60ce30c231b04cf.png)
+![](https://lh4.googleusercontent.com/DLulzeHR4XrKFFcsv5JmBQVpKmCBPaw559Re6eSW35wuTkuSAWuPyRGY1oCd_evZFZNXFG2GOvn4osmV17vjM0XSBzWJ1emwu5LRh-LRaOgw-fWpwx6MsNjr9a5bTqTZlh_OFDc)
 
 Many connected perceptrons build a simple neural network that consists of three parts: Input layer,hidden layer and an output layer.The hidden layer is playing the inter-communication role in the neural network or sometimes what what we call a Multi-layer perceptron network. If we have more than 3 hidden layers then we are talking about Deep Learning and Deep learning Networks.
 
-![](RackMultipart20200926-4-kmxakm_html_359d425d71651515.png)
+![](https://lh4.googleusercontent.com/DLulzeHR4XrKFFcsv5JmBQVpKmCBPaw559Re6eSW35wuTkuSAWuPyRGY1oCd_evZFZNXFG2GOvn4osmV17vjM0XSBzWJ1emwu5LRh-LRaOgw-fWpwx6MsNjr9a5bTqTZlh_OFDc)
 
 According to the data scientist and deep learning experts like the machine learning practitioner Dr. Jason Brownlee; every deep learning model must go thru five steps:
 
@@ -163,11 +163,11 @@ The detection can be done using two intrusion detection techniques:
 - **Signature based detection technique:**  the traffic is compared against a [database](https://www.peerlyst.com/tags/database) of [signatures](https://www.peerlyst.com/tags/signatures) of known [threats](https://www.peerlyst.com/tags/threats)
 - Anomaly-based intrusion technique: inspects the traffic based on the behavior of activities.
 
-![](RackMultipart20200926-4-kmxakm_html_6c37206948520baa.png)
+![](https://lh6.googleusercontent.com/bkxscHFXk3FbYHEPS2sBVwZ-lhhQLzgM9E_EcNDN2etvpUx_hnOVChRKMVtxzJz0iYRykwxdXIWYbr3nMlXSHgHiykbOhxxS9HkIgJqAfmlhK_7xPbge-m4YxRooCjfLNSyGRBc)
 
 Modern organization are facing thousands of threats in a daily basis.That is way the classic techniques could not be a wise solution to defend against them.Many [researchers](https://www.peerlyst.com/tags/researchers) and information [security professionals](https://www.peerlyst.com/tags/security-professionals) are coming with new concepts,prototypes or models to try solving this serious security issues.For example this is graph shows the different intrusion detection techniques including the discussed machine learning algorithms
 
-![](RackMultipart20200926-4-kmxakm_html_f36bf154bfca569c.jpg)
+![](https://lh4.googleusercontent.com/52VVlYvYwYmdqm4JUSl8YgxOlAjDMuyzKvflyXBmGue8cem7ssm-BY0RmjFxp-hd5iXfWm88N4LnSRPKLzEIOzzAnVu3gwcK3Kx7EDY7h8PcmBXXvismQCSYjeTt8CwD0xDYNS0)
 
 By now, after reading the previous sections we are able to build a Machine learning detection system. As discussed before the first step is Data processing.The are many publicly available datasets in the wild used by data scientist to train machine learning models.You can download some of them from here:
 
@@ -180,7 +180,7 @@ The NSL-KDD is one of the most used datasets in intrusion detection anomaly base
 
 It is an enhanced dataset from the KDD99 dataset
 
-![](RackMultipart20200926-4-kmxakm_html_6db25479b452e33.png)
+![](https://lh3.googleusercontent.com/TjGVpuHgWa7KVECRGnV67cka9wE_ZoHjmSCfL9sBMauMQohQuBCBn-l0nX2zXZXD4I4SJXgwNtVT8Bi1q177Loj-kugPyyvCYMZp7m7D-caLExeEhUiFFr99GEme_CayVoOCIBc)
 
 After choosing the feature that you are going to work on and splitting the dataset into two sub-datasets for the training and the experience (They should not be the same) you can choose one of the machine learning algorithms represented in the graph of intrusion detection techniques and train your model.Finally when you finish the training phase it is time to put your model to the test and check its accuracy based on the machine learning evaluation metrics. To explore some of the tested models i recommend taking an eye on &quot;Shallow and Deep Networks Intrusion Detection System: A Taxonomy and Survey&quot; research paper.
 
