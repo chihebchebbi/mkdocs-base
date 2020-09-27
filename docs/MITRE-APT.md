@@ -9,7 +9,7 @@ _Image _[_Courtesy_](https://base.imgix.net/files/base/ebm/tdworld/image/2019/04
 
 Before diving into how to use MITRE ATT&amp;CK framework to defend against advanced persistent threats and protect critical assets, let&#39;s explore some important terminologies
 
-## **Threats **
+##  Threats 
 
 ![](https://wpsitehelpers.com/wp-content/uploads/2016/11/wordpress-malware-removal.png)
 
@@ -17,19 +17,19 @@ _Image _[_Courtesy_](https://wpsitehelpers.com/wp-content/uploads/2016/11/wordpr
 
 By definition, a  **threat**  is a potential danger for the enterprise assets that could harm these systems. In many cases, there is confusion between the three terms Threat, Vulnerability and Risk; the first term, as I explained before, is a potential danger while a Vulnerability is a known weakness or a gap in an asset. A risk is a result of a threat exploiting a vulnerability. In other words, you can see it as an intersection between the two previous terms. The method used to attack an asset is called a  **Threat Vector**.
 
-## **Advanced Persistent Threats**
+## Advanced Persistent Threats 
 
 Wikipedia defines an &quot;Advanced Persistence Threat&quot; as follows:
 
-_&quot;An  __advanced persistent threat__  is a stealthy computer  __network__   __threat actor__ , typically a nation-state or state-sponsored group, which gains  __unauthorized access__  to a computer network and remains undetected for an extended period&quot;_
+> "An advanced persistent threat is a stealthy computer network threat actor, typically a nation-state or state-sponsored group, which gains unauthorized access to a computer network and remains undetected for an extended period"
 
 To discover some of the well-known APT groups you can check this great resource from FireEye: [Advanced Persistent Threat Groups](https://www.fireeye.com/current-threats/apt-groups.html)
 
-![](RackMultipart20200923-4-16yksxn_html_5128e66636a3133f.png)
+![](https://lh4.googleusercontent.com/TCVMwDJMikRxMYcpfTntHg-M0FVI6ywuriDY6bfRP80NhoE88Mmv_t6T6fXFOBPxnwTe7ooGyb8hvVSxdmBCNnPPfbbgEws_tZDqRrZpz95p_vh5sOOvgvKdq1mPCxUoprgz6ik)
 
-![](RackMultipart20200923-4-16yksxn_html_637f115c4eb01d.png)
+![](https://lh6.googleusercontent.com/ZThxerykAyaiXocODKqI8QEGo3m05SOHSZIbOdV1j3Rz4wnUVQTkrP6eHjmn0DgXEv5f0Ed249mR-Hxci3_hKQN5g52tL2CnNg7bXkATMr6qf7ERSPK5ribQ0N1xUo8L484KGBA)
 
-## **The Cyber Kill Chain**
+##  The Cyber Kill Chain 
 
 The Cyber Kill Chain is a military inspired model to describe the required steps and stages to perform attacks. The Cyber Kill Chain framework is created by Lockheed Martin as part of the Intelligence Driven Defense model for identification and prevention of cyber intrusions activity. While a kill chain in military refers to: Find, Fix, Track, Target, Engage and Assess, cyber kill chain refers to: reconnaissance, Initial attack, Command and control, Discover and spread and finally Extraction and exfiltration. Knowing this framework is essential to have a clearer understanding about how major attacks occur.
 
@@ -45,9 +45,9 @@ _Image _[_Courtesy_](https://www.fortinet.com/content/dam/fortinet-blog/article-
 
 Security operation analysts should be proactive when it comes to gathering information and intelligence about the external threats and adversaries to achieve faster detection.
 
-## **MITRE ATT&amp;CK Framework**
+##  MITRE ATT&amp;CK Framework 
 
-![](RackMultipart20200923-4-16yksxn_html_a1f3903ce3b17ff4.png)
+![](https://lh4.googleusercontent.com/2Hkbqi1hUwm1O8Gyx1xSR8k6E-bWDW_BPBLZbUAAiy6-tzJRk29mm8Af1ByvJIwQQco17ae-2-Ie8Ud3nX4kjv6Tr0rZPQbNHYRGv76c1iIiH-Shh6V7or399uB-buLB2m1PLco)
 
 MITRE ATT&amp;CK is a framework developed by the Mitre Corporation. The comprehensive document classifies adversary attacks, in other words, their techniques and tactics after observing millions of real-world attacks against many different organizations. This is why ATT&amp;CK refers to &quot;Adversarial Tactics, Techniques &amp; Common Knowledge&quot;.
 
@@ -57,7 +57,7 @@ But wait, what is a  **tactic**  and what is a  **technique**?
 
 To understand tactics and techniques we need to understand the pyramid of pain first. The pyramid of pain shows the relationship between the types of indicators found when dealing with adversaries. By indicators, I mean Hash values, IP addresses, Domain names, Network/host artefacts, tools and Tactics, techniques and procedures (TTPs).
 
-![](RackMultipart20200923-4-16yksxn_html_5fbc4555ec472a8b.png)
+![](https://lh4.googleusercontent.com/vkdAp0IBNu27mZVCzZTtbUEGMflHiIVbM7qHq4NWeQ5QWnjFdq8yDM0WVm4W7e3_vo-v_tWv1FzUDNivAaSQk9lQg2RZCjQp_IhnsmAVh6fe7k97LY2KHTAxoaRVJvgMXbT661c)
 
 _Image _[_Courtesy_](http://3.bp.blogspot.com/-rZkSSNqMxqA/Wvq-rMvj2FI/AAAAAAAAMkk/fgnVNRBrdnwrgF_bWy0iDi7HJ-nqLxg7QCLcBGAs/s640/Screen%2BShot%2B2018-05-15%2Bat%2B1.02.42%2BPM.png)
 
@@ -77,7 +77,7 @@ Tactics, Techniques and procedures (TTPs) are how the attackers are going to ach
 
 Techniques are used to execute an attack successfully. For example, this is information about the &quot;_AppCertDLLs_&quot; technique
 
-![](RackMultipart20200923-4-16yksxn_html_3328c8a8f03042f2.png)
+![](https://lh6.googleusercontent.com/HbXY-BR_PcfCpqgAfMZVyK4-a1Gmt2sv7zFWRUKmASm9IWUHDVsqeHSnp2V6xtBWNaxQ2S9EpS8KzBGKBhrB8Xml1xDqHpDMnbms3IfZHHyslRwE8_K52mxmXSI1x9tatH9w0hI)
 
 Let&#39;s suppose that security analysts receive a report about a new APT group that threats middle east and Africa. We can take &quot;[Muddy Water](https://www.bankinfosecurity.com/muddywater-apt-group-upgrades-tactics-to-avoid-detection-a-12504) APT&quot; as an example.
 
@@ -85,11 +85,11 @@ Go to [https://mitre-attack.github.io/attack-navigator/enterprise/#](https://mit
 
 And highlight all the techniques used by Muddy Water APT Group
 
-![](RackMultipart20200923-4-16yksxn_html_5bca1bd32be12882.png)
+![](https://lh5.googleusercontent.com/8MwNDmK4mPniKa0L_Bzh37MkmJmcwJLPKkFsv8YtZTwU13kXZI2P9vARfpC9bhmYSmB5g8XdbP6407H93UKEQMoqa_xseHr5ml-RPBNPiKfPAvaidYElVrbuonn9RYuLIz1dA4I)
 
 Export the techniques as SVG
 
-![](RackMultipart20200923-4-16yksxn_html_ce015078badae193.png)
+![](https://lh4.googleusercontent.com/Lg7XC7BfAM6SBNbOummMk2Q4o5Kvp-8FXchWxg_Wxgiqj3aj8l1QLdM6tRTGqj8Wgivo-mQrXifqOGVJi4JvEkHkCsQB62jhRJwrtC_xG1fOd6XoO_OkyNTirII0YbDJf_vqooE)
 
 If you are dealing with many APT groups at the same time highlight the techniques using colorful shades depends on how often the technique is used by the APT groups (brightest color = The technique is used by many groups)
 
@@ -101,13 +101,13 @@ Now you know your adversaries. It is time to prepare the mitigations (tools and 
 
 Create a roadmap to improve the defense gaps and update the map accordingly
 
-![](RackMultipart20200923-4-16yksxn_html_565dd6c3a94ee053.png)
+![](https://lh3.googleusercontent.com/3zW4UI0EASdSGA5Mzjsj29-ArGsfpEyh-rDPMR1mUCUtOFAQ6mtPTdKbqXreY-sxXbNXQZaXbI49VktueIAX-U-4mLYCJRHysN1BjGcDUfGdcOnxo6KAEpwLkCoxEysooYpN-ZI)
 
 Mitigations for every technique can be found on [https://attack.mitre.org/mitigations/enterprise/](https://attack.mitre.org/mitigations/enterprise/)
 
-![](RackMultipart20200923-4-16yksxn_html_ed02c2f56802bed8.png)
+![](https://lh6.googleusercontent.com/GU6CPDE1UTMYuFtw6XSuMJg-bu1D4NyE5eBO5X4KPPuGBCQzf6R-aCQDVUbB9pqJIdR6w9G0xOaZCxCIvPlmRkcObjkcOXVDXCHqvZuO9ovl-jZtcByHNRaP-od0mVoD25wtAek)
 
-## **Threat Emulation**
+##  Threat Emulation 
 
 One of the techniques to help you practice how to defend your organization from these attacks is Threat Emulation. You can use Atomic Red Team to train your team.
 
@@ -117,12 +117,12 @@ _&quot;_[_Atomic Red Team_](https://atomicredteam.io/)_ is a library of simple  
 
 
 
-## **Summary**
+##   Summary
 
 In this article, we learned many important terminologies and how to use MITRE ATT&amp;CK framework to detect advanced persistent threats.
 
 
-**References and Credit**
+### References  
 
 - [https://www.fireeye.com/blog/products-and-services/2020/01/operationalizing-cti-hunt-for-defend-against-iranian-cyber-threats.html](https://www.fireeye.com/blog/products-and-services/2020/01/operationalizing-cti-hunt-for-defend-against-iranian-cyber-threats.html)
 
