@@ -51,7 +51,7 @@ Now let&#39;s explore some techniques:
 
 ### T1279 Conduct social engineering
 
-![](https://securityonline.info/wp-content/uploads/2018/08/set.png)
+
 
 Social engineering is the art of hacking humans. In other words, it is a set of techniques (technical and nontechnical) used to get useful and sensitive information from others using psychological manipulation. These are some causes why people and organizations are vulnerable to Social engineering attacks:
 
@@ -78,9 +78,8 @@ To perform computer-based social engineering attacks you can use SEToolkit
 
 Social engineering Toolkit is an amazing open source project developed by  **Trustedsec ** to help penetration testers and ethical hackers perform social engineering attacks. To check the project official GitHub repository you can visit this link: [https://github.com/trustedsec/social-engineer-toolkit](https://github.com/trustedsec/social-engineer-toolkit)
 
-![](RackMultipart20200926-4-1ddq8vf_html_8d7baf95ad66ea3b.png)
+![](https://securityonline.info/wp-content/uploads/2018/08/set.png)
 
-To learn more about social engineering read my article:
 
 ### T1254 Conduct active scanning
 
