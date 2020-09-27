@@ -50,7 +50,7 @@ Check the Java version with:
 
 `java -version`
 
-![](RackMultipart20200926-4-122n7kb_html_29ea21525978abbe.png)
+![](https://lh4.googleusercontent.com/civNjJFKfx-ggDY02MITB82Z0p58QpaK_bVBRaQUwtIwnRwKkIznUniI8AUfIN9bcLKiTGpzFLcI5WZP03jI_JNWwh3cdHz17u00SPsXffUQrS6to7hwAnzjxcZhPtCTz0bntdg)
 
 Now let&#39;s install Elasticsearch:
 
