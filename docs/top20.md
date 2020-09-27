@@ -1,4 +1,4 @@
-# **TOP 20 tools every Blue Teamer should have**
+# **TOP 20 Open-source tools every Blue Teamer should have**
 
 
 In this module we are going to explore the TOP 20 free tools that every blue teamer should have:
@@ -12,7 +12,6 @@ In this module we are going to explore the TOP 20 free tools that every blue tea
 TheHive is a scalable 4-in-1 open source and free security incident response platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. Thanks to [Cortex](https://github.com/TheHive-Project/Cortex/), our powerful free and open-source analysis engine, you can analyze (and triage) observables at scale using more than 100 analyzers.
 
 Its official website: [https://thehive-project.org](https://thehive-project.org/)
-
 
 
 ### OSSIM
@@ -84,7 +83,7 @@ Its official website: [https://github.com/redcanaryco/atomic-red-team](https://g
 
 ### Caldera
 
-![](RackMultipart20200926-4-1rlrx7g_html_78bed61d96880020.png)
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7KkA6JOxQGImtEWav14YKYYNMwjFBGI8EOA&usqp=CAU)
 
 Another threat simulation tool is Caldera.
 
@@ -94,15 +93,15 @@ Its official website: [https://github.com/mitre/caldera](https://github.com/mitr
 
 ### Suricata
 
-![](RackMultipart20200926-4-1rlrx7g_html_7aa53ece7d7d6cd0.png)
+![](https://idsips.files.wordpress.com/2015/10/suri-400x400.png?w=300)
 
 Intrusion detection systems are a set of devices or pieces of software that play a huge role in modern organizations to defend against intrusions and malicious activities. The role of network-based intrusion detection systems is to detect network anomalies by monitoring the inbound and outbound traffic. One of the most-used IDSs is Suricata. Suricata is an open-source IDS/IPS developed by the Open Information Security Foundation ([OISF](https://suricata-ids.org/about/oisf/))
 
 Its official website: ** ** [https://suricata-ids.org](https://suricata-ids.org/)
 
-### Zeek (FormelyBro)
+### Zeek (Formely Bro IDS)
 
-![](RackMultipart20200926-4-1rlrx7g_html_664b02e496f99906.png)
+![](https://zeek.org/wp-content/uploads/2019/09/logo.png)
 
 Zeek is one of the most popular and powerful NIDS. Zeek was known before by Bro. This network analysis platform is supported by a large community of experts. Thus, its documentation is very detailed and good.
 
@@ -110,7 +109,7 @@ Its official website: [https://www.zeek.org](https://www.zeek.org/)
 
 ### OSSEC
 
-![](RackMultipart20200926-4-1rlrx7g_html_97e175f3757647db.png)
+![](https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/ossec-01022014.gif)
 
 OSSEC is a powerful host-based intrusion detection system. It provides Log-based Intrusion Detection (LIDs), Rootkit and Malware Detection, Compliance Auditing, File Integrity Monitoring (FIM) and many other capabilities.
 
@@ -118,7 +117,7 @@ Its official website:[https://www.ossec.net](https://www.ossec.net/about)
 
 ### OSQuery
 
-![](RackMultipart20200926-4-1rlrx7g_html_51996ff50cf5c77.png)
+![](https://engineering.fb.com/wp-content/uploads/2014/10/1_XC-k2QigREIwZnBpFZ4StA@2x.png)
 
 OSQuery is a framework that is supported by many operating systems in order to perform system analytics and monitoring using simple queries. It uses SQL queries.
 
@@ -126,7 +125,7 @@ Its official website:[https://www.osquery.io](https://www.osquery.io/)  ** **** 
 
 ### AccessData FTK Imager
 
-![](RackMultipart20200926-4-1rlrx7g_html_3630655a2aaef65a.png)
+![](https://www.scmagazine.com/wp-content/uploads/sites/2/2018/07/1016-gt2-accessdata_1053146.jpg)
 
 Forensics imaging is a very important task in digital forensics. Imaging is copying the data carefully with ensuring its integrity and without leaving out a file because it is very critical to protect the evidence and make sure that it is properly handled. That is why there is a difference between normal file copying and imaging. Imaging is capturing the entire drive. When imaging the drive, the analyst image the entire physical volume including the master boot record. One of the used tools is &quot;AccessData FTK Imager&quot;.
 
@@ -134,7 +133,7 @@ Its official website: [https://accessdata.com/product-download/ftk-imager-versio
 
 ### Cuckoo
 
-![](RackMultipart20200926-4-1rlrx7g_html_a57e1a3795995974.jpg)
+![](https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2243D93F57FF20C113)
 
 Malware analysis is the art of determining the functionality, origin and potential impact of a given malware sample, such as a virus, worm, trojan horse, rootkit, or backdoor. As a malware analyst, our main role is to collect all the information about malicious software and have a good understanding of what happened to the infected machines. The most-known malware sandbox is cuckoo.
 
@@ -142,7 +141,7 @@ Its official website: [https://cuckoo.sh/blog/](https://cuckoo.sh/blog/)
 
 ### MISP
 
-###   ![](RackMultipart20200926-4-1rlrx7g_html_98e172d46d22db6a.png)
+###   ![](https://upload.wikimedia.org/wikipedia/commons/9/91/Misp-logo.png)
 
 Malware Information Sharing Platform or simply MISP is an open-source threat sharing platform where analysts collaborate and share information about the latest threats between them. The project was developed by Christophe Vandeplas and it is under GPL v3 license.
 
@@ -150,7 +149,7 @@ Its official website:[https://www.misp-project.org](https://www.misp-project.org
 
 ### Ghidra
 
-![](RackMultipart20200926-4-1rlrx7g_html_bff0226233d7fe5f.png)
+![](https://media.defense.gov/2019/Mar/05/2002096238/1088/820/0/190503-D-IM742-3002.PNG)
 
 Another great reverse engineering tool is Ghidra. This project is open-source and it is maintained by the [National Security Agency](https://www.nsa.gov/) Research Directorate. Ghidra gives you the ability to analyze different file formats. It supports Windows, Linux and MacOS. You need to install Java in order to run it. The project comes with many helpful detailed training, documentation and cheat-sheets. Also, it gives you the ability to develop your own plugins using Java or Python.
 
@@ -160,7 +159,7 @@ Its official website is: [http://ghidra-sre.org](http://ghidra-sre.org/)
 
 ### Snort
 
-![](RackMultipart20200926-4-1rlrx7g_html_ffe964f2d027dd60.png)
+![](https://ultimatepeter.com/wp-content/uploads/2013/10/snort_large.gif)
 
 Another powerful network-based intrusion detection system is Snort. The project is very powerful and it was developed more than 5 million times. Thus, it is well documented and it is supported by a large community of network security experts.
 
@@ -168,7 +167,7 @@ Its official website: [https://www.snort.org](https://www.snort.org/)
 
 ## Security Onion
 
-![](RackMultipart20200926-4-1rlrx7g_html_936f6aeb77b9aaa5.png)
+![](https://pbs.twimg.com/profile_images/1285648758525526017/gQFtcr9m.jpg)
 
 If you are looking for a ready-to-use OS that contains many of the previously discussed tools you can simply download Security Onion. IT is a free and open-source Linux distribution for intrusion detection, enterprise security monitoring, and log management.
 
