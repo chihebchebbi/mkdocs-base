@@ -1,10 +1,9 @@
-Hands-on Malicious Traffic Analysis with Wireshark
+## Hands-on Malicious Traffic Analysis with Wireshark
 
-Hi Peerlysters,
 
 Communication and networking are vital for every modern organization. Making sure that all the networks of the organization are secure is a key mission.In this article we are going to learn how to analyze malicious traffic using the powerful tool Wireshark.
 
-![](RackMultipart20200926-4-1kxbamy_html_31d8ab112fd2c498.jpg)
+![](https://lh5.googleusercontent.com/UrICols41RopVGU5ivRDDegsuk8n3EFj1LxIwWIkNlP2IlJUllcO9llKaj48KsqCkUyFZOFAUsNiZePIR9f83T9Rfsl1jdfgZH0s18ebxsAmJ6xBq19-smjtkzChXy2llHHzZfo)
 
 [Image Courtesy](https://www.armytimes.com/resizer/tMz7-pZbYe8WTbhGlVTCpaSDtDU=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/SPQTUFFMHRFI7FZBGH36NHJ5MA.jpg)
 
@@ -35,15 +34,15 @@ A topology is a schematic representation of a network. You can see it as the lay
 
 [Techopedia](https://www.techopedia.com/definition/29917/network-traffic) defines it as follows:
 
-&quot;_Network traffic refers to the amount of data moving across a network at a given point of time.  __Network data__  is mostly encapsulated in  __network packets__ , which provide the load in the network.  __Network traffic__  is the main component for network traffic measurement, network traffic  __control__  and simulation.&quot;_
+> &quot;_Network traffic refers to the amount of data moving across a network at a given point of time.  __Network data__  is mostly encapsulated in  __network packets__ , which provide the load in the network.  __Network traffic__  is the main component for network traffic measurement, network traffic  __control__  and simulation.&quot;_
 
-![](RackMultipart20200926-4-1kxbamy_html_16c516d85efb846f.png)
+![](https://lh5.googleusercontent.com/vwga5qw-V31q2A0kUEHQ-sEVqKqCzsLI4ToCNuP65bVjFq4wmBQRlkTVmm6hhsWURsO9Gpj31SyS-eZMc1n9AXjme7CyNIkHyOVBXoqM0P1JSmJSzWwt9Ol7kyFFZawiLhxtMeI)
 
 [Image Courtesy](https://www.flowmon.com/getattachment/Solutions/use-case/flow-monitoring/product-img_Monitoring.png.aspx?width=480&amp;height=309)
 
 **Traffic Analysis with Wireshark **
 
-![](RackMultipart20200926-4-1kxbamy_html_f6c1567191def229.png)
+![](https://lh3.googleusercontent.com/24OiDT6gcn37TKewMOJAb_JJjZYmng44HidSs60bQOA3LZPwX4ZfaelU9QRQkFIXCBFsECeQyCTvoME9VaVek98kKPFONTESHEznLcgAtlyIUYJDCJjXeCjqF0SP73pmU7DzGjU)
 
 The most suitable tool that will help you analyze your network traffic is definitely Wireshark. Wireshark is a free and open-source tool to help you analyse network protocols with deep inspection capabilities. It gives you the ability to perform live packet capturing or offline analysis. It supports many operating systems including Windows, Linux, MacOS, FreeBSD and many more systems.
 
@@ -54,7 +53,7 @@ _To learn more about it:_
 - [How to use Wireshark: Part one](https://www.peerlyst.com/posts/let-s-use-wireshark-part-one-kimberly-crawley?trk=search_page_search_result)
 - [How to get started with Wireshark plugins, tools, and scripts](https://www.peerlyst.com/posts/how-to-get-started-with-wireshark-plugins-tools-and-scripts-kimberly-crawley?trk=search_page_search_result)
 
-![](RackMultipart20200926-4-1kxbamy_html_4cd7581317d7669b.png)
+![](https://lh6.googleusercontent.com/HKb3zNrtDk8dOr8N7guWe3tfPC2cv4StzdlWJX_hEGUiEE9DjP3G_rVYxWZAzdtB7ZG8Co90x9xXIfZrSmufeGjBnf0AMjqBo2PrUuEye27MKYWNyvvqGDToDaYfX5E_d3osdXc)
 
 Wireshark will help capture and analyze traffic as  **pcap**  files. The analysis follows the OSCAR methodology:
 
@@ -64,7 +63,7 @@ Wireshark will help capture and analyze traffic as  **pcap**  files. The analysi
 - Analyze
 - Report
 
-![](RackMultipart20200926-4-1kxbamy_html_aa6be3f85b03c23f.jpg)
+![](https://lh3.googleusercontent.com/7sOHkaMZjyh022rylu0xSLl3uoiPLzqOqk5Tqa6sqv4Mj-YQpCrrTDPCdUGVS9MDGkQU6Tup-GvSrh04iAF5M7rH2Ee8bB_ppPgEb4xzn_35p6FthAtiEVazeLaTSoD613yvsV8)
 
 [Image Courtesy](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/127890c2e5d5b14ec6b1671436e2b965f323eda0/3-Figure2-1.png)
 
@@ -90,7 +89,7 @@ In other words data is moving in the network respecting a specific order. The fo
 
 The following graph illustrates the different OSI model layers:
 
-![](RackMultipart20200926-4-1kxbamy_html_5fef5fa7ddc390bb.png)
+![](https://lh4.googleusercontent.com/VL-XEpcWKBcUh7y4JqGFXI_r560HFpAzuAcm5cALemlmCHE7Jt8fXCBs_JZ0REVzZCdm4py6YQxd9_PD8jioMA87a81qwcuQB2yS4ifcCOVTkJ3X_zrRi03HZQ3RynvZ7QCwuc8)
 
 [Image Courtesy](https://www.researchgate.net/profile/Jay_Johnson3/publication/322568288/figure/fig6/AS:631584889778238@1527592980914/OSI-model-seven-layer-protocol-stack-28.png)
 
@@ -98,7 +97,7 @@ As a first demonstration let&#39;s start analyze a small [pcap](https://www.malw
 
 Once you open it with Wireshark you will get this main window:
 
-![](RackMultipart20200926-4-1kxbamy_html_404c2788988981f7.png)
+![](https://lh3.googleusercontent.com/UEjDUjkN9DXhmataeTjAeL4mW4cVh7j_AbPVcDvkZRuYl9WJz6AWKB2hfAWo0PoQdk8jwYYmPHcpChxdXGfhgW8walSf-PLvFN1TahQrHbZHRWz4IzaO9-KYH6YQ2z63Sxpla90)
 
 Let&#39;s start collecting some helpful information like the Host, destination, source etc...
 
@@ -111,15 +110,17 @@ Dynamic Host Configuration Protocol (DHCP) is a network layer protocol based on 
 - _Request_
 - _Acknowledgment_
 
-![](RackMultipart20200926-4-1kxbamy_html_23dae3ccb7e2f8da.png)
+![](https://lh4.googleusercontent.com/HiynnOar7p6WWpYNNpTbK3B1JuuAiE_GimUiKULLMiJU1hqVrmtW9k5dPRRmXFD4N9D7B5qCQRWKCnuua9c97B0swwq5juTa_5zb2RRJlrXT1zjCE9jaR1KnyDalM99YvmdRe5o)
 
 To learn more about Filters check this great resource:_ _[Using Wireshark – Display Filter Expressions](https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/)
 
 Now select: DHCP Request and you will get many helpful pieces of information including the client Mac address. In switching the traffic of data is determined by Media Access Control (MAC) addresses. A MAC address is a unique 48-bit serial number. It is composed equally of the Organizational Unique Identifier (OUI) and the vendor-assigned address.MAC addresses are stored in a fixed size table called the Content Addressable Memory (CAM)
 
-![](RackMultipart20200926-4-1kxbamy_html_c00fdde97b1d1aab.png) And you will get also the hostname. It is &quot;_Rogers-iPad_&quot;
+![](https://lh6.googleusercontent.com/NhVDWhVps0TpxzTGCK6c5NxIynjSSyIH5uaIttU2FfDA_VZXpjDuzFSIoCihiQcjuH9RIluRXnxGgatQ-Xyg4OXenZcEG-r2qZgS9-dulGfdrC68Cy1IaCBAicEXgWi-KZI0zac) 
 
-![](RackMultipart20200926-4-1kxbamy_html_a7092cc888cf8795.png)
+And you will get also the hostname. It is &quot;_Rogers-iPad_&quot;
+
+![](https://lh4.googleusercontent.com/cvPYnSmQPbkyoMiMML4T_2CgFeHdzs3Lnvjps2YN1_JUAGEW2ZT5GK0ge4UdpiPYdO4ujPmu0Rjdv76ce5ncsGn9Gq_hmUwjkb0rfEv19PqQvkFSlZbLrx7VqjnJ_-jinHK4dwQ)
 
 After taking a look at how you can use Wireshark to extract some pieces of information, let&#39;s analyze a malicious traffic. As a demonstration we are going to analyze this [pcap](https://www.malware-traffic-analysis.net/2019/12/03/2019-12-03-traffic-analysis-exercise.pcap.zip) from the same source (the password is &quot;infected&quot;). Some additional alerts file can be found [here](https://www.malware-traffic-analysis.net/2019/12/03/2019-12-03-traffic-analysis-exercise-alerts.zip).
 
@@ -129,35 +130,35 @@ Open the pcap file with Wireshark. We are going to find:
 - The Windows user account name of the victim
 - The used Malware
 
-![](RackMultipart20200926-4-1kxbamy_html_d85d81df118c207a.png)
+![](https://lh4.googleusercontent.com/3zbB_a_cYmJxJcNlGhrrttlaMOR3Hh-RzqqKQJ4KmxLei2pc6aoxyXhZUtoWEPEqhPAUcQ3V3K1qB1_AaFxlZLzWCOiq-djWrQjgKV-Xg6cJgxTGACxrHtXLwF_iQjA_Al4vuIE)
 
 By highlighting &quot;Internet Protocol Version 4&quot; we can get the IP address which is:  **10.18.20.97**
 
-![](RackMultipart20200926-4-1kxbamy_html_6b4017eeba993024.png)
+![](https://lh6.googleusercontent.com/gjMBtHa2nFrPS2KeGlI6uSYSGwHpJ-XH2jGN771hPyR3gVDWJUj7r6hcC2WLPswc4kEyEydagbDcJG7N-kon1Ntk3ppk3kzI1ZHsgiRmP27SxDlq7fz9_Qz-EQD9vTzKP7XMYy8)
 
 The MAC address is:  **00:01:24:56:9b:cf**
 
-![](RackMultipart20200926-4-1kxbamy_html_ac76cd9d78ba026a.png)
+![](https://lh6.googleusercontent.com/mBZrNN8ToZuXkiDpzhOn_tRgeKIbmA-S5_REw6er9fp67RSe3Xwup0K77ns87k6ekt1GZqI-uDq2DckhCie7yiYCsokC_3jSlACC4bYWjz2k4PHN-Tcm1MDacaYxnyju2zDVCDw)
 
 Like what we did previously to detect the hostname we can see that the hostname is: JUANITA-WORK-PC
 
-![](RackMultipart20200926-4-1kxbamy_html_2a39e608d0e61bc3.png)
+![](https://lh3.googleusercontent.com/hyxXXUwucYsQBjzeU-Z5lNJgeQKezZBotd6yUqhc_ey_zZNTNLzCwOArYffgMl-UEvSCoKQKnu_aleAg_i-I940fyjwlIiqIFNyGM2JNzNdSkQJfAswbB7slwJzf9ZpG8LBXrXU)
 
 To get the windows user account by analyzing the kerberos traffic using this filter:  _ **kerberos.CNameString** _
 
-![](RackMultipart20200926-4-1kxbamy_html_8064544e08c96738.png)
+![](https://lh6.googleusercontent.com/TfIAZWFOnC7uUgDCpwnZulxOQPKz_j1_XbAG9RXIWj7Id-CphfRCG1ebXJtSlClSC13uIvAeIQVUTy2JEFqQ90vr8LSxz-vh0C0UR_PhPS8I4ZM73nTrwlm5oN63UHa74UV-eiY)
 
 The Windows account name is:  **momia.juanita**
 
 Based on the alerts we can get that the malware was a variant of &quot; **Ursnif**&quot;
 
-![](RackMultipart20200926-4-1kxbamy_html_ed3361251e2756cf.jpg)
+![](https://lh5.googleusercontent.com/9UKbU1ILuJsdtS3dPGLj_HTGgjc2lmYOIZf-C9JbKa2VnZJEji439gZx7gFrhYzAh53JK2MBRV7tMf6G4xM96i76eBG_3IAShkwaXL-SfoqjhKTB-kNTdzB40wKuCi6VzT_AYCw)
 
 _ **Ursnif** __ __ steals __ system information and attempts to __ steal __ __ banking__ and online account credentials. (from: F-Secure __Labs__: _[_https://www.f-secure.com/v-descs/trojan\_w32\_ursnif.shtml_](https://www.f-secure.com/v-descs/trojan_w32_ursnif.shtml)_ )_
 
 The malware appears to come from a mail because if you notice closely you will find that the victim visited mail.aol.com:
 
-![](RackMultipart20200926-4-1kxbamy_html_7c0560c43e68b496.png)
+![](https://lh5.googleusercontent.com/PB-ArIM5z8QKB-Wop72a6FauzVam1MRjyyeUSMb7zH4gAtuF17jjbkDd_erqJ02_jhVWCdbr3JRM4J66JhdBY0n0S0f6a5eNjBc3e5KxpX9FMUm4F4rohRq8z1xjbZtORrPkhGA)
 
 I hope you found it helpful.
 
