@@ -11,7 +11,7 @@ Let&#39;s start exploring the first tool OSQuery
 
 According to its official Github [repository](https://github.com/osquery/osquery):
 
-![](RackMultipart20200926-4-17gj2ps_html_bc0fff99401b647b.png)
+![](https://engineering.fb.com/wp-content/uploads/2014/10/1_XC-k2QigREIwZnBpFZ4StA@2x.png)
 
 > _Osquery is a __ __ SQL __ __ powered __ __ operating system __ __ instrumentation, __ __ monitoring __, and__   __analytics__   __framework. It is Available for__   __Linux__ , __ __ macOS __,__   __Windows,__  __and FreeBSD._
 
@@ -21,7 +21,7 @@ Its official website is [https://osquery.io](https://osquery.io/)
 
 To download OSQuery visit: [https://osquery.io/downloads/official/4.3.0](https://osquery.io/downloads/official/4.3.0)
 
-![](RackMultipart20200926-4-17gj2ps_html_46cadda6778e56c3.png)
+![](img/downloadpage.png)
 
 For the demonstration, we are going to use a Ubuntu 18.04 TLS server machine. To install it on our Ubuntu server type the following commands:
 
@@ -29,11 +29,11 @@ For the demonstration, we are going to use a Ubuntu 18.04 TLS server machine. To
 
 `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys $OSQUERY\_KEY`
 
-![](RackMultipart20200926-4-17gj2ps_html_f702731b934420d1.png)
+![](img/key.png)
 
 sudo add-apt-repository &#39;deb [arch=amd64] [https://pkg.osquery.io/deb](https://pkg.osquery.io/deb) deb main&#39;
 
-![](RackMultipart20200926-4-17gj2ps_html_a0e8dbbe6d54dfe3.png)
+![](img/addapt.png)
 
 `sudo apt-get update`
 
@@ -41,7 +41,7 @@ sudo add-apt-repository &#39;deb [arch=amd64] [https://pkg.osquery.io/deb](https
 
 `sudo apt-get install osquery`
 
-![](RackMultipart20200926-4-17gj2ps_html_31aebc206fc1c1d8.png)
+![](img/installosquery.png)
 
 OSQuery delivers these modes:
 
@@ -54,41 +54,41 @@ To start using OSQuery simply type:
 
 To explore the available commands type  **.help**
 
-![](RackMultipart20200926-4-17gj2ps_html_173b71f458c56aef.png)
+![](img/help.png)
 
 To explore the available tables type
 
 `.tables`
 
-![](RackMultipart20200926-4-17gj2ps_html_535e8b7a789bf7e7.png)
+![](img/tables.png)
 
 To explore the schema of a specific table type
 
 `.schema \&lt;TABLE\_HERE\&gt;`
 
-![](RackMultipart20200926-4-17gj2ps_html_962a4ebb8e0a9728.png)
+![](img/schema.png)
 
 For example if you want to get the users type:
 
 `select \* from users ;`
 
-![](RackMultipart20200926-4-17gj2ps_html_f5f44694349952ed.png)
+![](img/users.png)
 
 To select loggedin users type:
 
 `select \* from logged\_in\_users ;`
 
-![](RackMultipart20200926-4-17gj2ps_html_4970d5ddda6efb88.png)
+![](img/loggedin.png)
 
 The official website contains the list of all the available tables and its schemes. For example this is the scheme of  **Kernel\_info table**
 
-![](RackMultipart20200926-4-17gj2ps_html_695c561e9ce0476b.png)
+![](img/downloadpage.png)
 
 For example to select the version of the kernel type:
 
 `select version from Kernel\_info`
 
-![](RackMultipart20200926-4-17gj2ps_html_d83a7545a0e2afd1.png)
+![](img/kernelinfo.png)
 
 Let&#39;s suppose that you want to automate a specific query (selecting users) every 300 seconds. Edit the  **/etc/osquery/osquery.conf  ** file and add your rules
 
@@ -101,11 +101,11 @@ Let&#39;s suppose that you want to automate a specific query (selecting users) e
 
 A collection of queries is called a ** Pack**. OSQuery provides many hekpful packs that you can use in your assessments here: [https://github.com/osquery/osquery/tree/master/packs](https://github.com/osquery/osquery/tree/master/packs)
 
-![](RackMultipart20200926-4-17gj2ps_html_31ca69e35c13c0a6.png)
+![](img/packs.png)
 
 This is a query from [https://github.com/osquery/osquery/blob/master/packs/incident-response.conf](https://github.com/osquery/osquery/blob/master/packs/incident-response.conf)  that retreive all the startup items in MacOS hosts:
 
-![](RackMultipart20200926-4-17gj2ps_html_8be4432f7189cae8.png)
+![](img/packexample.png)
 
 But now, what to do if we want to deploy OSQuery in large scale environments and we want to manage them all easily. In this situation we need another powerful platform called &quot;Kolide Fleet&quot;
 
@@ -115,13 +115,13 @@ According to its official [Github repository](https://github.com/kolide/fleet):
 
 > _Fleet is the most widely used __ __ open-source __ __ osquery Fleet manager. Deploying osquery with Fleet enables live queries, and effective __ __ management __ __ of osquery infrastructure._
 
-![](RackMultipart20200926-4-17gj2ps_html_e0b0f7489c084926.png)Image source: [Kolide fleet ](https://miro.medium.com/max/1400/1*t17v4ZaUn-4Nz7tmAJWElQ@2x.png)
+![](https://miro.medium.com/max/1400/1*t17v4ZaUn-4Nz7tmAJWElQ@2x.png)Image source: [Kolide fleet ](https://miro.medium.com/max/1400/1*t17v4ZaUn-4Nz7tmAJWElQ@2x.png)
 
 To install it use the following commands:
 
 wget [https://github.com/kolide/fleet/releases/latest/download/fleet.zip](https://github.com/kolide/fleet/releases/latest/download/fleet.zip)
 
-![](RackMultipart20200926-4-17gj2ps_html_c9c92d6d20e94031.png)
+![](img/zip.png)
 
 `sudo apt-get install unzip`
 
@@ -129,11 +129,11 @@ Unzip the file:
 
 `sudo unzip fleet.zip`
 
-![](RackMultipart20200926-4-17gj2ps_html_3c2c99eacbfbb0d7.png)
+![](img/unzip.png)
 
 Enter the linux folder:
 
-![](RackMultipart20200926-4-17gj2ps_html_b983e214420a7e39.png)
+![](img/linux.png)
 
 Copy the binaries in /usr/bin
 
@@ -143,7 +143,7 @@ Install this required program:
 
 `sudo apt install software-properties-common`
 
-  ![](RackMultipart20200926-4-17gj2ps_html_632f8ed4befe6af8.png)
+  ![](img/common.png)
 
 `sudo apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8`
 
@@ -159,13 +159,13 @@ Install Maria database server and its client:
 
 `sudo apt install mariadb-server mariadb-client`
 
-![](RackMultipart20200926-4-17gj2ps_html_23ca584f11f74b5e.png)
+![](img/mariaclient.png)
 
 Check its status:
 
 `sudo systemctl status mariadb`
 
-![](RackMultipart20200926-4-17gj2ps_html_5c6946116b821cca.png)
+![](img/mariastatus.png)
 
 Enable Mariadb service:
 
@@ -177,7 +177,7 @@ Enter mysql and type the following commands:
 
 `sudo mysql -u root -p`
 
-![](RackMultipart20200926-4-17gj2ps_html_7b0c8f6731a4764f.png)
+![](img/mysql.png)
 
 create database kolide;
 
@@ -193,7 +193,7 @@ Install Redis:
 
 `sudo apt install redis`
 
-![](RackMultipart20200926-4-17gj2ps_html_9b49b1ea1ae69d35.png)
+![](img/redis.png)
 
 Prepare fleet:
 
