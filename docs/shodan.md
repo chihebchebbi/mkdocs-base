@@ -8,7 +8,7 @@ In some of my previous articles we had the opportunity to explore different tech
 
 Wikipedia defines OSINT as follows:
 
-&quot;_Open-source intelligence is data collected from publicly available sources to be used in an intelligence context. In the intelligence community, the term &quot;open&quot; refers to overt, publicly available sources. It is not related to open-source software or collective intelligence&quot;_
+> &quot;_Open-source intelligence is data collected from publicly available sources to be used in an intelligence context. In the intelligence community, the term &quot;open&quot; refers to overt, publicly available sources. It is not related to open-source software or collective intelligence&quot;_
 
 Open source intelligence is like any methodological process is going thru a defined number of steps.In order to perform an open source intelligence you can follow the following phases:
 
@@ -65,11 +65,11 @@ Queries can be more specific. Shodan provides a list of advanced queries that yo
 
 To select a specific country type:
 
-country: \&lt;Country Symbol\&gt;
+`country: <Country Symbol>`
 
 For example, Germany code is: DE. So the query will be:
 
-country:DE
+`country:DE`
 
 ![](img/DE.png)
 
@@ -77,14 +77,15 @@ County codes can be found here: [https://github.com/postmodern/shodan-ruby/blob/
 
 To select  specific ports type:
 
-port: \&lt;Ports\_HERE\&gt;
+`port: <Ports_HERE>`
 
 For example:
 
-port:80
+`port:80`
 
 ![](img/80.png)
 
  To search for a specifit operating system(OS) type:
 
-os: \&lt;OS\_HERE\&gt;
+`os: <OS_HERE>`
+
