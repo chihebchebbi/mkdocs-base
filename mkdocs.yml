@@ -2,6 +2,7 @@ site_name: Blue Teaming Training 2020
 nav:
     - Home: index.md
     - Module 1 - Incident Response and Security Operations Fundamentals: Incident-Response-and-Security-Operations-Fundamentals.md
+    - Module 2 - TOP 20 Open-source tools every Blue Teamer should have: top20.md
     - Module 2 - Using MITRE ATT&CK to defend against Advanced Persistent Threats: MITRE-APT.md
     - Module 3 - Getting started with IDA Pro: ida.md
     - Module 4 - Threat Intelligence Fundamentals: Threat-intelligence-fundamentals.md
