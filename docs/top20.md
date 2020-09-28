@@ -1,4 +1,4 @@
-# **TOP 20 Open-source tools every Blue Teamer should have**
+#  TOP 20 Open-source tools every Blue Teamer should have 
 
 
 In this module we are going to explore the TOP 20 open source tools that every blue teamer should have:
