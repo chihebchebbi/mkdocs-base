@@ -3,10 +3,24 @@ nav:
     - Home: index.md
     - Module 1 - Incident Response and Security Operations Fundamentals: Incident-Response-and-Security-Operations-Fundamentals.md
     - Module 2 - TOP 20 Open-source tools every Blue Teamer should have: top20.md
-    - Module 2 - Using MITRE ATT&CK to defend against Advanced Persistent Threats: MITRE-APT.md
-    - Module 3 - Getting started with IDA Pro: ida.md
-    - Module 4 - Threat Intelligence Fundamentals: Threat-intelligence-fundamentals.md
-    - Module 5 - Malware Analysis- How to use Yara rules to detect malware: test.md
-    - Module Incident Response and Threat hunting with OSQuery and Kolide Fleet : kolide.md
-    
+    - Module 3 - How to deploy your Elastic Stack (ELK) SIEM: elk.md
+    - Module 4 - Getting started using Microsoft Azure Sentinel (Cloud-Native SIEM and SOAR) : azure.md
+    - Module 5 - Hands-on Wazuh Host-based Intrusion Detection System (HIDS) Deployment : wazuh.md
+    - Module 6 - Threat Intelligence Fundamentals: Threat-intelligence-fundamentals.md
+    - Module 7 - How to Install and use The Hive Project in Incident Management : hive.md
+    - Module 8 - Incident Response and Threat hunting with OSQuery and Kolide Fleet : kolide.md
+    - Module 9 - How to use the MITRE PRE-ATT&CK framework to enhance your reconnaissance assessments: MITRE-PRE.md 
+    - Module 10 - How to Perform Open Source Intelligence (OSINT) with SpiderFoot: spiderfoot.md
+    - Module 11 - How to perform OSINT with Shodan: shodan.md
+    - Module 12 - Using MITRE ATT&CK to defend against Advanced Persistent Threats: MITRE-APT.md
+    - Module 13 - Hands-on Malicious Traffic Analysis with Wireshark: 
+    - Module 14 - Digital Forensics Fundamentals: 
+    - Module 15 - How to Perform Static Malware Analysis with Radare2: 
+    - Module 16 - How to use Yara rules to detect malware: 
+    - Module 17 - Getting started with IDA Pro: 
+    - Module 18 - Getting Started with Reverse Engineering using Ghidra: 
+    - Module 19 - How to Perform Memory Analysis: 
+    - Module 20 - Red Teaming Attack Simulation with "Atomic Red Team": 
+    - Module 21 - Vulnerability Scanning: 
+    - Module 22 - How to build a Machine Learning Intrusion Detection system: 
 theme: material
