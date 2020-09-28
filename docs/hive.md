@@ -95,8 +95,8 @@ My local IP address is ** 192.168.43.188**. Then to enter TheHive I need to use 
 
 To access the platform use these credentials:
 
-- **Login: ** admin
-- **Password: ** thehive1234
+- **Login:** admin
+- **Password:** thehive1234
 
 ![](img/signin.png)
 
@@ -122,7 +122,7 @@ Add your user information
 
 The user was added successfully
 
-![](img/user2.png)
+![](https://lh4.googleusercontent.com/bHXKq3Ud6wD-H5FbWpphw1XOh3ATd_yytsgX7sqR3LATBbNQs43Q6VlZm-2HQIdz4esaIUbZo8Zl-gjFdXB5hZq8crtW1tkSBEcei_HKEBGC6mUHzBfTxhgXIU5UBFJuPF9EvXY)
 
 Create a new password for it by clicking &quot; **New password**&quot;, type a password and press enter to save it.
 
@@ -132,7 +132,7 @@ Our password will be &quot; **analyst1**&quot; too.
 
 To create cases in the Hive, click on &quot; **New case&quot;**
 
-![](img/newcase.png)
+![](https://lh3.googleusercontent.com/iFAOFwMJ0_e_7ufot9jQlMA1LYmcDH34EHFRzpLQzORNhSgxi6pyHPRk3J5ZV2Xh841nZbM3iEmoTiMOEphnCZihxaxh-v36bVt3_fb-i54MN_qFmPRAMaDAvew4Y8JZqIglT-U)
 
 Add your case information:
 
@@ -143,15 +143,15 @@ Add your case information:
 
 Add the case tasks:
 
-![](img/task.png)
+![](https://lh6.googleusercontent.com/3jI-1x4NcGNHytZIekWFzCeskoAXUrjK3ze3jAZlqy1kzSBemukTOl1Fkz5mNGmtPOttGKXr9dj6r6NjenrwVBh5_XP_7QjkJv2fAuQNfXafNmT3VJbyM6p-W6WVn5MbHSB_l8s)
 
 Now we created a case file
 
-![](img/mytask.png)
+![](https://lh4.googleusercontent.com/_SWRqRApHH2Xmhi-TP9o3Y1Q-DMPBKvTeRsZrVO8Rij4MR6gtN2gRtcJCIUelRNQQQfNpAeromGmxCOBlRFp7aSHqc86cShhJRI4AMRJYLVYhRoms2Lf2Cb-xgqJ7t9KL7EKMQk)
 
 The case file contains also the tasks and the Observables:
 
-![](img/tasks.png)
+![](https://lh6.googleusercontent.com/Qr2Htf2vXEhi_PAphWLIIaZQ62yq8Set9KdBPJMm2Cu-U5YNIT4Uivhqe5cKHFMp6GVf607ZQPCVdgCcZ4azB_x6jvGZbAd1FYG7BQNgm_1d0OWYGRZoWrIe-ua874vbW5HfVgc)
 
 You will find the case in the &quot;Waiting cases&quot; section
 
@@ -159,7 +159,7 @@ You will find the case in the &quot;Waiting cases&quot; section
 
  To take it just click on tasks and it will be added to your &quot;my tasks&quot; section
 
-![](img/mytask.png)
+![](https://lh4.googleusercontent.com/GZXs-IBlokSnJ0Lq90s_Xrfaf840H5NErOX1ZKxwowe4d4nE2ErfJd5xgofy_hzMSP0lNdX4wKkqhgD4dHgtBL8CeVLSuyzrm8UPI-E_teYj30r46zXzJl8ECWRaxLW_zNv22Jo)
 
 Once you finish the case, click on &quot;Close&quot; and it will be closed
 
@@ -167,7 +167,7 @@ Once you finish the case, click on &quot;Close&quot; and it will be closed
 
 To visualize your cases statistics you need to use The Hive dashboards. To open or create a new dashboard go to &quot;Dashboards&quot;
 
-![](img/dash1.png)
+![](https://lh4.googleusercontent.com/ap3KKJAdAq1BsHyaamxOPP1FR4m2eRJjZpDhVNmsw3zLQTWwRCnfOfba59-3bMCqfkickjANpjGoLswMUk-TE0oKA89sVFJRdUHzMCXY585q8M0hSZKQtSlkvsbMGYgsDj2psaA)
 
 Select any available dashboard to explore it
 
@@ -196,11 +196,11 @@ Login to cortex using the same credentials as The hive
 - Login: admin
 - Password: thehive1234
 
-![](img/cortexsignin.png)
+![](https://lh5.googleusercontent.com/KwW88oSp3Rj7s0m8dZBUSAdf6JCGckxMjnPHoOUsUUcRSKg4-fiMeDW4DW7S427Q8mAGsxrfWOasJu563gPx1lu3pVKNQNuwopPGBu2zc4s1MhVaMGgJ-wTa244oLsCble-SDsQ)
 
 This is the main dashboard of &quot;Cortex&quot;
 
-![](img/cortexdash.png)
+![](https://lh3.googleusercontent.com/YPWFHwbillXFGVOQ7tHWJ-x_2P4KWeaWwFAqmmBeSbgE3H_0WdlD4zxZED_tWLyb1-NfN8ipPheQ5K94CujNljOTEdJ4m_KrIt5XUAfnDnDQ9oVJaMa7b_fR8eqU_XaT5i2ixzI)
 
 ## Summary  
 
