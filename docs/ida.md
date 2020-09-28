@@ -1,6 +1,5 @@
 # **Getting started with IDA Pro**
 
-Hi Peerlysters,
 
 ![](https://lh6.googleusercontent.com/Ha65AuSfzRhri77CzdK0fTAje1o4wGbV2Cq8cN3pKRg8pxMaQnLxlWDeMfokvFyo8dizEPdpbADB4detcmMlut3o5-pZaegjChaozjoJfu4-ny4yI4I2M_viRCZEt8FnIsJmiC4)
 
