@@ -2,7 +2,7 @@
 
 ![](https://marvel-b1-cdn.bc0a.com/f00000000167977/www.evansonline.com/hs-fs/hubfs/2020%20Hero%20Image%20updates/1280x499-Security-Operations-hero.jpg?width=1200&name=1280x499-Security-Operations-hero.jpg)
 
-This is a collection of some of my Blue teaming articles. The original posts were hosted on *Peerlyst* 
+This is a collection of some of my Blue teaming articles. The original posts were published on *Peerlyst* 
 
 ## Modules
 
