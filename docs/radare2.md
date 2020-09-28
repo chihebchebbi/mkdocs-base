@@ -20,17 +20,17 @@ Static malware analysis refers to the examination of the malware sample without 
 
 the work of malware analysts harder so they are always using packers and cryptors to evade detection. That is why, during static analysis, it is necessary to detect them using tools like PEiD.
 
-## **Dynamic Malware analysis **
+##  Dynamic Malware analysis  
 
 Performing static analysis is not enough to fully understand malware&#39;s true functionality. That is why running the malware in an isolated environment is the next step for the malware analysis process. During this phase, the analyst observes all the behaviours of the malicious binary. Dynamic analysis techniques track all the malware activities, including DNS summary, TCP connections, network activities, syscalls and much more.
 
-## **Memory Malware analysis **
+##  Memory Malware analysis  
 
 Memory malware analysis is widely used for digital investigation and malware analysis. It refers to the act of analysing a dumped memory image from a targeted machine after executing the malware to obtain multiple numbers of artefacts including network information, running processes, API hooks, kernel loaded modules, Bash history, etc. ... This phase is very important because it is always a good idea to have a clearer understanding of malware capabilities. The first step of memory analysis is memory acquisition by dumping the memory of a machine using a various number of utilities. One of these tools is fmem, which is a kernel module to create a new device called /dev/fmem to allow direct access to the whole memory
 
 To perform malware analysis you need to build a malware lab. To learn how to do it, I highly recommend you to read my article:
 
-## **How to perform static malware analysis with Radare2**
+##  How to perform static malware analysis with Radare2 
 
 According to its official
 
@@ -38,13 +38,13 @@ According to its official
 
 _Radare2 __ is unix-like __ reverse engineering __ __ framework __ and __ command line__ tools_
 
-![](RackMultipart20200926-4-1w5ysxb_html_c64ab1af6bc0dfcb.png)
+![](https://lh4.googleusercontent.com/5j-HEuDj_N8ZnpacAPOYlSox7WxX36HZwYdywQWUpv1U6P-N0luzQHxUYpP65bbGprdZA7VWdXjxIaXUyOiTJUdlOgqUURVl-Zi49lwOxOnimyUQcqcgyyA9rExW1TQfHgZZbUY)
 
 Source:  [https://rada.re/r/img/webui.png](https://rada.re/r/img/webui.png)
 
 It is more than a reverse engineering tool. R2 is able to perform many other tasks. Usually, you will find it hard to learn Radare2 but after a while, you will acquire a good understanding of most of its features.
 
-![](RackMultipart20200926-4-1w5ysxb_html_fd0cb3488f8d5f81.png)
+![](https://lh5.googleusercontent.com/PFb6sSIChEv7js_W8pooUdB0EHPVvxS4cmMYfvHkbZqKhySAA1SM-gea0HAYhZYe0XyKOL-WxOhEV5HhNb7P1Sr8Wbh3G5oAWG5gF9mmq-c625w85T5DDgyLeO4fUhvqieaqv08)
 
 [Source](https://radare.gitbooks.io/radare2book/content/first_steps/learning_curve.png)
 
@@ -77,7 +77,7 @@ If you are using Kali Linux you can use it directly by typing:
 
 `r2`
 
-![](RackMultipart20200926-4-1w5ysxb_html_dcc5022d3b1f5179.png)
+![](https://lh3.googleusercontent.com/E7af1mOJKcFYdtsu0xIDRzRzOrUUjsBowDOLhUCrnvwQ96xuCO4eUY9uh3m6lXfBQenqNUaOqaMr4uN0xAS7VpLVpJdFm0HHxnIzIZDJ89ssnzuo6YNG5333Z96Xz_sQlMt1d2Q)
 
 For the demonstration, I downloaded &quot;[Multi-Platform Linux Router DDoS ELF](http://blog.malwaremustdie.org/2014/05/threat-analysis-zendran-elf-ddos-scheme.html)&quot;.
 
@@ -85,13 +85,13 @@ For the demonstration, I downloaded &quot;[Multi-Platform Linux Router DDoS ELF]
 
 `rabin2 -I halfnint`
 
-![](RackMultipart20200926-4-1w5ysxb_html_5f58ba1e409305ce.png)
+![](https://lh6.googleusercontent.com/R6-2iqpcA0UjdysqG3JQIcbXQpx9pAAqOxR_K6RqNLaUVuLa05k01OtfnXUOb9FvH9qlzVfbdYN04djUxUmvrNoeqQ6M1bAdSiOb0J4O_PFK2p4TooMxqkkU-7EB2zdmck-4UJY)
 
 To extract the string from the data section type:
 
 `rabin2 -z halfnint`
 
-![](RackMultipart20200926-4-1w5ysxb_html_c15a56f6f0dbd78c.png)
+![](https://lh6.googleusercontent.com/1YziZMz9b15OAdpNDzw3fOWTjAzgww5psFEvDA2sHsR1K80DzV7smSDz-T0qLkvAljT0dTZR9NTpeLMqI7-zHeNEb7PY3VT1y-CkBYRt0XnJV3ry6FNrtmgN0KS5iJv1eQTPUlo)
 
 Load the binary
 
@@ -101,35 +101,35 @@ To get information use the &quot; ** i **&quot; option. Check all the available 
 
 `i?`
 
-![](RackMultipart20200926-4-1w5ysxb_html_c00d5a1fd54de76e.png)
+![](https://lh5.googleusercontent.com/FTK-k3RAC9QgGnTQghXL7pCx0LmbNdWiQ6X-UkGosLYmBpGudzeBbhhvyfEN9A_MsqHU8Ti-ip4iBZ4zVWuWuDqn5jjbhMjfmkxkv-h5Btht0oDlRZCVja-mUmp3tuse_jhIsQY)
 
 For example to collect information about Exports type:
 
 `iE`
 
-![](RackMultipart20200926-4-1w5ysxb_html_6795461d9f5c9234.png)
+![](https://lh3.googleusercontent.com/ETHr0qPcyD4M0N9o1WBtS-yN1ZkCCmraINrF_94OecfospVfhavYo2Ee2UaVjrk6vbQvuz44MQz5kqrlVGsqRi3__hSvKkoaBR84P3HMhYZ5NLI-ZSxcZZAc78b_mGHY4endcIE)
 
 Imports:
 
 `ii`
 
-![](RackMultipart20200926-4-1w5ysxb_html_7ba0335ac811987c.png)
+![](https://lh3.googleusercontent.com/jv0jvy0Ovt5ur9_d0caYkYKuxAHDQkxx6DoHjiQnEzutimFzoc9Zm1KyoGlPL0qNTWH3qC8CGSSRQsB-rIh-CtW24pT0YL7ayYWFSQ4RpebbB1s8uojw8GUuNGFrClnRo2fcBGs)
 
 Headers:
 
 `ih`
 
-![](RackMultipart20200926-4-1w5ysxb_html_568b05c223a0e3ff.png)
+![](https://lh6.googleusercontent.com/V9D-6xnNBhjlO7Dm-ho8nqfO8zspbouYuffwO8DzToEM2_fvP9-mIT-hZPawjk3y7SLxgTcq4PimKb5W1N9Y7Q3Hz-FRLbaPnDVoN30KeNeT-B7XZxET8NvEq60eM-na2ajQL-M)
 
 To calculate the hashes type:
 
 `rahash2 -a all halfnint`
 
-![](RackMultipart20200926-4-1w5ysxb_html_72023ccbaaf53163.png)
+![](https://lh3.googleusercontent.com/SWtoHg1Pj5nBXFO8gUDlZjWaZPnsMNibPMOlqHpqPVwMJjBt1b5sklwAK1dWYs5cv-iNSn21fXuF1EKOo7yOqwHOvFMjrh1morWi7Xb4y61Q4rT1L1329yLi2G5xYKNquY5uXDg)
 
 To determine the packers usually, we use [PEiD](https://www.aldeid.com/wiki/PEiD)
 
-![](RackMultipart20200926-4-1w5ysxb_html_693853757d583d70.png)
+![](https://lh6.googleusercontent.com/-lwV0jIjOE3XqL0NyXjZG0qZJHIhIFsZGJqLhh1O_8BfcIVFXEumziKCFgNH-4AtpS9cYWvSmDrLy2wsHUtkTB0BIejztcN_URyS4d1bMzlnOJbWqlWHXXj5kYjRSICHTZEXrPE)
 
 [source](https://www.aldeid.com/w/images/c/c6/Peid.png)
 
@@ -145,7 +145,7 @@ install  **libyara**
 
 ## **Summary**
 
-In this article, we explored the different techniques to perform malware analysis. Later we learned how to install an amazing tool called &quot;Radare2&quot; and how to use to perform some static malware analysis tasks.
+In this module, we explored the different techniques to perform malware analysis. Later we learned how to install an amazing tool called &quot;Radare2&quot; and how to use to perform some static malware analysis tasks.
 
 ### **References:**
 
@@ -154,4 +154,5 @@ In this article, we explored the different techniques to perform malware analysi
 2. Chiheb Chebbi: How to bypass Machine Learning Malware Detectors with Generative adversarial Networks  
 
 3. [https://github.com/radare/radare2/blob/master/doc/yara.md](https://github.com/radare/radare2/blob/master/doc/yara.md)
+
 
