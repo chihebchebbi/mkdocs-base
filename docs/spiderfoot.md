@@ -34,7 +34,7 @@ Human intelligence (HUMINT) is the process of collecting information about human
 
 ## Signal intelligence
 
-**Signal intelligence ** ( **SIGINT** ) is the operation of gathering information by intercepting electronic signals and communications. It can be divided into two subcategories:  **communications intelligence ** ( **COMINT** ) and  **electronic intelligence ** ( **ELINT** ).
+**Signal intelligence** ( **SIGINT** ) is the operation of gathering information by intercepting electronic signals and communications. It can be divided into two subcategories:  **communications intelligence** ( **COMINT** ) and  **electronic intelligence** ( **ELINT** ).
 
 
 
@@ -50,27 +50,27 @@ Conducting search queries in many search engines Gaining information from social
 
 Open source intelligence is like any methodological process is going thru a defined number of steps.In order to perform an open source intelligence you can follow the following phases:
 
-- **Direction and planning: ** in this phase you need to identify the sources,in other words where you can find information
+- **Direction and planning:** in this phase you need to identify the sources,in other words where you can find information
 - **Collection:**  in this phase you will collect and harvest information from the selected sources
 - **Processing and collation:**  during this phase you need to process information to get useful insights.
 - **Analysis and integration:**  in this phase you need to join all the information and analyse them
-- **Production, dissemination and feedback: ** finally when you finish the analysis you need to present the findings and report them. ![](https://www.supanet.com/upload/images/201911/osint-stages-52020.png)
+- **Production, dissemination and feedback:** finally when you finish the analysis you need to present the findings and report them. ![](https://www.supanet.com/upload/images/201911/osint-stages-52020.png)
 
 [Image source](https://www.supanet.com/upload/images/201911/osint-stages-52020.png)
 
 There are many helpful tools that you can use to perform OSINT, you can find some of them in this post:
 
-**How to Deploy SpiderFoot **
+**How to Deploy SpiderFoot**
 
 According to its official github [repository](https://github.com/smicallef/spiderfoot):
 
-![](RackMultipart20200926-4-18f5prg_html_c228e6c98f7c1a97.png)
+![](https://lh6.googleusercontent.com/YQjQxaCBZL8Pve7JU3c3wEL0UhMcB1ytdAH02V-8OmTUctX8wjsZR92mNOhJqHJth7_aOCGfVg3B0TG57uic-K9K_Yeo2kE3OYWZuVLO_3-Mdf04A4baFxUO-pnZzg2JFkudyok)
 
 _SpiderFoot __ __ is an open source intelligence (OSINT) __ __ automation __ __ tool. It integrates with just about every data source available and utilises a range of methods for __ __ data analysis__, making that data easy to navigate._
 
 _SpiderFoot has an __ __ embedded __ __ web-server for providing a clean and intuitive __ __ web-based __ __ interface __ __ but can also be used completely via the command-line. It&#39;s written in __ __ Python __ __ 3 and GPL-licensed._
 
-![](RackMultipart20200926-4-18f5prg_html_e75054db527097b7.png)
+![](https://lh6.googleusercontent.com/xHiH4ykj6jwNBHCeCf2hvQ0p4f4C1afDOThExvJdShMcNLUf0IWdcOIitofYBgBXPv6SIDpjEbK-dUM7nCEgXzGgwKCDhUQaEUnUqDZ-giTgrT1OwjsJP1IE30yw37c0U8tcthI)
 
 Spiderfoot is able to collect information about:
 
@@ -112,11 +112,11 @@ There is another option which is using a ready-to-go Spiderfoot instance. To do 
 
 To start a new scan, click on &quot; **+ Create a new scan**&quot;
 
-![](RackMultipart20200926-4-18f5prg_html_f1eee762d3133995.png)
+![](https://lh5.googleusercontent.com/28jDAJ4AxKoNLsjd5QbJ1vDMheyjr4KbTImVUuScBaflzO4-t2G4i14qChXvhxVVVpGqUHPaHAV-Yqukzkc7QNt6ureofuxqSDfnQSxKFZ1mG405HJk-d_6brGMrc3Q9vdyTbO8)
 
 Enter your target and click on &quot; **Run scan now**&quot;
 
-![](RackMultipart20200926-4-18f5prg_html_d8daf39de7269e8a.png)
+![](https://lh3.googleusercontent.com/Y17fHyCX9CpYnDE-8hK4KMuj1VWt-gDsb-Em8QdUvcu2hjtHwe7L4HhVEdQ-rX855l5McV_alQSwTG_oIN-Sk42fKLWC4S4o_XHvf3LEYdBnaGb4AVKIQH1pU4VZ3OwR7B7RWsM)
 
 As you can notice from the screenshot there are some APIs that need to be added n order to use some modules.
 
