@@ -121,9 +121,8 @@ When the rule is achieved you will receive an email notification
 
 You can also write your own advanced detection queries with KQL. Go to &quot; **Hunting**&quot; and Click &quot; **New Query**&quot; and create your customized query and also you can identify its connection with MITRE ATT&amp;CK framework.
 
-![](RackMultipart20200926-4-o5tfaf_html_4e021d847b722091.png)
 
 By now you are ready to start your Hunting mission.
 
-I hope you found it helpful. If you need me to correct something please don&#39;t hesitate to comment on this post.
+
 
