@@ -9,7 +9,9 @@
 
 But first what is Ghidra exactly?
 
-![](https://lh5.googleusercontent.com/TmgOszGWkRqttmJ379gcglZAxiuooMbvVZ_ZLkdULKYNpnhdxKiIpZQX-n2perJs7ElXzbi9R8QZMQUv4V8qfn9vQloemzvlI_sGXGtoiFYdHhoRat9n9T1GlYQux0CUgts6-TQ)
+<img src="https://lh5.googleusercontent.com/TmgOszGWkRqttmJ379gcglZAxiuooMbvVZ_ZLkdULKYNpnhdxKiIpZQX-n2perJs7ElXzbi9R8QZMQUv4V8qfn9vQloemzvlI_sGXGtoiFYdHhoRat9n9T1GlYQux0CUgts6-TQ" width="200px">
+
+
 
 According to its official [Github repository](https://github.com/NationalSecurityAgency/ghidra):
 
@@ -98,6 +100,8 @@ For more information about the installation steps you can check Ghidra official 
 We learned the compilation phases in order to generate a fully working binary. Now it is time to continue our learning experience with acquiring some fundamentals about reverse engineering. That is why we are going to download a small and easy CrackMe challenge and we will try to understand what is doing and how it works in order to find the correct password to solve the challenges.
 
 The challenge that we are going to solve is a part of this free and publicly available training materials: [https://github.com/Maijin/Workshop2015](https://github.com/Maijin/Workshop2015)
+
+We are going to follow [Here Be Dragons: Reverse Engineering with Ghidra](https://www.shogunlab.com/blog/2019/04/12/here-be-dragons-ghidra-0.html "Here Be Dragons: Reverse Engineering with Ghidra")
 
 Download the GitHub repository, go to /IOLI-crackme/bin-win32 and you will find the challenge binaries.
 
@@ -196,3 +200,4 @@ This article will be updated with more interesting sections in the next few hour
 **Summary **
 
 This article was a good opportunity to learn the fundamentals of reverse engineering with an amazing tool called &quot;Ghidra&quot;
+
