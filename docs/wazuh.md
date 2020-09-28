@@ -42,7 +42,6 @@ Now let&#39;s explore how to deploy it. For the demonstration i am using a Ubunt
 
 `sudo apt-get update`
 
-![](img/update.png)
 
 `sudo apt-get installcurl apt-transport-https lsb-release gnupg2`
 
