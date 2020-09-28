@@ -15,7 +15,7 @@ This is a collection of some of my Blue teaming articles. The original posts wer
 - **Module 7 -** How to Install and use The Hive Project in Incident Management : hive.md
 - **Module 8 -** Incident Response and Threat hunting with OSQuery and Kolide Fleet : kolide.md
 - **Module 9 -** How to use the MITRE PRE-ATT&CK framework to enhance your reconnaissance assessments: MITRE-PRE.md 
-- ** Module 10 -** How to Perform Open Source Intelligence (OSINT) with SpiderFoot: spiderfoot.md
+- **Module 10 -** How to Perform Open Source Intelligence (OSINT) with SpiderFoot: spiderfoot.md
 - **Module 11 -** How to perform OSINT with Shodan: shodan.md
 - **Module 12 -** Using MITRE ATT&CK to defend against Advanced Persistent Threats: MITRE-APT.md
 - **Module 13 -** Hands-on Malicious Traffic Analysis with Wireshark: wireshark.md
