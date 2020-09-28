@@ -14,7 +14,7 @@ In this article we are going to explore the following points:
 - **Host-based evidence collection and Analysis**
 - **Forensics Imaging**
 - **Practical Lab: Autopsy Forensics Browser**
-- **Practical Lab: Memory Analysis with Volatility **
+- **Practical Lab: Memory Analysis with Volatility**
 
 
 ## **Digital Forensics Fundamentals**
@@ -181,13 +181,7 @@ Run it from the menu:
 
 Go to:
 
-\&lt;a href=&quot;http://localhost:9999/autopsy&quot;\&gt;
-
- \&lt;a
-
- href=&quot;http://localhost:9999/autopsy&quot;\&gt;http://localhost:9999/autopsy
-
- \&lt;/a
+`http://localhost:9999/autopsy`
 
 ![](https://lh6.googleusercontent.com/JUyVnThH56Y9_OgESxi9TXJLaQtNjsf_Up3o6bar41Ar_xsniDDRrAKbpx6juY7dIRmCDDa5NGW2qT_Ac5-tPWob2qnfvRxw-JZ5CGZDuRbCU1wgQV8NCRloHRTt7A8VxYd1Jzw)
 
@@ -209,23 +203,23 @@ Check the configuration and click Add Image
 
 For the demo, we are going to use a memory dump sample (NTFS Undelete) from  [http://dftt.sourceforge.net](http://dftt.sourceforge.net/) (Digital Forensics Tool Testing Images)
 
-![]()
+![](https://lh4.googleusercontent.com/hBk_dFWG6almtmnavdD2X-vOESdf1xqrbly7knkx5HjVNgkSyFVcJN2Pl79Jc5EBYXbx-5GWRfEVhfyrlfX-YPRnidIXrZm02ZFmX1FE64AuGM1bswIC3hOCGGGentcUTAb9M7E)
 
 Add the path of the dump:
 
-![](https://lh4.googleusercontent.com/1k-qltQ3ypyaJf0ipKkl-PIRHfofkJNWaUaRbAr4Zk88o37jmMel1REI9ZiMWXf-kMvOf3nK7-JmmyLMV2PjiLI97BSX82U5vZJeDxhlNJAN8QuNTGk8BxG1g7jtYYQoyngXXbE)
+![](https://lh5.googleusercontent.com/eTIBkM4YlCy4vayFfKriI_XkThl0sLAZSM27WuBw6-Vt0ch4hWvcClubB34Y3oMLwaVThL6rLtU51lkRknUoCBGBtla_YMiuJeqJ2n69s7dt5tISix2tnoKsxIfDZ6Fhe1yRtvQ)
 
 Click on Analyze:
 
-![](RackMultipart20200926-4-4zxqee_html_53297c21f450e941.png)
+![](https://lh3.googleusercontent.com/VK7CRCv004FH8qMZ1-3JUw78pfA3c3sBjsXO151tkUUUnGrj6foGe3pAxcFQ-z9j32waZ2E9_Syno_4PicKYdWkonx2fuK124apm1Mlgf8eqVSrmYfK_m0KgEOGMRYb64RNkKFI)
 
 These are some pieces of information about the dump
 
-![](RackMultipart20200926-4-4zxqee_html_495e203d471bec32.png)
+![](https://lh6.googleusercontent.com/Fd861fON2uR-l6V4g7D61ZVb479Xtm6vZcxbCBcpradTOoz852eVc_Ytcj3e7_Q1W-Pnk9FDG6WZDbgSfBhvYeG2qoG0eLnX8bDjkPl4sLdFFvQTX3X9Ql70l3tI1u4acuKs-d0)
 
 Now you can analyse the file freely:
 
-![](RackMultipart20200926-4-4zxqee_html_8ae02b669ea19582.png)
+![](https://lh4.googleusercontent.com/N_XZqgiCR3VAm-bsqejK-5jGAJweVXwpp8E1-ai3Atrq96OqQRH2JrgMp2G9O5RBAVmxkM7N1jjs0RjaHPviLxQ0rNX5szOpbcPljbbXYvIxLYiBMyTtQR9YEYjHn3wuNmM0XkQ)
 
 ## **Practical Lab 2: Memory Analysis with Volatility **
 
@@ -245,81 +239,35 @@ As a hands-on practice, we are going to analyse a memory dump from an infected c
 
 For the demonstration, we are going to analyse a memory dump called &quot; **cridex.vmem**&quot;
 
-\&lt;a
-
- class=&quot;mention&quot;
-
- data-id=&quot;4v8Z7sw5ifiZte6zY&quot;
-
- data-type=&quot;Tag&quot;
-
- href=&quot;/tags/wget&quot;\&gt;wget
-
- \&lt;a
-
- href=&quot;http://files.sempersecurus.org/dumps/cridex\_memdump.zip&quot;
-
- target=&quot;\_blank&quot;
-
- rel=&quot;noopener&quot;\&gt;
-
- \&lt;a
- href=&quot;http://files.sempersecurus.org/dumps/cridex\_memdump.zip&quot;
- target=&quot;\_blank&quot;
- rel=&quot;noopener&quot;\&gt;http://files.sempersecurus.org/dumps/cridex\_memdump.zip
- \&lt;/a
-
- \&lt;/a
+`wget http://files.sempersecurus.org/dumps/cridex_memdump.zip`
 
 Get info about the memory dump:
 
-\&lt;a
-
-
- class=&quot;mention&quot;
-
- data-id=&quot;wAGpMrfjv7ykyEKm4&quot;
-
- data-type=&quot;Tag&quot;
-
- href=&quot;/tags/sudo&quot;\&gt;sudo
-
- \&lt;a
- class=&quot;mention&quot;
- data-id=&quot;bbvDjYcTgX2BDzWzp&quot;
- data-type=&quot;Tag&quot;
- href=&quot;/tags/python&quot;\&gt;python
- vol.py
- -f
- cridex.vmem
- imageinfo
- \&lt;/a
-
- \&lt;/a
+`python vol.py -f cridex.vmem imageinfo `
 
 ![](https://lh6.googleusercontent.com/qhHh7VGDwEc9Kw64HCTecEXfXucBQaiBNWqZIBiwRJqTWTejXpIw2N2tdlhyjC1yVPPsoQVF-iGZ76zauqvjxk6spDVDl2Lq1YfSKCps1WmSOt5Ek7RehrkC69oAy08vazrHEsQ)
 
 Get Processes
 
-\&lt;a class=&quot;mention&quot; href=&quot;/tags/sudo&quot; data-type=&quot;Tag&quot; data-id=&quot;wAGpMrfjv7ykyEKm4&quot; title=&quot;#sudo (search)&quot;\&gt;sudo \&lt;a class=&quot;mention&quot; href=&quot;/tags/python&quot; data-type=&quot;Tag&quot; data-id=&quot;bbvDjYcTgX2BDzWzp&quot; title=&quot;#python (search)&quot;\&gt;python vol.py -f cridex.vmem psxview\&lt;/a\&lt;/a
+`python vol.py -f cridex.vmem psxview`
 
 ![](https://lh6.googleusercontent.com/RycgECH3b-ET-QcfQxTIMbw2Jze6p_mHMpc84xkpHhd83TYqxdqB-gcAvm757YriFzCw0ThjnNiP1epoifBDo1LUIrsGb1RNUepvJU8jCqPmoFnL2hWCGnvlbIFmtxw6yqVTM1c)
 
 Processes as Parent/Child
 
-sudo python vol.py -f cridex.vmem pstree
+`sudo python vol.py -f cridex.vmem pstree`
 
 ![](https://lh5.googleusercontent.com/Ldy0BJfoY4CxQ8l058uxFYswOaN5IKbxzOFnYTOKRW-Rwl3flfD5_y5E0u0ZjLRuBsRDp1Vvw-9VKtqKkqR5-a4eytxHV8-C-WgfAhLyxzOFst1KotGkRboOnQRBGe48wXgkF5g)
 
 Get hidden and terminated Processes
 
-sudo python vol.py -f cridex.vmem psscan
+`sudo python vol.py -f cridex.vmem psscan`
 
 ![](https://lh5.googleusercontent.com/Ldy0BJfoY4CxQ8l058uxFYswOaN5IKbxzOFnYTOKRW-Rwl3flfD5_y5E0u0ZjLRuBsRDp1Vvw-9VKtqKkqR5-a4eytxHV8-C-WgfAhLyxzOFst1KotGkRboOnQRBGe48wXgkF5g)
 
 Get DLLs
 
-sudo python vol.py -f cridex.vmem dlllist
+`sudo python vol.py -f cridex.vmem dlllist`
 
 ![](https://lh5.googleusercontent.com/C1e-XZqhkpeWgBMEhyvQazrddYah9W42hP6yiZTfjquyDKIASHZQ3oxCVUf7auXUJDfAFRr0jNtlg3WILnEGUgC1SlxbTdwYLHF4YibvJ-MHWueHRLpZ6LQmyyzBX6o5cC11tgU)
 
@@ -331,19 +279,19 @@ sudo python vol.py -f cridex.vmem cmdline
 
 Get SIDs:
 
-sudo python vol.py -f cridex.vmem getsids
+`sudo python vol.py -f cridex.vmem getsids`
 
 ![](https://lh5.googleusercontent.com/hbJIE7yFugDB7a9FI-MA5O1T2aiCcSwbFrh-WBlhNmPhmC-z-LSiiKrW8ansREkcGv__-XYOOsxgPeoeIcOIE_485P-AigdSSG7pkv60wj3UbJFOB1jpKl4pNE_ClWgJ_9Zuvmc)
 
 Networking information:
 
-sudo python vol.py -f cridex.vmem connscan
+`sudo python vol.py -f cridex.vmem connscan`
 
 ![](https://lh6.googleusercontent.com/keXXK0MmYfkSUFUobN4SkUHbmHVO30j85lo4wIhZQbxFz535zXySsW6QpHVLsSB0otCXEYu4L-xCnIfLt2-Zuz5DbDcejvlE694FUAOk4tMhdSb0ufPdB6KZ5tft8RyThQZWmvo)
 
 Kernel modules:
 
-sudo python vol.py -f cridex.vmem modules
+`sudo python vol.py -f cridex.vmem modules`
 
 ![](https://lh5.googleusercontent.com/GpAix9_AiI4dfp4WiUZMmh8FvqR4igg10bA2u4JIIy1UBSMOMHMUf-10dLTz2DlM9U5uo1NAfhOTu2YZbnypNu6MNZQbTZFqfmWdL6zV7Dmnbr5CI5MAA__kuVHAr8Euxu49CHU)
 
@@ -362,4 +310,5 @@ For more information about the most used Volatility commands check these two hel
 ## **Summary**
 
 In this module, we discovered what digital forensics is, what are the different steps to perform it, including evidence acquisition and analysis. Later, we explored some well-known digital forensics tools by analyzing some memory dumps using Autopsy and Volatility framework.
+
 
