@@ -43,7 +43,7 @@ This is a collection of some of my Blue teaming articles. The original posts wer
 
 * Check content 
 * Add Image courtesy and credits
-* check credits and reference links
+* check credits and reference links from old posts
 
 
 
