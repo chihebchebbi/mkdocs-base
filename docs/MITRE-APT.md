@@ -11,9 +11,6 @@ Before diving into how to use MITRE ATT&amp;CK framework to defend against advan
 
 ##  Threats 
 
-![](https://wpsitehelpers.com/wp-content/uploads/2016/11/wordpress-malware-removal.png)
-
-_Image _[_Courtesy_](https://wpsitehelpers.com/wp-content/uploads/2016/11/wordpress-malware-removal.png)
 
 By definition, a  **threat**  is a potential danger for the enterprise assets that could harm these systems. In many cases, there is confusion between the three terms Threat, Vulnerability and Risk; the first term, as I explained before, is a potential danger while a Vulnerability is a known weakness or a gap in an asset. A risk is a result of a threat exploiting a vulnerability. In other words, you can see it as an intersection between the two previous terms. The method used to attack an asset is called a  **Threat Vector**.
 
@@ -107,19 +104,12 @@ Mitigations for every technique can be found on [https://attack.mitre.org/mitiga
 
 ![](https://lh6.googleusercontent.com/GU6CPDE1UTMYuFtw6XSuMJg-bu1D4NyE5eBO5X4KPPuGBCQzf6R-aCQDVUbB9pqJIdR6w9G0xOaZCxCIvPlmRkcObjkcOXVDXCHqvZuO9ovl-jZtcByHNRaP-od0mVoD25wtAek)
 
-##  Threat Emulation 
-
-One of the techniques to help you practice how to defend your organization from these attacks is Threat Emulation. You can use Atomic Red Team to train your team.
-
-![](RackMultipart20200923-4-16yksxn_html_8e6b3fb35333cc8d.png)
-
-_&quot;_[_Atomic Red Team_](https://atomicredteam.io/)_ is a library of simple  __tests__  that every  __security team__  can execute to test their defenses. Tests are focused, have few dependencies, and are defined in a structured  __format__  that can be used by  __automation__  frameworks.&quot;_
 
 
 
 ##   Summary
 
-In this article, we learned many important terminologies and how to use MITRE ATT&amp;CK framework to detect advanced persistent threats.
+In this module, we learned many important terminologies and how to use MITRE ATT&amp;CK framework to detect advanced persistent threats.
 
 
 ### References  
