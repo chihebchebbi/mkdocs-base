@@ -1,8 +1,7 @@
-**Malware Analysis: How to use Yara rules to detect malware**
+# Malware Analysis: How to use Yara rules to detect malware
 
-Hi Peerlysters,
 
- When performing malware analysis, the analyst needs to collect every piece of information that can be used to identify malicious software. One of the techniques is Yara rules. In this article, we are going to explore Yara rules and how to use them in order to detect malware.
+When performing malware analysis, the analyst needs to collect every piece of information that can be used to identify malicious software. One of the techniques is Yara rules. In this article, we are going to explore Yara rules and how to use them in order to detect malware.
 
 The article outline is the following:
 
@@ -35,88 +34,55 @@ Malware analysis is the art of determining the functionality, origin and potenti
 - Dynamic Malware Analysis
 - Memory Malware Analysis
 
-To have a clear understanding of these techniques in detail I highly recommend that you read the first sections of my Article: &quot; **How to bypass Machine Learning Malware Detectors with Generative adversarial Networks**
-
-Where I discussed many aspects including:
-
-- Malware fundamentals
-- Malware Distribution
-- Classical AV evasion techniques
-- Malware analysis techniques
-- Machine learning malware detection
-- Machine Learning Threat Model
-- Bypassing Machine Learning malware detectors using Generative Adversarial Networks (GANs)
 
 **Static Malware analysis**
 
 Static malware analysis refers to the examination of the malware sample without executing it. It consists of providing all the information about the malicious binary. The first steps in static analysis are knowing the malware size and file type to have a clear vision about the targeted machines, in addition to determining the hashing values, because cryptographic hashes like MD5 or SHA1 can serve as a unique identifier for the sample file. To dive deeper, finding strings, dissecting the binary and reverse engineering the code of malware using a disassembler like IDA could be a great step to explore how the malware works by studying the program instructions. Malware authors often are trying to make the work of malware analysts harder so they are always using packers and cryptors to evade detection. That is why, during static analysis, it is necessary to detect them using tools like PEiD.
 
-For more information, read my articles:
-
-- [Getting started with IDA Pro](https://www.peerlyst.com/posts/getting-started-with-ida-pro-chiheb-chebbi?trk=search_page_search_result)
-- [How to Perform Static Malware Analysis with Radare2](https://www.peerlyst.com/posts/how-to-perform-static-malware-analysis-with-radare2-chiheb-chebbi?trk=search_page_search_result)
-- [How to build a Linux Automated Malware Analysis Lab](https://www.peerlyst.com/posts/how-to-build-a-linux-automated-malware-analysis-lab-chiheb-chebbi?trk=search_page_search_result)
 
 In this article, we are going to explore how to use YARA Rules. When performing static malware analysis there are many techniques to classify malware and identify it such as hashes. Another technique is using YARA rules. According to Wikipedia:
 
 &quot; **YARA**  is the name of a tool primarily used in malware research and detection. It provides a  **rule** -based approach to create descriptions of malware families based on textual or binary patterns. A description is essentially a  **Yara rule**  name, where these  **rules**
 
-![](RackMultipart20200926-4-10yq816_html_c18cb780bb742889.jpg)
+![](https://lh3.googleusercontent.com/9vjOkN0oLeIrqDd-lsLffyuUJO5P---Hnpx5UdWyXRP-asHzm0Cs_cE_Iey31HlNF4NdHO6o0bxED_n1LJRlVSaSd3AjxFOrnXJ8zu1lK_ANrbP_qEJ67Dlldko8qB-x2gXVzGs)
 
 **Install Yara: **
 
 The first step, of course, is installing YARA. If you are using Ubuntu for example, you can simply use
 
-class=&quot;mention&quot; data-id=&quot;wAGpMrfjv7ykyEKm4&quot; data-type=&quot;Tag&quot; href=&quot;/tags/sudo&quot;\&gt;sudo apt-get class=&quot;mention&quot; data-id=&quot;yyNaYMKWDRZvHQL6q&quot; data-type=&quot;Tag&quot; href=&quot;/tags/install&quot;\&gt;install yara
+`sudo apt-get install yara`
 
 It is already installed on my machine
 
-![](RackMultipart20200926-4-10yq816_html_528576b4c6f401db.png)
+![](https://lh4.googleusercontent.com/FhM76efi8q23Vh_JPIeWoHQcInQkQWMWnhXwlZ377fVwTpNfS8sHTVuKqv8L8xjB6G47mXvy2wglk-A4EZQkUv5vUPY4COL45G-eLaPEVs3c1eyk_arK8-x2R84H-3MdREXdg2w)
 
 Or you can download the tar file and install it from Github  [https://github.com/VirusTotal/yara/releases](https://github.com/VirusTotal/yara/releases)
 
-tar -zxf yara-3.7.1.tar.gz
+`tar -zxf yara-3.7.1.tar.gz`
 
-cd yara-3.7.1
- ./bootstrap.sh
+`cd yara-3.7.1`
 
-./configure
- make
-
-
- \&lt;a
-
-
- class=&quot;mention&quot;
-
- data-id=&quot;wAGpMrfjv7ykyEKm4&quot;
-
- data-type=&quot;Tag&quot;
-
- href=&quot;/tags/sudo&quot;\&gt;sudo
-
- make
-
- install
-
- \&lt;/a
+`./bootstrap.sh`
+`./configure`
+` make`
+`make install`
 
 Yara needs the following libraries  **automake libtool make ** and  **gcc**  so ensure that you already installed them
 
-\&lt;a class=&quot;mention&quot; href=&quot;/tags/sudo&quot; data-type=&quot;Tag&quot; data-id=&quot;wAGpMrfjv7ykyEKm4&quot; title=&quot;#sudo (search)&quot;\&gt;sudo apt-get install automake libtool make gcc\&lt;/a
+`sudo apt-get install automake libtool make gcc`
 
-![](RackMultipart20200926-4-10yq816_html_24d281af0a0ef6ab.png)
+![](https://lh5.googleusercontent.com/97yuOIin2zhOWE4hbyjUTc9HuWmeX7jcbDWB2S8qhn1M1IHIF2SMzcLL-KLY_Pch-UuWxk35nfpzXXM4pExJXY01mhxXUagL71N_POYatIkilqYWEnZKt0Qdh_nd7IXWhCrlDGM)
 
 Let&#39;s check if everything went well
 
 Create a dummy rule
 
-class=&quot;mention&quot; data-id=&quot;ST23Jcmnioh2F7G2X&quot; data-type=&quot;Tag&quot; href=&quot;/tags/echo&quot;\&gt;echo &quot;rule dummy { condition: true }&quot; \&gt; my\_first\_rule
+`echo "rule dummy { condition: true }" > my_first_rule`
 
-yara my\_first\_rule my\_first\_rule
+`yara my_first_rule my_first_rule`
 
 If you get &quot; **dummy my\_first\_rule**&quot; then everything is Okay!
- ![](RackMultipart20200926-4-10yq816_html_fadbf8cf80749fe0.png)
+ ![](https://lh5.googleusercontent.com/sPlFO0N1mGsp6XTjitOLCqzFja5eQMTzg7xg6saP1YsnxRxINdxqJB04_hFXbeLaPZXGAYHai-JJeZjLwUb9ry0T_pjLPbq6jIHLpu7ljwIAUalW_n_Gdt-vhbja5pP8uKvIa_Y)
 
 The Official YARA documentation can be found here: [https://yara.readthedocs.io/en/stable/gettingstarted.html](https://yara.readthedocs.io/en/stable/gettingstarted.html)
 
@@ -124,7 +90,7 @@ The Official YARA documentation can be found here: [https://yara.readthedocs.io/
 
 We already learned that we use Yara rules to detect malware. Let&#39;s discover how to do that in a real-world example. For testing purposes, I am going to use malware from a dataset called &quot;theZoo&quot;: [https://thezoo.morirt.com](https://thezoo.morirt.com/). The project owners define the repository as follows:
 
-![](RackMultipart20200926-4-10yq816_html_41eb602bd370ab89.png)
+![](https://lh3.googleusercontent.com/D2zmI8sO6J2NLxxvsuKa5ZNeaHGC1VB_r4Y1q5xrv6Kjr_0dze156i6UrYLUk8eyVDC1SGhK_p79T3kdP7I5Ztr61-kxb3TGtqwg8Wh2ENPhIPyKAiBShy6-NKiGlxEXEBXBVug)
 
 _theZoo is a project created to make the possibility of malware analysis open and available to the public. Since we have found out that almost all versions of malware are very hard to come by in a way which will allow analysis, we have decided to gather all of them for you in an accessible and safe way. theZoo was born by Yuval tisf Nativ and is now maintained by Shahak Shalev._
 
@@ -132,34 +98,19 @@ _Disclaimer_
 
 _ **Please remember that these are live and dangerous malware! They come encrypted and locked for a reason! Do NOT run them unless you are absolutely sure of what you are doing!** _
 
-![](RackMultipart20200926-4-10yq816_html_4891cefbe46abd35.png)
+![](https://lh4.googleusercontent.com/FilhWX4M06-sE7UlCrBP82MvVefUCT0UQQhjzHi4F46lvKUqUs1BNorxcpUB1enkdHMUXbqCV1HCygjGe4y4Vv_SK_GlbOnlxNiEg4-My2SHJyfO6S4kNpxKl-HSo_1HBrhoa0I)
 
 Isolation is a security approach provided by many computer systems. It is based on splitting the system into smaller independent pieces to make sure that a compromised sub-system cannot affect the entire entity. Using a sandbox to analyse malware is a wise decision to run untrusted binaries. There are many sandboxes in the wild, such as Cuckoo Sandbox and LIMON, which is an open source sandbox developed by cisco systems Information Security Investigator Monnappa K A as a research project. It is a Python script that automatically collects, analyzes, and reports on Linux malware. It allows one to inspect the Linux malware before execution, during execution, and after execution (post-mortem analysis) by performing static, dynamic and memory analysis using open source tools.
 
 To identify malware we are going to use publically available rules as a demonstration. One of the greatest resources is [https://github.com/Yara-Rules/rules](https://github.com/Yara-Rules/rules)
 
-![](RackMultipart20200926-4-10yq816_html_6a47587c8525a972.png)
+![](https://lh3.googleusercontent.com/i6UZdcQJF-Ezk01w5j-x2IQBdbFCz6J9iBCBrXx8l3ANQDv0cQtceOCZncBZHfAC8BQ10G1y3CGuZBksjH0AfmKzscl3YrcEzqJLtT2yP_TnTK06UfjnSRe7waJNMkyG6nCgRZw)
 
 Clone them
 
-\&lt;a class=&quot;mention&quot; href=&quot;/tags/git&quot; data-type=&quot;Tag&quot; data-id=&quot;TMLH8gEnq2rpQcJkH&quot; title=&quot;#git (search)&quot;\&gt;git clone
+`git clone https://github.com/Yara-Rules/rules`
 
- \&lt;a
-
-
- href=&quot;https://github.com/Yara-Rules/rules&quot;
-
-
- target=&quot;\_blank&quot;
-
-
- rel=&quot;noopener&quot;\&gt;https://github.com/Yara-Rules/rules
-
-
-
- \&lt;/a\&lt;/a
-
-![](RackMultipart20200926-4-10yq816_html_979ee212cd3ca69e.png)
+![](https://lh4.googleusercontent.com/fVpeCDF9nTax0lkufte1DWj2_U31Ca24pK5_eumqmLIGqJMEdEg4CWhEcRYOXUzzxW5K8r3AKQf2EWuScaVlcVMwhfTuFFXh8iAGrOjWqkKarHEgyyAwpc-vhfmyyR5KgDkle2U)
 
 _This project covers the need of a group of IT  __Security Researchers__  to have a single repository where different Yara  __signatures__  are compiled, classified and kept as up to date as possible, and began as an open source  __community__  for collecting Yara rules. Our Yara ruleset is under the GNU-GPLv2 license and open to any user or organization, as long as you use it under this license._
 
@@ -167,19 +118,19 @@ Yara version 3 or higher is required to run the rules.
 
 To detect malware, generally, you need to follow this format
 
-yara [OPTIONS] RULES\_FILE TARGET
+`yara [OPTIONS] RULES_FILE TARGET`
 
 For example to detect NJ-RAT
 
-![](RackMultipart20200926-4-10yq816_html_83292375101124f.png)
+![](https://lh3.googleusercontent.com/ZxM_Abol2c3x_n2ydrC_VRALZ2c5OjCAvmA3fz4qNozWXv4psWBa81BFd0759aagDCwx7GoFfIQ8y_lHhRPHqcqOzmXEc_ol4u1fX6SnjolXB04hYqigmnds4dpHs7cLdmEQGoI)
 
 Run the following command
 
-yara /home/azureuser/rules/malware/RAT\_Njrat.yar /home/azureuser/malwares/theZoo/malwares/Binaries/njRAT-v0.6.4/njRAT-v0.6.4
+`yara /home/azureuser/rules/malware/RAT\_Njrat.yar /home/azureuser/malwares/theZoo/malwares/Binaries/njRAT-v0.6.4/njRAT-v0.6.4`
 
 Yara detect the malicious file
 
-![](RackMultipart20200926-4-10yq816_html_b831fe7b93365f1d.png)
+![](https://lh6.googleusercontent.com/zQorO0zrUjcogLz7o3adoPJIB1SG18AiNGCGQJIjWqll0crUMTy-D5-GObdAIx7tGA9s2pbYyGIjkmaQCRrm_BqvBFgC8o5nwZ9yT4HX66ElH1ERGiyv2eiognjvPDb4Iq07wbw)
 
 **Yara Rules structure**
 
@@ -192,15 +143,15 @@ Now let&#39;s explore the structure of a Yara rule. Yara rules usually contain:
 
 For example, this is a skeleton of a simple Yara rule:
 
-rule Malware\_Detection
- {
- strings:
- $a = &quot;Sring1&quot;
- $b = &quot;String2&quot;
-
- condition:
- ($a or $b)
- }
+    rule Malware\_Detection
+     {
+     strings:
+     $a = &quot;Sring1&quot;
+     $b = &quot;String2&quot;
+    
+     condition:
+     ($a or $b)
+     }
 
 You can&#39;t use these terms as identifiers:
 
@@ -208,17 +159,17 @@ _all, and, any, ascii, at, condition, contains,entrypoint, false, filesize, full
 
 This is the Yara rule for the njRAT detection
 
-![](RackMultipart20200926-4-10yq816_html_9b76d31bc2e42ad8.png)
+![](https://lh6.googleusercontent.com/re74iFErB_sdTpmREiEKiZ689AqI8MGTtyVfD4jFWkVUtqetUnwyYRyhyhksn_bdfRXR8ZFNz04eriqqj1dOnZd2UtjfePSZp5f8jQ-wjykHWqihKb5tdPQbKX1uFTdSnoXYpL8)
 
-![](RackMultipart20200926-4-10yq816_html_a2af6c5c194b49cc.png)
+![](https://lh3.googleusercontent.com/AgRpHGoSBWlQi5l4t89xOweO13iePdy_aI_h-9tmeGwjb2M-HneuTyLDU5trO9IpVULHblvnjZaBevtTx8i5JCCuTskbC_pM-MQjRDoU_FRUAKAVfeGSnLvFnF_MUTRXIl-rGig)
 
 **How to create your first YARA rule**
 
 Let&#39;s suppose that we are going to create a rule that detects Ardamax Keylogger. First we need to extract the strings using strings command
 
-strings ArdamaxKeylogger\_E33AF9E602CBB7AC3634C2608150DD18
+`strings ArdamaxKeylogger_E33AF9E602CBB7AC3634C2608150DD18`
 
-![](RackMultipart20200926-4-10yq816_html_2f402826bf686e3f.png)
+![](https://lh3.googleusercontent.com/jvRQj3QJvsi0w-K7Y5yUKV3OjNQKxHlViASGNHdvyL4La9JKAGJFwDRh4VUzjoauMpJHqXK4ujnpO0gI2sxIVE3D-d7215_OcCAktsABkUwdQHYGC6tZqQ_1RnlYMw84G_IOvtM)
 
 Select some strings for demonstration purposes. In my case I am going to select:
 
@@ -228,23 +179,23 @@ Select some strings for demonstration purposes. In my case I am going to select:
 
 Open a text editor and create your rule (FirstRule.yar)
 
-rule FirstRule {
-
- meta:
- author = &quot;Chiheb&quot;
- last\_updated = &quot;2019&quot;
- category = &quot;Test&quot;
- confidence = &quot;medium&quot;
- description = &quot;This rule was made for a Peerlsyt Article&quot;
-
- strings:
- $a = &quot;invalid bit length repeat&quot; ascii wide nocase
- $b = &quot;??1type\_info@@UAE@XZ&quot; ascii wide nocase
- $c = &quot;.?AVtype\_info@@&quot; ascii wide nocase
-
- condition:
- ($a or $b or $c)
- }
+    rule FirstRule {
+    
+    meta:
+      author = "Chiheb"
+      last_updated = "2019"
+      category = "Test"
+      confidence = "medium"
+      description = "This rule was made for a Peerlsyt Article"
+    
+    strings:
+      $a = "invalid bit length repeat" ascii wide nocase
+      $b = "??1type_info@@UAE@XZ" ascii wide nocase
+      $c = ".?AVtype_info@@" ascii wide nocase
+    
+    condition:
+     ($a or $b or $c)
+    }
 
 **wide**  was added to search for strings encoded with two bytes per character
 
@@ -252,11 +203,11 @@ rule FirstRule {
 
 Save the rule and run:
 
-yara FirstRule.yar ~/malwares/theZoo/malwares/Binaries/Keylogger.Ardamax
+`yara FirstRule.yar ~/malwares/theZoo/malwares/Binaries/Keylogger.Ardamax`
 
 As you can see Yara detected the malicious file based on our rules:
 
-![](RackMultipart20200926-4-10yq816_html_a29c6cb10d4147ef.png)
+![](https://lh4.googleusercontent.com/Pqvj7lQxYmBMhk2Dzy4oPVlOblpUtLZM_LE6F4OqUT0TYW_2fSN7VBr2VXoL_7w4cHCZUNBkLqAWNFfFnbRHAKdJQ7AfAqrv_vVqkRk4hygz1QrO30vmVr8o-OwZxeFfXg7Z3NQ)
 
 Yara supports regular expressions thus you can use one of the following expressions
 
@@ -277,57 +228,27 @@ _With this library you can use _[_YARA_](https://github.com/VirusTotal/yara)_ fr
 
 To install it:
 
-\&lt;a
+` clone https://github.com/VirusTotal/yara-python`
 
- class=&quot;mention&quot;
+` cd yara-python`
 
- data-id=&quot;TMLH8gEnq2rpQcJkH&quot;
+` python setup.py build`
 
- data-type=&quot;Tag&quot;
-
- href=&quot;/tags/git&quot;\&gt;git
-
- clone
-
- https://github.com/VirusTotal/yara-python
-
-
- cd
-
- yara-python
-
-
- python
-
- setup.py
-
-
- build
-
-
- sudo
-
- python
-
- setup.py
-
- install
-
- \&lt;/a
+` sudo python  setup.py install`
 
 This is an example that shows how to include Yara-python in your python application:
 
-\&gt;\&gt;\&gt; import yara
- \&gt;\&gt;\&gt; rule = yara.compile(source=&#39;rule foo: bar {strings: $a = &quot;lmn&quot; condition: $a}&#39;)
- \&gt;\&gt;\&gt; matches = rule.match(data=&#39;abcdefgjiklmnoprstuvwxyz&#39;)
- \&gt;\&gt;\&gt; print(matches)
- [foo]
- \&gt;\&gt;\&gt; print(matches[0].rule)
- foo
- \&gt;\&gt;\&gt; print(matches[0].tags)
- [&#39;bar&#39;]
- \&gt;\&gt;\&gt; print(matches[0].strings)
- [(10L, &#39;$a&#39;, &#39;lmn&#39;)]
+    >>> import yara
+    >>> rule = yara.compile(source='rule foo: bar {strings: $a = "lmn" condition: $a}')
+    >>> matches = rule.match(data='abcdefgjiklmnoprstuvwxyz')
+    >>> print(matches)
+    [foo]
+    >>> print(matches[0].rule)
+    foo
+    >>> print(matches[0].tags)
+    ['bar']
+    >>> print(matches[0].strings)
+    [(10L, '$a', 'lmn')]
 
 **Evasion techniques**
 
@@ -349,4 +270,5 @@ By now, we explored what is the different malware analysis approaches after a sm
 4. [https://seanthegeek.net/257/install-yara-write-yara-rules/](https://seanthegeek.net/257/install-yara-write-yara-rules/)
 5. [https://yara.readthedocs.io/en/v3.4.0/writingrules.html](https://yara.readthedocs.io/en/v3.4.0/writingrules.html)
 
-I hope you will find it helpful.
+
+
