@@ -5,7 +5,7 @@
 
 ## MITRE ATT&amp;CK Framework
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mitre_Corporation_logo.svg/1200px-Mitre_Corporation_logo.svg.png)
+![](https://www.mitre.org/sites/default/files/images/ATT&CK-Pre-ATT&CK.jpg)
 
 MITRE ATT&amp;CK is a framework developed by the Mitre Corporation. The comprehensive document classifies adversary attacks, in other words, their techniques and tactics after observing millions of real-world attacks against many different organizations. This is why ATT&amp;CK refers to &quot;Adversarial Tactics, Techniques &amp; Common Knowledge&quot;.
 
