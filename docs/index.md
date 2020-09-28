@@ -40,10 +40,10 @@ This is a collection of some of my Blue teaming articles. The original posts wer
 
 
 *Todo list:*
-:fa-check-square-o:  Move content
-:fa-square-o:  Check content 
-:fa-square-o: Add Image courtesy and credits
-:fa-square-o: check credits and reference links
+
+* Check content 
+* Add Image courtesy and credits
+* check credits and reference links
 
 
 
