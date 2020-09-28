@@ -121,8 +121,6 @@ During many OSINT missions, you will be dealing with terrorism threats. Thus, it
 
 To obtain information about the domains, subdomains, IP addresses of the targeted organization you can use [https://spyse.com](https://spyse.com/)
 
-![](RackMultipart20200926-4-1ddq8vf_html_4485eca0fb0302aa.png)Image source: [https://pentestlab.files.wordpress.com](https://pentestlab.files.wordpress.com/)
-
 
 
 ### T1258 Determine Firmware version
@@ -168,7 +166,6 @@ By searching online blogs and technical forums you can collect many useful piece
 
 ### T1251 Obtain domain/IP registration information
 
-![](RackMultipart20200926-4-1ddq8vf_html_cafce3fca1f06053.png)Image source: wiki.jolt.co.uk
 
 The Whois database is a publicly accessible database containing the contact details of the owner and contact person of each domain name as well as the data of the name server. It is usually possible to find out the address, phone number, and e-mail address of the person who owned or at least registered the website. In most cases, this person is the system administrator of the website. You can use this online service: [https://whois.net](https://whois.net/)
 
