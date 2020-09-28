@@ -91,7 +91,6 @@ To perform network scanning you can use Nmap:
 
 ![](https://www.unixmen.com/wp-content/uploads/2015/06/nmap.png)
 
-To learn more about active scanning and nmap read my articles:
 
 ## T1253 Conduct passive scanning
 
@@ -117,7 +116,6 @@ During many OSINT missions, you will be dealing with terrorism threats. Thus, it
 
 ![](https://elvinouyang.github.io/assets/images/gtd/GTD_photo.png)Image source: theconversation.com
 
-###
 
 ### T1250 Determine domain and IP address space
 
@@ -125,7 +123,7 @@ To obtain information about the domains, subdomains, IP addresses of the targete
 
 ![](RackMultipart20200926-4-1ddq8vf_html_4485eca0fb0302aa.png)Image source: [https://pentestlab.files.wordpress.com](https://pentestlab.files.wordpress.com/)
 
-###
+
 
 ### T1258 Determine Firmware version
 
@@ -139,7 +137,7 @@ When performing reconnaissance, it is essential to identify the used technologie
 
 ![](https://blog.samuel.domains/img/blog/why-you-really-shouldn-t-use-wappalyzer-as-a-browser-extension_1.png)Image source: [https://medium.com/@hari\_kishore](https://medium.com/@hari_kishore)
 
-###
+
 
 ### T1248 Identify Job postings and needs/gaps
 
@@ -156,7 +154,7 @@ A web application firewall (WAF) is a security solution that filters out bad HTT
 
 ![](https://www.systemconf.com/wp-content/uploads/2020/07/img_5f0320601b6c7.png)Image source: offensivesec.blogspot.com
 
-###
+ 
 
 ### T1252 Map network topology
 
@@ -199,3 +197,4 @@ Shodan is a search engine that lets the user find specific types of computers (w
 **Summary**
 
 In this module we explored the MITRE PRE-ATT&amp;CK framework and we discovered some techniques used when performing reconnaissance against an organization
+
