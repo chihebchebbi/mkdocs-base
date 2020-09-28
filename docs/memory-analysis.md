@@ -123,7 +123,7 @@ Digital evidence needs to be treated carefully because we are going to analyse t
 
 The first step of memory analysis is memory acquisition by dumping the memory of a machine using a number of utilities. One of these [tools](https://www.peerlyst.com/tags/tools) is fmem, which is a kernel module to create a new device called /dev/fmem to allow direct access to the whole memory. After downloading it from their official repository and compiling it you can acquire the machine memory using this command:
 
-# dd if=/dev/fmem of=... bs=1MB count=...
+`# dd if=/dev/fmem of=... bs=1MB count=...`
 
 Another [tool](https://www.peerlyst.com/tags/tool) is The Linux Memory Extractor. LIME is a Loadable Kernel Module (LKM) to allow volatile memory acquisition from Linux and Linux- based devices, such as Android. To explore LIME check this small overview: [LiME: Loadable Kernel Module Overview](https://www.peerlyst.com/posts/lime-loadable-kernel-module-overview-chiheb-chebbi?trk=search_page_search_result)
 
@@ -196,3 +196,4 @@ Checked the availability of tools (Thanks to  **Ken Pryor** )
 5. [https://resources.infosecinstitute.com/memory-forensics/#gref](https://resources.infosecinstitute.com/memory-forensics/#gref)
 6. [https://technical.nttsecurity.com/post/102egyy/hunting-malware-with-memory-analysis](https://technical.nttsecurity.com/post/102egyy/hunting-malware-with-memory-analysis)
 7. [What is RAM - Random Access Memory? Webopedia Definition](https://www.webopedia.com/TERM/R/RAM.html)
+
