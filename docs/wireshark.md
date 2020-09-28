@@ -20,38 +20,37 @@ When it comes to communication networks we have many types. Some of them are the
 - **Wide area network (WAN): **We use this type of networks to connect large distances
 - **Personal area network (PAN): **this network is used in short distances and small areas like a single room.
 
-**Network Topologies**
+## Network Topologies 
 
 A topology is a schematic representation of a network. You can see it as the layout of the network and how the connected devices are arranged in the network. In networking we have many topologies some of the them are:
 
-- **Ring Topology:  ** the data flows in one direction
-- **Star Topology:  ** all the devices are connected to a single node (Hub)
-- **Tree Topology: ** this topology is hierarchical
+- **Ring Topology: ** the data flows in one direction
+- **Star Topology: ** all the devices are connected to a single node (Hub)
+- **Tree Topology:** this topology is hierarchical
 - **Bus Topology: ** all the devices are connected to a central connection
 - **Fully-connected Topology:**  each device is connected with all the other devices of the network
 
-**What is a network traffic?**
+## **What is a network traffic?**
 
 [Techopedia](https://www.techopedia.com/definition/29917/network-traffic) defines it as follows:
 
 > &quot;_Network traffic refers to the amount of data moving across a network at a given point of time.  __Network data__  is mostly encapsulated in  __network packets__ , which provide the load in the network.  __Network traffic__  is the main component for network traffic measurement, network traffic  __control__  and simulation.&quot;_
 
-![](https://lh5.googleusercontent.com/vwga5qw-V31q2A0kUEHQ-sEVqKqCzsLI4ToCNuP65bVjFq4wmBQRlkTVmm6hhsWURsO9Gpj31SyS-eZMc1n9AXjme7CyNIkHyOVBXoqM0P1JSmJSzWwt9Ol7kyFFZawiLhxtMeI)
+<img src="https://lh5.googleusercontent.com/vwga5qw-V31q2A0kUEHQ-sEVqKqCzsLI4ToCNuP65bVjFq4wmBQRlkTVmm6hhsWURsO9Gpj31SyS-eZMc1n9AXjme7CyNIkHyOVBXoqM0P1JSmJSzWwt9Ol7kyFFZawiLhxtMeI" width="200px">
+
 
 [Image Courtesy](https://www.flowmon.com/getattachment/Solutions/use-case/flow-monitoring/product-img_Monitoring.png.aspx?width=480&amp;height=309)
 
-**Traffic Analysis with Wireshark **
+## **Traffic Analysis with Wireshark **
 
-![](https://lh3.googleusercontent.com/24OiDT6gcn37TKewMOJAb_JJjZYmng44HidSs60bQOA3LZPwX4ZfaelU9QRQkFIXCBFsECeQyCTvoME9VaVek98kKPFONTESHEznLcgAtlyIUYJDCJjXeCjqF0SP73pmU7DzGjU)
+<img src="https://lh3.googleusercontent.com/24OiDT6gcn37TKewMOJAb_JJjZYmng44HidSs60bQOA3LZPwX4ZfaelU9QRQkFIXCBFsECeQyCTvoME9VaVek98kKPFONTESHEznLcgAtlyIUYJDCJjXeCjqF0SP73pmU7DzGjU" width="200px">
+
 
 The most suitable tool that will help you analyze your network traffic is definitely Wireshark. Wireshark is a free and open-source tool to help you analyse network protocols with deep inspection capabilities. It gives you the ability to perform live packet capturing or offline analysis. It supports many operating systems including Windows, Linux, MacOS, FreeBSD and many more systems.
 
 You can download it from here: [https://www.wireshark.org/download.html](https://www.wireshark.org/download.html)
 
-_To learn more about it:_
 
-- [How to use Wireshark: Part one](https://www.peerlyst.com/posts/let-s-use-wireshark-part-one-kimberly-crawley?trk=search_page_search_result)
-- [How to get started with Wireshark plugins, tools, and scripts](https://www.peerlyst.com/posts/how-to-get-started-with-wireshark-plugins-tools-and-scripts-kimberly-crawley?trk=search_page_search_result)
 
 ![](https://lh6.googleusercontent.com/HKb3zNrtDk8dOr8N7guWe3tfPC2cv4StzdlWJX_hEGUiEE9DjP3G_rVYxWZAzdtB7ZG8Co90x9xXIfZrSmufeGjBnf0AMjqBo2PrUuEye27MKYWNyvvqGDToDaYfX5E_d3osdXc)
 
@@ -89,7 +88,8 @@ In other words data is moving in the network respecting a specific order. The fo
 
 The following graph illustrates the different OSI model layers:
 
-![](https://lh4.googleusercontent.com/VL-XEpcWKBcUh7y4JqGFXI_r560HFpAzuAcm5cALemlmCHE7Jt8fXCBs_JZ0REVzZCdm4py6YQxd9_PD8jioMA87a81qwcuQB2yS4ifcCOVTkJ3X_zrRi03HZQ3RynvZ7QCwuc8)
+<img src="https://lh4.googleusercontent.com/VL-XEpcWKBcUh7y4JqGFXI_r560HFpAzuAcm5cALemlmCHE7Jt8fXCBs_JZ0REVzZCdm4py6YQxd9_PD8jioMA87a81qwcuQB2yS4ifcCOVTkJ3X_zrRi03HZQ3RynvZ7QCwuc8" width="400px">
+
 
 [Image Courtesy](https://www.researchgate.net/profile/Jay_Johnson3/publication/322568288/figure/fig6/AS:631584889778238@1527592980914/OSI-model-seven-layer-protocol-stack-28.png)
 
@@ -170,6 +170,6 @@ To learn more about traffic analysis you can download this doc that contains man
 
 **References and Credit**
 
-- [https://www.peerlyst.com/posts/how-to-exploit-and-secure-routers-chiheb-chebbi?trk=search\_page\_search\_result](https://www.peerlyst.com/posts/how-to-exploit-and-secure-routers-chiheb-chebbi?trk=search_page_search_result)
 - [https://unit42.paloaltonetworks.com/using-wireshark-identifying-hosts-and-users/](https://unit42.paloaltonetworks.com/using-wireshark-identifying-hosts-and-users/)
 - [https://www.malware-traffic-analysis.net/2019/12/03/index.html](https://www.malware-traffic-analysis.net/2019/12/03/index.html)
+
