@@ -1,6 +1,5 @@
 # Using MITRE ATT&CK to defend against Advanced Persistent Threats
 
-
 Nowadays, new techniques are invented on a daily basis to bypass security layers and avoid detection. Thus it is time to figure out new techniques too and defend against cyber threats.
 
 ![](https://base.imgix.net/files/base/ebm/tdworld/image/2019/04/tdworld_13685_cyberattack_matejmo.png?auto=format&amp;fit=crop&amp;h=432&amp;w=768)
@@ -44,7 +43,8 @@ Security operation analysts should be proactive when it comes to gathering infor
 
 ##  MITRE ATT&amp;CK Framework 
 
-![](https://lh4.googleusercontent.com/2Hkbqi1hUwm1O8Gyx1xSR8k6E-bWDW_BPBLZbUAAiy6-tzJRk29mm8Af1ByvJIwQQco17ae-2-Ie8Ud3nX4kjv6Tr0rZPQbNHYRGv76c1iIiH-Shh6V7or399uB-buLB2m1PLco)
+<img src="https://lh4.googleusercontent.com/2Hkbqi1hUwm1O8Gyx1xSR8k6E-bWDW_BPBLZbUAAiy6-tzJRk29mm8Af1ByvJIwQQco17ae-2-Ie8Ud3nX4kjv6Tr0rZPQbNHYRGv76c1iIiH-Shh6V7or399uB-buLB2m1PLco" width="200px">
+
 
 MITRE ATT&amp;CK is a framework developed by the Mitre Corporation. The comprehensive document classifies adversary attacks, in other words, their techniques and tactics after observing millions of real-world attacks against many different organizations. This is why ATT&amp;CK refers to &quot;Adversarial Tactics, Techniques &amp; Common Knowledge&quot;.
 
@@ -90,7 +90,7 @@ Export the techniques as SVG
 
 If you are dealing with many APT groups at the same time highlight the techniques using colorful shades depends on how often the technique is used by the APT groups (brightest color = The technique is used by many groups)
 
-![](https://www.schemecolor.com/wp-content/uploads/lunar-eclipses-red-colors.png)
+<img src="https://www.schemecolor.com/wp-content/uploads/lunar-eclipses-red-colors.png" width="200px">
 
 _Image _[_Courtesy_](https://www.schemecolor.com/wp-content/uploads/lunar-eclipses-red-colors.png)_ _
 
@@ -105,8 +105,6 @@ Mitigations for every technique can be found on [https://attack.mitre.org/mitiga
 ![](https://lh6.googleusercontent.com/GU6CPDE1UTMYuFtw6XSuMJg-bu1D4NyE5eBO5X4KPPuGBCQzf6R-aCQDVUbB9pqJIdR6w9G0xOaZCxCIvPlmRkcObjkcOXVDXCHqvZuO9ovl-jZtcByHNRaP-od0mVoD25wtAek)
 
 
-
-
 ##   Summary
 
 In this module, we learned many important terminologies and how to use MITRE ATT&amp;CK framework to detect advanced persistent threats.
@@ -115,5 +113,6 @@ In this module, we learned many important terminologies and how to use MITRE ATT
 ### References  
 
 - [https://www.fireeye.com/blog/products-and-services/2020/01/operationalizing-cti-hunt-for-defend-against-iranian-cyber-threats.html](https://www.fireeye.com/blog/products-and-services/2020/01/operationalizing-cti-hunt-for-defend-against-iranian-cyber-threats.html)
+
 
 
