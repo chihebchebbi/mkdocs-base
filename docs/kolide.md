@@ -1,9 +1,9 @@
-#  Incident Response and Threat hunting with OSQuery and Kolide Fleet 
+#  Incident Response and Threat hunting with OSQuery and Fleet 
 
 
 In this guide, we are going to explore some powerful tools to help you enhance your incident response and threat hunting assessments. These tools are OSQuery and Kolide Fleet.
 
-![](https://github.com/kolide/fleet/raw/master/assets/images/dashboard-screenshot.png)Image source: [Kolide Fleet dashboard](https://github.com/kolide/fleet/raw/master/assets/images/dashboard-screenshot.png)
+![](https://www.freelancinggig.com/blog/wp-content/uploads/2019/05/What-is-Osquery.jpg)Image source: [OSQUERY logo](https://www.freelancinggig.com/blog/wp-content/uploads/2019/05/What-is-Osquery.jpg)
 
 Let&#39;s start exploring the first tool OSQuery
 
@@ -110,6 +110,20 @@ This is a query from [https://github.com/osquery/osquery/blob/master/packs/incid
 But now, what to do if we want to deploy OSQuery in large scale environments and we want to manage them all easily. In this situation we need another powerful platform called &quot;Kolide Fleet&quot;
 
 ##  Kolide Fleet (OSQuery Management)
+
+------------
+
+#### :heavy_exclamation_mark:  Kolide is no longer maintaining Fleet. The new name is Fleet and can be found here: https://github.com/fleetdm/fleet 
+
+![](https://user-images.githubusercontent.com/618009/98254443-eaf21100-1f41-11eb-9e2c-63a0545601f3.jpg)
+
+> Fleet is the most widely used open source osquery manager. Deploying osquery with Fleet enables programmable live queries, streaming logs, and effective management of osquery across 50,000+ servers, containers, and laptops. It's especially useful for talking to multiple devices at the same time.
+
+![](https://user-images.githubusercontent.com/618009/101847266-769a2700-3b18-11eb-9109-7f1320ed5c45.png)
+
+------------
+
+
 
 According to its official [Github repository](https://github.com/kolide/fleet):
 
