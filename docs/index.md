@@ -2,7 +2,7 @@
 
 ![](https://marvel-b1-cdn.bc0a.com/f00000000167977/www.evansonline.com/hs-fs/hubfs/2020%20Hero%20Image%20updates/1280x499-Security-Operations-hero.jpg?width=1200&name=1280x499-Security-Operations-hero.jpg)
 
-This is a collection of some of my Blue teaming articles. The original posts were published on *Peerlyst* 
+:blue_book: This is a collection of some of my Blue teaming articles. The original posts were published on *Peerlyst* 
 
 ## Modules
 
@@ -31,7 +31,6 @@ This is a collection of some of my Blue teaming articles. The original posts wer
 
 ------------
 
-
  This training is maintained by: **Chiheb Chebbi**
  
 >  If you want me to modify/correct something please don't hesitate to contact me via: **chiheb-chebbi [at] outlook.fr**
@@ -41,9 +40,9 @@ This is a collection of some of my Blue teaming articles. The original posts wer
 
 *Todo list:*
 
-* Check content 
-* Add Image courtesy and credits
-* check credits and reference links from old posts
+:white_check_mark: Check content <br>
+:black_square_button: Add Image courtesy and credits <br> 
+:black_square_button: check credits and reference links from old posts
 
 
 
