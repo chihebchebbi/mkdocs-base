@@ -8,8 +8,6 @@ Before jumping in the detection part, it is essential to explore some important 
 
 According to [MITRE](https://attack.mitre.org/techniques/T1055/012/):
 
-![](https://4.bp.blogspot.com/-oP3fsd9IyWg/XIF6kIC4xDI/AAAAAAAAEVs/d2ObvQoSKTQffYTiKX2H69CWvIYLuaXvACLcBGAs/s1600/attack.png)
-
 &quot;Process hollowing (T1055.012) is commonly performed by creating a process in a suspended state then unmapping/hollowing its memory, which can then be replaced with malicious code. A victim process can be created with native Windows API calls such as CreateProcess, which includes a flag to suspend the processes primary thread. At this point the process can be unmapped using APIs calls such as ZwUnmapViewOfSection or NtUnmapViewOfSection before being written to, realigned to the injected code, and resumed via VirtualAllocEx, WriteProcessMemory, SetThreadContext, then ResumeThread respectively&quot;
 
 ![](https://lh6.googleusercontent.com/X7bS6yaiRtrnC9B1zO4xN1rMbCfzZnBOS-94MwBilbXPwdGdPXG2lQMk1RpSTvkzCyAwsyZEdQV8J5gAgqDX_IB8KSY5W1Q7mO4NnwPEmvrSnWc_TmXMQ4YJA9hJAd1w3ojxo2RV)
