@@ -28,13 +28,13 @@ For the detection we are going to use Azure Sentinel and sysmon. Sysmon can be d
 
 [https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
 
-To install run the following command as administrator:
+To install it, run the following command as an administrator:
 
 ```
 sysmon.exe -accepteula -i <CONFIG_FILE_HERE>
 ```
 
-You can use the following config file by ION-STORM
+You can use the following config file by ION-STORM:
 
 [https://github.com/ion-storm/sysmon-config](https://github.com/ion-storm/sysmon-config)
 
