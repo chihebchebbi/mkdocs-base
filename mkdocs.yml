@@ -22,5 +22,6 @@ nav:
     - Module 19 - How to Perform Memory Analysis: memory-analysis.md
     - Module 20 - Red Teaming Attack Simulation with "Atomic Red Team": atomic.md
     - Module 21 - How to build a Machine Learning Intrusion Detection system: ML-IDS.md
+    - Module 22 - Azure Sentinel - Process Hollowing (T1055.012) Analysis:  processhollowing.md
    
 theme: material
