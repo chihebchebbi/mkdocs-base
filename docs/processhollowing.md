@@ -1,4 +1,4 @@
-# Azure Sentinel: Process Hollowing (****T1055.012****) Analysis 
+# Azure Sentinel: Process Hollowing (T1055.012) Analysis 
 
 In this article, we are going to explore a technique called &quot;Process Hollowing&quot; and how to detect it using Azure Sentinel.
 
