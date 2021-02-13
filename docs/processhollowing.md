@@ -4,7 +4,7 @@
 
 In this article, we are going to explore a technique called Process Hollowing.
 
-Before jumping in the detection part, it is essential to explore some important terminologies.
+Before jumping into the detection part, it is essential to explore some important terminologies.
 
 According to [MITRE](https://attack.mitre.org/techniques/T1055/012/):
 
@@ -18,7 +18,7 @@ This technique is widely used by adversaries such as Duqu and TrickBot
 
 ![](https://lh4.googleusercontent.com/RuGwhJNJ2jecJMALsGYeNxywIm_7Kl4QCTbWFOT9fDGcCCLLteWamrXov0GWbPI4YABnsPxmvFJwuLzD7cApwgCC1MfpGMRywzQivhiJI9TE0RgYEuXjEcIdDIfWiAU0mKCXSe1w)
 
-The following pieces by [Jonathan Johnson](https://medium.com/@jsecurity101?source=post_page-----c11f5aedf5e0--------------------------------) and [David Polojac](https://medium.com/@david.polojac?source=post_page-----b6014a83d4c8--------------------------------) from Specterops deep dives into the detection engineering aspects of process hollowing
+The following pieces by [Jonathan Johnson](https://medium.com/@jsecurity101?source=post_page-----c11f5aedf5e0--------------------------------) and [David Polojac](https://medium.com/@david.polojac?source=post_page-----b6014a83d4c8--------------------------------) from Specterops deep dive into the detection engineering aspects of process hollowing
 
 - [Engineering Process Injection Detections - Part 1: Research](https://posts.specterops.io/engineering-process-injection-detections-part-1-research-951e96ad3c85)
 - [Engineering Process Injection Detections — Part 2: Data Modeling](https://posts.specterops.io/engineering-process-injection-detections-part-2-data-modeling-c11f5aedf5e0)
