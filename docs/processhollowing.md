@@ -1,6 +1,8 @@
 # Azure Sentinel: Process Hollowing (T1055.012) Analysis 
 
-In this article, we are going to explore a technique called &quot;Process Hollowing&quot; and how to detect it using Azure Sentinel.
+![](https://gblobscdn.gitbook.com/assets%2F-MO5yzvM95WKuwxNJv3b%2F-MTQnOs_xEAye829JeSx%2F-MTQxmYtLUotvQ1w5IT1%2Fcover.png?alt=media&token=d269697f-0bcb-4e20-a433-3111862ab673)
+
+In this article, we are going to explore a technique called Process Hollowing.
 
 Before jumping in the detection part, it is essential to explore some important terminologies.
 
