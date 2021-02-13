@@ -30,7 +30,9 @@ For the detection we are going to use Azure Sentinel and sysmon. Sysmon can be d
 
 To install run the following command as administrator:
 
-sysmon.exe -accepteula -i \&lt;CONFIG\_FILE\_HERE\&gt;
+```
+sysmon.exe -accepteula -i <CONFIG_FILE_HERE>
+```
 
 You can use the following config file by ION-STORM
 
@@ -54,9 +56,12 @@ Now go to Settings -\&gt; Workspace Settings -\&gt; Advanced settings -\&gt; Dat
 
 To check the events go to Azure Sentinel **Logs** section and run the following query:
 
-Event
+```
+Event 
+| where Source == "Microsoft-Windows-Sysmon"
 
-| where Source == &quot;Microsoft-Windows-Sysmon&quot;
+```
+
 
 ![](https://lh6.googleusercontent.com/XjLdqsr7KShVhpQ9OCUp5Yg8O2t3_O5IG5JegrnfrzLV2P1Bqu1bkUSQLvGNo9lFXiUjxZjxO3PCgjr80ngnWveDxzqCUEhLbhyivO2DxM1xKUz4JCd0xuQ8J-AOQOIWNJQo4Lqz)
 
@@ -87,11 +92,12 @@ Let&#39;s perform a process hollowing technique using the following poc: [https:
 
 Go to Azure Sentinel logs console
 
-Sysmon\_Parser
-
-| where EventID in (&quot;1&quot;,&quot;10&quot;)
-
+```
+Sysmon_Parser
+| where EventID in ("1","10") 
 | project SourceImage, TargetImage, EventID, GrantedAccess
+
+```
 
 - EventID 1: Process Created
 - EventID 10: Process Accessed
