@@ -36,6 +36,7 @@ For example, let's enable the system module:
 ```
 sudo filebeat modules enable system
 ```
+Edit the config file:
 ```
 sudo vi /etc/filebeat/filebeat.yml
 ```
