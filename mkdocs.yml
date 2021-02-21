@@ -23,5 +23,6 @@ nav:
     - Module 20 - Red Teaming Attack Simulation with "Atomic Red Team": atomic.md
     - Module 21 - How to build a Machine Learning Intrusion Detection system: ML-IDS.md
     - Module 22 - Azure Sentinel - Process Hollowing (T1055.012) Analysis:  processhollowing.md
+    - Module 23 - Azure Sentinel - Send Events with Filebeat and Logstash:  filebeat.md
    
 theme: material
