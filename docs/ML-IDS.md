@@ -143,36 +143,36 @@ According to the data scientist and deep learning experts like the machine learn
 
 •  **Network Definition:**  in this phase we need to define the layers.Thanks to Keras this step is easy because it defines neural networks as sequences and to define layers we just need to create a sequence instance with mentioning the number of outputs
 
-•  **Network Compiling:**  Now we need to compile the network including choosing the optimizing technique like Stochastic Gradient Descent (sgd) and a Loss function (Loss function is used to measure the degree of fit) to evaluate the model we can use Mean Squared [Error](https://www.peerlyst.com/tags/error) (mse)
+•  **Network Compiling:**  Now we need to compile the network including choosing the optimizing technique like Stochastic Gradient Descent (sgd) and a Loss function (Loss function is used to measure the degree of fit) to evaluate the model we can use Mean Squared [Error]() (mse)
 
 •  **Network Fitting:** a Back-Propagation algorithm is used during this step based on the parameters specified in the compiling step.
 
 • **Network Evaluation :**  After fitting the network an evaluation operation is needed to evaluate the performance of the model
 
-•  **Prediction: ** Finally after [training](https://www.peerlyst.com/tags/training) the [deep learning](https://www.peerlyst.com/tags/deep-learning)model we now can use it to predict a new [malware](https://www.peerlyst.com/tags/malware) sample using a [testing](https://www.peerlyst.com/tags/testing)dataset
+•  **Prediction: ** Finally after [training]() the [deep learning]()model we now can use it to predict a new [malware]() sample using a [testing]()dataset
 
 ## **Intrusion detection systems with Machine learning**
 
-Dangerous [hackers](https://www.peerlyst.com/tags/hackers) are inventing new techniques in a daily basis to bypass security layers and avoid detection.Thus it is time to figure out new techniques to defend against cyber threats. [Intrusion detection](https://www.peerlyst.com/tags/intrusion-detection) systems are a set of devices or pieces of software that play a huge role in modern organizations to defend against intrusions and [malicious](https://www.peerlyst.com/tags/malicious) activities.We have two major [intrusion](https://www.peerlyst.com/tags/intrusion) [detection](https://www.peerlyst.com/tags/detection) system categories:
+Dangerous [hackers]() are inventing new techniques in a daily basis to bypass security layers and avoid detection.Thus it is time to figure out new techniques to defend against cyber threats. [Intrusion detection]() systems are a set of devices or pieces of software that play a huge role in modern organizations to defend against intrusions and [malicious]() activities.We have two major [intrusion]() [detection]() system categories:
 
 - **Host Based Intrusion Detection Systems (HIDS): **they run on the enterprise hosts to
-- **Network Based Intrusion Detection Systems (NIDS):** their role is to detect network anomalies by [monitoring](https://www.peerlyst.com/tags/monitoring) the inbound and outbound traffic.
+- **Network Based Intrusion Detection Systems (NIDS):** their role is to detect network anomalies by [monitoring]() the inbound and outbound traffic.
 
 The detection can be done using two intrusion detection techniques:
 
-- **Signature based detection technique:**  the traffic is compared against a [database](https://www.peerlyst.com/tags/database) of [signatures](https://www.peerlyst.com/tags/signatures) of known [threats](https://www.peerlyst.com/tags/threats)
+- **Signature based detection technique:**  the traffic is compared against a [database]() of [signatures]() of known [threats]()
 - Anomaly-based intrusion technique: inspects the traffic based on the behavior of activities.
 
 ![](https://lh6.googleusercontent.com/bkxscHFXk3FbYHEPS2sBVwZ-lhhQLzgM9E_EcNDN2etvpUx_hnOVChRKMVtxzJz0iYRykwxdXIWYbr3nMlXSHgHiykbOhxxS9HkIgJqAfmlhK_7xPbge-m4YxRooCjfLNSyGRBc)
 
-Modern organization are facing thousands of threats in a daily basis.That is way the classic techniques could not be a wise solution to defend against them.Many [researchers](https://www.peerlyst.com/tags/researchers) and information [security professionals](https://www.peerlyst.com/tags/security-professionals) are coming with new concepts,prototypes or models to try solving this serious security issues.For example this is graph shows the different intrusion detection techniques including the discussed machine learning algorithms
+Modern organization are facing thousands of threats in a daily basis.That is way the classic techniques could not be a wise solution to defend against them.Many [researchers]() and information [security professionals]() are coming with new concepts,prototypes or models to try solving this serious security issues.For example this is graph shows the different intrusion detection techniques including the discussed machine learning algorithms
 
 ![](https://lh4.googleusercontent.com/52VVlYvYwYmdqm4JUSl8YgxOlAjDMuyzKvflyXBmGue8cem7ssm-BY0RmjFxp-hd5iXfWm88N4LnSRPKLzEIOzzAnVu3gwcK3Kx7EDY7h8PcmBXXvismQCSYjeTt8CwD0xDYNS0)
 
 By now, after reading the previous sections we are able to build a Machine learning detection system. As discussed before the first step is Data processing.The are many publicly available datasets in the wild used by data scientist to train machine learning models.You can download some of them from here:
 
 - The ADFA Intrusion Detection Datasets:  [https://www.unsw.adfa.edu.au/australian-centre-for-cyber-security/cybersecurity/ADFA-IDS-Datasets/](https://www.unsw.adfa.edu.au/australian-centre-for-cyber-security/cybersecurity/ADFA-IDS-Datasets/)
-- Publicly available [pcap](https://www.peerlyst.com/tags/pcap) files: [http://www.netresec.com/?page=PcapFiles](http://www.netresec.com/?page=PcapFiles)
+- Publicly available [pcap]() files: [http://www.netresec.com/?page=PcapFiles](http://www.netresec.com/?page=PcapFiles)
 - The Cyber Research Center - DataSets: [https://www.westpoint.edu/crc/SitePages/DataSets.aspx](https://www.westpoint.edu/crc/SitePages/DataSets.aspx)
 - The NSL-KDD dataset: [https://github.com/defcom17/NSL\_KDD](https://github.com/defcom17/NSL_KDD)
 
