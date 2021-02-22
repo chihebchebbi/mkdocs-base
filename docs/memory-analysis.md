@@ -8,14 +8,11 @@ Source: [malware-analysis-virtual-box-cyber-forensicator.jpg](http://cyberforens
 
 **Abstract **
 
-Hi Peerlysters! [Malware](https://www.peerlyst.com/tags/malware) [threats](https://www.peerlyst.com/tags/threats) are a very serious problem in [information security](https://www.peerlyst.com/tags/information-security) nowadays. Dangerous [hackers](https://www.peerlyst.com/tags/hackers) are inventing new [techniques](https://www.peerlyst.com/tags/techniques) on a daily basis to bypass security layers and avoid detection. Thus it is time to figure out [how to](https://www.peerlyst.com/tags/how-to) analyse [memory](https://www.peerlyst.com/tags/memory)dumps as. I already discussed briefly this technique in some of my other Peerlyst articles:
+[Malware]() [threats]() are a very serious problem in [information security]() nowadays. Dangerous [hackers]() are inventing new [techniques]( ) on a daily basis to bypass security layers and avoid detection. Thus it is time to figure out [how to]() analyse [memory]()dumps as. 
 
-- [How to build a Linux Automated Malware Analysis Lab](https://www.peerlyst.com/posts/how-to-build-a-linux-automated-malware-analysis-lab-chiheb-chebbi?trk=search_page_search_result)
-- [How To detect Advanced Volatile Threats (AVT) and Fileless Malware](https://www.peerlyst.com/posts/how-to-detect-advanced-volatile-threats-avt-and-fileless-malware-chiheb-chebbi?trk=search_page_search_result)
+But this time I want to take this opportunity to elaborate more [Memory analysis]() because it is a required skill to every [Forensics]() expert and malware analyst.
 
-But this time I want to take this opportunity to elaborate more [Memory analysis](https://www.peerlyst.com/tags/memory-analysis) because it is a required skill to every [Forensics](https://www.peerlyst.com/tags/forensics) expert and malware analyst.
 
-After reading this article you can [download](https://www.peerlyst.com/tags/download) this document that contains additional [resources](https://www.peerlyst.com/tags/resources) and tutorials: [Memory Analysis](https://static.peerlyst.com/image/upload/v1534966781/post-attachments/Memory_Analysis_bnwpk5.pdf)
 
 In this Article we are going to learn:
 
@@ -30,12 +27,12 @@ In this Article we are going to learn:
 
 **Memory Analysis **
 
-[Malware analysis](https://www.peerlyst.com/tags/malware-analysis) is the art of determining the [functionality](https://www.peerlyst.com/tags/functionality), origin and potential impact of a given malware sample, such as a [virus](https://www.peerlyst.com/tags/virus), [worm](https://www.peerlyst.com/tags/worm), [trojan horse](https://www.peerlyst.com/tags/trojan-horse), [rootkit](https://www.peerlyst.com/tags/rootkit), or backdoor. As a [malware analyst](https://www.peerlyst.com/tags/malware-analyst), your main role is to collect all the information about the [malicious software](https://www.peerlyst.com/tags/malicious-software) and have a good understanding of what happened to the [infected](https://www.peerlyst.com/tags/infected) machines. Like any [process](https://www.peerlyst.com/tags/process), to perform a malware [analysis](https://www.peerlyst.com/tags/analysis) you typically need to follow a certain methodology and a number of steps.
+[Malware analysis]() is the art of determining the [functionality](), origin and potential impact of a given malware sample, such as a [virus](), [worm](), [trojan horse](), [rootkit](), or backdoor. As a [malware analyst](), your main role is to collect all the information about the [malicious software]() and have a good understanding of what happened to the [infected]() machines. Like any [process](), to perform a malware [analysis]() you typically need to follow a certain methodology and a number of steps.
 
-Memory malware analysis is widely used for [digital](https://www.peerlyst.com/tags/digital) [investigation](https://www.peerlyst.com/tags/investigation) and malware analysis. It refers to the act of analysing a dumped memory image from a targeted machine after executing the malware to obtain multiple numbers of artefacts including [network](https://www.peerlyst.com/tags/network) information, running processes, [API](https://www.peerlyst.com/tags/api) hooks, [kernel](https://www.peerlyst.com/tags/kernel) loaded [modules](https://www.peerlyst.com/tags/modules), [Bash](https://www.peerlyst.com/tags/bash) history, etc. ... This phase is very important because it is always a good idea to have a clearer understanding of the malware capabilities.
+Memory malware analysis is widely used for [digital]() [investigation]() and malware analysis. It refers to the act of analysing a dumped memory image from a targeted machine after executing the malware to obtain multiple numbers of artefacts including [network]() information, running processes, [API]() hooks, [kernel]() loaded [modules](), [Bash]() history, etc. ... This phase is very important because it is always a good idea to have a clearer understanding of the malware capabilities.
 
 - Process list and the associated threads
-- [networking](https://www.peerlyst.com/tags/networking) information and interfaces (TCP/UDP) • Kernel modules including the hidden modules
+- [networking]() information and interfaces (TCP/UDP) • Kernel modules including the hidden modules
 - Opened files in the kernel
 - Bash and commands history
 - System Calls • Kernel hooks
@@ -62,11 +59,11 @@ _A  __**RAM**__  (pronounced ramm) is an acronym for random access memory, a typ
 
 source: [RAM061711.jpg](http://www.dfinews.com/sites/dfinews.com/files/u739/RAM061711.jpg)
 
-The memory is divided into 4,096-byte memory chunks named pages, to facilitate internal handling. The 12 least significant bits are the offset; the rest is the page number. On the recent [x86 architecture](https://www.peerlyst.com/tags/x86-architecture), For example, the [Linux kernel](https://www.peerlyst.com/tags/linux-kernel) divides the [virtual](https://www.peerlyst.com/tags/virtual) space, usually 4 GB into 3 GB dedicated to UserLand, and 1 GB for kernel land. This operation is named segmentation. The kernel uses a page table for the correspondence between physical and virtual addresses. To manage the different regions of memory, it uses a virtual memory area (VMA)
+The memory is divided into 4,096-byte memory chunks named pages, to facilitate internal handling. The 12 least significant bits are the offset; the rest is the page number. On the recent [x86 architecture](), For example, the [Linux kernel]() divides the [virtual](https://www.peerlyst.com/tags/virtual) space, usually 4 GB into 3 GB dedicated to UserLand, and 1 GB for kernel land. This operation is named segmentation. The kernel uses a page table for the correspondence between physical and virtual addresses. To manage the different regions of memory, it uses a virtual memory area (VMA)
 
-**The stack**  is a special memory space. In [programming](https://www.peerlyst.com/tags/programming), it is an abstract data type used to collect elements using two [operations](https://www.peerlyst.com/tags/operations): [push](https://www.peerlyst.com/tags/push) and pop. This section grows automatically, but when it becomes closer to another memory section, it will cause a problem and a confusion to the system. That is why attackers are using this technique to confuse the system with other memory areas.
+**The stack**  is a special memory space. In [programming](), it is an abstract data type used to collect elements using two [operations](https://www.peerlyst.com/tags/operations): [push]() and pop. This section grows automatically, but when it becomes closer to another memory section, it will cause a problem and a confusion to the system. That is why attackers are using this technique to confuse the system with other memory areas.
 
-**The heap**  is used for dynamic memory allocation. It resides in the [RAM](https://www.peerlyst.com/tags/ram) like the stack, but it is slower. The kernel heap is using the following three types of allocators:
+**The heap**  is used for dynamic memory allocation. It resides in the [RAM]() like the stack, but it is slower. The kernel heap is using the following three types of allocators:
 
 - **SLAB:**  This is a cache-friendly allocator.
 - **A simple list of blocks (SLOB)**: This is an allocator used in small systems. It uses a first-fit algorithm.
@@ -80,7 +77,7 @@ Better resolution here  [Memory Segmentation sheet ](https://www.0x0ff.info/wp-c
 
 **Memory Management**
 
-Memory [management](https://www.peerlyst.com/tags/management) is an important capability of every [operating](https://www.peerlyst.com/tags/operating) system. It is also integrated into Linux kernel. Linux manages memory in a virtual way. In other words, there is no correspondence between the physical memory addresses, and the addresses used and seen by the program. This technique gives the [users](https://www.peerlyst.com/tags/users) and [developers](https://www.peerlyst.com/tags/developers) flexibility. Linux is dealing with the following five types of addresses:
+Memory [management]() is an important capability of every [operating]() system. It is also integrated into Linux kernel. Linux manages memory in a virtual way. In other words, there is no correspondence between the physical memory addresses, and the addresses used and seen by the program. This technique gives the [users]() and [developers]() flexibility. Linux is dealing with the following five types of addresses:
 
 1. User virtual addresses
 2. Physical addresses
@@ -92,16 +89,16 @@ Memory [management](https://www.peerlyst.com/tags/management) is an important ca
 
 [NIST](https://www.peerlyst.com/tags/nist) is describing Forensics as the following:
 
-_The most common goal of performing forensics is to gain a better understanding of an event of interest by finding and analyzing the facts related to that event... Forensics may be needed in many different situations, such as evidence collection for _[_legal_](https://www.peerlyst.com/tags/legal)_ proceedings and internal disciplinary actions, and handling of malware incidents and unusual operational problems. _
+_The most common goal of performing forensics is to gain a better understanding of an event of interest by finding and analyzing the facts related to that event... Forensics may be needed in many different situations, such as evidence collection for _[_legal_]()_ proceedings and internal disciplinary actions, and handling of malware incidents and unusual operational problems. _
 
-Like any methodological operation, Computer [forensic analysis](https://www.peerlyst.com/tags/forensic-analysis) goes through well-defined steps: Collection; Examination, Analysis and reporting. let&#39;s explore these steps one by one:
+Like any methodological operation, Computer [forensic analysis]() goes through well-defined steps: Collection; Examination, Analysis and reporting. let&#39;s explore these steps one by one:
 
-1. **Collection: ** identifying data ** ** sources and verify the [integrity](https://www.peerlyst.com/tags/integrity) of it
+1. **Collection: ** identifying data ** ** sources and verify the [integrity]() of it
 2. **Examination: ** assessing and extracting the relevant pieces of information from the collected data
 3. **Analysis**
 4. **Reporting**
 
-The steps are based on the [**NIST Guide to Integrating Forensic Techniques into Incident Response**](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-86.pdf). I highly recommend exploring the Process in details (Performing the [Forensic](https://www.peerlyst.com/tags/forensic) Process)
+The steps are based on the [**NIST Guide to Integrating Forensic Techniques into Incident Response**](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-86.pdf). I highly recommend exploring the Process in details (Performing the [Forensic]() Process)
 
 ![](https://lh3.googleusercontent.com/Yh5H6Itbvx8GmzbYI6tfkh5IshUkXcVpeva6d6ChMX4S5188Xeg62Qkm3BLgUvOrkejbX6FpoHu1MS6NZ7W3WRthEKj1heSvEAqUpV3WBqp4HOMcdTiklpqPfNaM7Eybcz-4X20)
 
@@ -112,7 +109,7 @@ source: [nist+process.jpg](http://4.bp.blogspot.com/_Jgk3LbZWY8I/TL4_gGa186I/AAA
 Digital evidence needs to be treated carefully because we are going to analyse them. Also, we need to use them later within the legal process. [Eliézer Pereira](https://www.cybrary.it/members/elytech/) prioritized them in his Article [RAM Memory Forensic Analysis](https://www.cybrary.it/0p3n/ram-memory-forensic-analysis/) as the following from the most volatile to the least volatile:
 
 - Caches
-- [Routing](https://www.peerlyst.com/tags/routing) tables, process tables, memory
+- [Routing]() tables, process tables, memory
 - Temporary system files
 - Hard drive
 - Remote [logs](https://www.peerlyst.com/tags/logs), [monitoring](https://www.peerlyst.com/tags/monitoring) data
@@ -125,9 +122,9 @@ The first step of memory analysis is memory acquisition by dumping the memory of
 
 `# dd if=/dev/fmem of=... bs=1MB count=...`
 
-Another [tool](https://www.peerlyst.com/tags/tool) is The Linux Memory Extractor. LIME is a Loadable Kernel Module (LKM) to allow volatile memory acquisition from Linux and Linux- based devices, such as Android. To explore LIME check this small overview: [LiME: Loadable Kernel Module Overview](https://www.peerlyst.com/posts/lime-loadable-kernel-module-overview-chiheb-chebbi?trk=search_page_search_result)
+Another [tool]() is The Linux Memory Extractor. LIME is a Loadable Kernel Module (LKM) to allow volatile memory acquisition from Linux and Linux- based devices, such as Android. 
 
-These are some [free](https://www.peerlyst.com/tags/free) Memory Acquisition tools:
+These are some [free]() Memory Acquisition tools:
 
 - [WindowsSCOPE](http://www.windowsscope.com/)
 - [https://belkasoft.com/ram-capture](https://belkasoft.com/ram-capturer)
@@ -144,7 +141,7 @@ After having a memory dump, it is time to analyze the memory image.
 
 ![](https://lh6.googleusercontent.com/Sw7Zt2Z61JUpRo56UBAYpz13Yiad_Ekkugdaen1vMICmvX0g943nJt5wqG-waTX1alVl2XSvuEpOE-VJ_PpM8Ad8NzOGhabgd7mbpPl2oYUluNmXDb5yauuJrpYaQL4nuH_goHc)
 
-To analyse memory You can simply use volatility [framework](https://www.peerlyst.com/tags/framework), which is an [open source](https://www.peerlyst.com/tags/open-source) [memory forensics](https://www.peerlyst.com/tags/memory-forensics) tool written in Python. It is available under GPL. Volatility comes with various plugins and a number of profiles to ease obtaining basic forensic information about memory image files. To download it you can visit this website: [The Volatility Foundation - Open Source Memory Forensics](https://www.volatilityfoundation.org/) or [GitHub - volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility)
+To analyse memory You can simply use volatility [framework](), which is an [open source](https://www.peerlyst.com/tags/open-source) [memory forensics]() tool written in Python. It is available under GPL. Volatility comes with various plugins and a number of profiles to ease obtaining basic forensic information about memory image files. To download it you can visit this website: [The Volatility Foundation - Open Source Memory Forensics](https://www.volatilityfoundation.org/) or [GitHub - volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility)
 
 ![](https://lh4.googleusercontent.com/fvGkLQLQ6PS7FkPb_el-HWvCXCbvmphmoWhWheqWryxpKAaM5cWbx-wKNDxx3oVlMONlJnnnRpCVMO6sr3mk7osnyDX-Qg3d2-vgdrFSmbEsoJolZnWqi9z7o6MiLoUFYgFv9T4)
 
@@ -173,11 +170,7 @@ source: [Fig2lg061711.jpg](http://www.dfinews.com/sites/dfinews.com/files/u739/F
 - [Malware analysis Frameworks](https://www.peerlyst.com/posts/malware-analysis-frameworks-prasanna-b-mundas?trk=search_page_search_result)
 - [Memory Forensics : Tracking Process Injection](https://www.peerlyst.com/posts/memory-forensics-tracking-process-injection-saurabh-sharma?trk=search_page_search_result)
 
-**Volatility Peerlyst Articles:**
 
-- [How to Perform Forensic Analysis with Volatility – Part 1](https://www.peerlyst.com/posts/forensic-analysis-with-volatility-part-1-abhinav-singh?trk=search_page_search_result)
-- [How to Perform Forensic Analysis with Volatility – Part 2](https://www.peerlyst.com/posts/how-to-perform-forensic-analysis-with-volatility-part-2-abhinav-singh?trk=search_page_search_result)
-- [The Volatility wiki](https://www.peerlyst.com/posts/the-volatility-wiki-peerlyst?trk=search_page_search_result)
 
 **Summary **
 
