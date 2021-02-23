@@ -40,11 +40,7 @@
 ------------
 
 
-*Todo list:*
 
-- Check content <br>
-- Add Image courtesy and credits <br> 
-- check credits and reference links from old posts
 
 
 
