@@ -24,5 +24,6 @@ nav:
     - Module 21 - How to build a Machine Learning Intrusion Detection system: ML-IDS.md
     - Module 22 - Azure Sentinel - Process Hollowing (T1055.012) Analysis:  processhollowing.md
     - Module 23 - Azure Sentinel - Send Events with Filebeat and Logstash:  filebeat.md
+    - Module 24 - Azure Sentinel - Using Custom Logs and DNSTwist to Monitor Malicious Similar Domains: dnstwist.md
    
 theme: material
