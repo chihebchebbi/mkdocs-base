@@ -31,7 +31,9 @@
 - **Module 23 -** Azure Sentinel - Send Events with Filebeat and Logstash
 - **Module 24 -** Azure Sentinel - Using Custom Logs and DNSTwist to Monitor Malicious Similar Domains
 
+## Code Snippets and Projects
 
+- **Azure Sentinel projects**  
 ------------
 
  This training is maintained by: **Chiheb Chebbi**
