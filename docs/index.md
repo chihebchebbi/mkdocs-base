@@ -33,7 +33,7 @@
 
 ## Code Snippets and Projects
 
-- **Azure Sentinel projects**  
+* **Azure Sentinel projects**  
 ------------
 
  This training is maintained by: **Chiheb Chebbi**
