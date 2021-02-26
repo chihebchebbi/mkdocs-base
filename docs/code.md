@@ -12,3 +12,6 @@
 
 
 * [Azure Sentinel TheHive Playbook](https://github.com/chihebchebbi/Azure-Sentinel-Hive-Playbook)
+
+
+* [Azure Sentinel Threat Hunting Queries](https://github.com/chihebchebbi/Threat-Hunting-Queries)
