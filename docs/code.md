@@ -15,3 +15,6 @@
 
 
 * [Azure Sentinel Threat Hunting Queries](https://github.com/chihebchebbi/Threat-Hunting-Queries)
+
+
+* [Sentinel2Attack](https://github.com/chihebchebbi/Sentinel2Attack)
