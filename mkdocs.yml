@@ -27,7 +27,8 @@ nav:
     - Module 24 - Azure Sentinel - Using Custom Logs and DNSTwist to Monitor Malicious Similar Domains: dnstwist.md
     - Azure Sentinel - Code Samples and projects: code.md
 
-gtags:
-  - G-G2T9580RGW
+google_analytics:
+  - UA-193355220-1
+  - auto
   
 theme: material
