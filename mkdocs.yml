@@ -26,6 +26,7 @@ nav:
     - Module 23 - Azure Sentinel - Send Events with Filebeat and Logstash:  filebeat.md
     - Module 24 - Azure Sentinel - Using Custom Logs and DNSTwist to Monitor Malicious Similar Domains: dnstwist.md
     - Azure Sentinel - Code Samples and projects: code.md
+    - Azure Security Center and Security Hygiene - Small Steps, Big Impact: securityhygiene.md
 
 google_analytics:
   - UA-193355220-1
