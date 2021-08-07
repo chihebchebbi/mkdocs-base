@@ -1,13 +1,12 @@
-Cloud Security Cyber Hygiene
+# Azure Security Center and Security Hygiene: Small Steps, Big Impact 
 
-# 1. Why Cyber Hygiene is important?  
+## <img src="img/1-2.png" alt="Logo" width="50" height="50"> - Why Cyber Hygiene is important?  
 
 <p align="center">
     <a href="#">
-    <img src="https://i.redd.it/2evjah8jbw8z.png" alt="Logo" width="250" height="250">
+    <img src="https://i.redd.it/2evjah8jbw8z.png" width="250" height="250">
    </a>
 </p>
-
 
 > “Great things are done by a series of small things brought together.“ - Vincent Van Gogh 
 
@@ -26,7 +25,7 @@ That is why ***“Security Hygiene”*** is very important. Security hygiene is 
 * Maintaining a cybersecurity policy 
 
 
-# 2. Security Hygiene with Azure Security Center
+## <img src="img/2-3.png" alt="Logo" width="50" height="50"> - Security Hygiene with Azure Security Center
 
 > “I am always doing what I cannot do yet, in order to learn how to do it.” - Vincent Van Gogh
 
@@ -48,7 +47,7 @@ Now let’s explore how Azure Security Center can help you in your cyber hygiene
 </p>
 
 
-## Secure Score
+### Secure Score
 
 You can’t enhance what you can’t measure. That is why one of the most helpful metrics provided by the Security Center is “Secure Score”. Secure Score is an aggregation of many values and assessment results to give you a clear idea about your current security situation and per consequence to help you track your situation. The score is represented as a percentage and it is calculated as follows:
 
@@ -68,7 +67,7 @@ You can’t enhance what you can’t measure. That is why one of the most helpfu
 
 To raise the “secure score”, you need to take actions based on the provided recommendations. For example, if you enable MFA, 10 points will be added to your score. More details about the scure score calculation can be found here: https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls 
 
-## Recommendations
+### Recommendations
 
 Recommendations can be found simply by selecting the “Recommendations” link in the side menu. The recommendations page gives you helpful insights about your resource health. 
 
@@ -112,7 +111,7 @@ Furthermore, it is possible to check the coverage by exploring the “coverage�
    </a>
 </p>
 
-## Regulatory Compliance
+### Regulatory Compliance
 
 Many organizations need to be aligned and compliant with industry and regulatory standards, and benchmarks. Azure Security Center saves your precious time and provides you with a regulatory compliance section where you can ensure how your organization is aligned with industry standards or internal policies.
 
@@ -148,7 +147,7 @@ Furthermore, you can add regulatory compliance standards from a list provided by
    </a>
 </p>
 
-## Azure Defender
+### Azure Defender
 
 Azure defender is integrated with the Security center and it helps you protect your hybrid resources and workloads. According to Microsoft documentation: 
 
@@ -256,13 +255,52 @@ Azure Security Center gives you the ability to integrate workloads from other cl
    </a>
 </p>
 
-# 3. Take Actions Now
+## <img src="img/3-2.png" alt="Logo" width="50" height="50"> - Take Actions Now
 
 
 > "What would life be if we had no courage to attempt anything?" - Vincent Van Gogh
 
+It is time to take some actions and try Azure Security Center by yourself. Go to your Azure Portal and search for "Security Center"
 
+<p align="center">
+    <a href="#">
+    <img src="img/az20.png" alt="Logo">
+   </a>
+</p>
 
+You will be taken to the "Getting Started Page"
+
+<p align="center">
+    <a href="#">
+    <img src="img/az21.png" alt="Logo">
+   </a>
+</p>
+
+Click ob upgrade to start a 30-day free trial 
+
+<p align="center">
+    <a href="#">
+    <img src="img/az222.png" alt="Logo">
+   </a>
+</p>
+
+Click on "Install Agents"
+
+<p align="center">
+    <a href="#">
+    <img src="img/az23.png" alt="Logo">
+   </a>
+</p>
+
+Voila! Now you can start exploring Azure Security Center
+
+<p align="center">
+    <a href="#">
+    <img src="img/az24.png" alt="Logo">
+   </a>
+</p>
+
+Now go to the recommendations page and try to raise the "Secure Score"
 
 
 
