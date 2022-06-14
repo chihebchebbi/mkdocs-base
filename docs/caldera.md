@@ -11,3 +11,5 @@ This project contains:
 You can download the playbook and the Workbook from here: https://github.com/chihebchebbi/MS_Sentinel_CALDERA 
 
 ![](https://github.com/chihebchebbi/MS_Sentinel_CALDERA/blob/main/Images/CALDERA.gif?raw=true)
+
+Dont't forget to edit them by adding the subscription ID, resource group etc.
