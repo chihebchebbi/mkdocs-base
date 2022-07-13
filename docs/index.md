@@ -30,6 +30,11 @@
 - **Module 22 -** Azure Sentinel - Process Hollowing (T1055.012) Analysis
 - **Module 23 -** Azure Sentinel - Send Events with Filebeat and Logstash
 - **Module 24 -** Azure Sentinel - Using Custom Logs and DNSTwist to Monitor Malicious Similar Domains
+- **Module 25 -** Azure Security Center and Security Hygiene: Small Steps, Big Impact
+-  Azure Sentinel - Code Samples and projects
+-  Connecting CALDERA to Microsoft Sentinel - Playbook and Workbook
+-  Atomic Red Team Microsoft Sentinel Workbook
+-  SIGMA Rules Microsoft Sentinel Workbook
 
 ## Code Snippets and Projects
 
