@@ -39,6 +39,12 @@
 ## Code Snippets and Projects
 
 - Azure Sentinel Code snippets and Projects 
+- Azure Sentinel Entity Hash VirusTotal Scanner
+- Azure Sentinel Report Generator
+- Azure Sentinel Entity Extractor
+- Azure Sentinel TheHive Playbook
+- Azure Sentinel Threat Hunting Queries
+- Sentinel2Attack
 
 
 ------------
