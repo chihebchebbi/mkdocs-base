@@ -36,14 +36,12 @@ A topology is a schematic representation of a network. You can see it as the lay
 
 > &quot;_Network traffic refers to the amount of data moving across a network at a given point of time.  __Network data__  is mostly encapsulated in  __network packets__ , which provide the load in the network.  __Network traffic__  is the main component for network traffic measurement, network traffic  __control__  and simulation.&quot;_
 
-<img src="https://lh5.googleusercontent.com/vwga5qw-V31q2A0kUEHQ-sEVqKqCzsLI4ToCNuP65bVjFq4wmBQRlkTVmm6hhsWURsO9Gpj31SyS-eZMc1n9AXjme7CyNIkHyOVBXoqM0P1JSmJSzWwt9Ol7kyFFZawiLhxtMeI" width="200px">
 
 
 [Image Courtesy](https://www.flowmon.com/getattachment/Solutions/use-case/flow-monitoring/product-img_Monitoring.png.aspx?width=480&amp;height=309)
 
 ## **Traffic Analysis with Wireshark **
 
-<img src="https://lh3.googleusercontent.com/24OiDT6gcn37TKewMOJAb_JJjZYmng44HidSs60bQOA3LZPwX4ZfaelU9QRQkFIXCBFsECeQyCTvoME9VaVek98kKPFONTESHEznLcgAtlyIUYJDCJjXeCjqF0SP73pmU7DzGjU" width="200px">
 
 
 The most suitable tool that will help you analyze your network traffic is definitely Wireshark. Wireshark is a free and open-source tool to help you analyse network protocols with deep inspection capabilities. It gives you the ability to perform live packet capturing or offline analysis. It supports many operating systems including Windows, Linux, MacOS, FreeBSD and many more systems.
